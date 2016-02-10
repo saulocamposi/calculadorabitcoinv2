@@ -1,0 +1,27 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+      <a href="#/">Calculadora Bitcoin</a>
+      <a href="#satoshi">Calculadora Satoshis</a>
+      <a href="#bit">Calculadora Bits</a>
+      <a href="#income">Lucro Trade</a>
+  </div>
+
+
+  <div class="mainresults">
+    <div class="results">
+      <span class="labelPrice">BRL : </span>
+      <span class="price"> {{ brlref * bitcoin / 1000000 | number : 5}} </span>
+    </div>
+
+    <div class="results">
+      <span class="labelPrice">Bit :</span>
+      <span class="price"> {{ brl / brlref * 100 | number : 8 }} </span>
+    </div>
+  </div>
+
+  <div class="inputCalculator">
+    <input class="inputcalc" type="text" name="brlrefname" value="" ng-model="brlref" ng-required="number" placeholder="Digite o preço do Bitcoin">
+    <input class="inputcalc" type="text" name="brlname" value="" ng-model="brl" ng-required="number" placeholder="Valor em Reais">
+    <input class="inputcalc" type="text" name="btcname" value="" ng-model="bitcoin" required="number" placeholder="Valor em Bits" maxlength="8">
+  </div>
+</div>

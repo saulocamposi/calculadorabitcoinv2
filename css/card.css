@@ -1,0 +1,32 @@
+.card{
+  border-radius: 3px;
+  background: #FFFFFF;
+  margin-top: 1%;
+  margin-bottom: 3%;
+}
+
+.title-card{
+  background: #673AB7;
+  height: 35px;
+}
+
+.title-card span{
+  color: #FFFFFF;
+  font-size: 1.5em;
+  margin-left: 1%;
+  vertical-align: bottom;
+  position: relative;
+  top: 28%;
+  left: 0;
+}
+
+.title-card span a{
+  color: #FFFFFF;
+  font-size: 1em;
+  margin-top: 5%;
+  margin-left: 1%;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

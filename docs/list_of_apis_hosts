@@ -1,0 +1,13 @@
+##### BlockChain ######
+
+https://blockchain.info/ticker?cors=true
+https://blockchain.info/address/3KAuEYkuJQw1Ad2GzWjfC7V5XoL2fCqjGN?format=json
+
+##### list of APIs with Brazilian exchanges  ##################
+
+https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC
+https://www.bitcointoyou.com/api/ticker.aspx
+https://mercadobitcoin.net/api/ticker
+https://api.flowbtc.com:8400/GetTicker/BTCBRL/
+
+##### list of APIs with Foreign exchanges  ##################
