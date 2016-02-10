@@ -9,6 +9,7 @@
   <link rel="stylesheet" type="text/css" href="css/main_calculator.css">
   <link rel="stylesheet" type="text/css" href="css/card.css">
   <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-custom.css">
 </head>
 
 <body ng-controller="mbCtrl">
@@ -24,11 +25,12 @@
         <ng-include src="'tpl/card-exchanges.html'"></ng-include>
         <ng-include src="'tpl/card-bitvalor.html'"></ng-include>
         <ng-include src="'tpl/card-polionex.html'"></ng-include>
-        <ng-include src="'tpl/card-foxbitwallet.html'"></ng-include>
+
       </div>
       <div class="col-md-6">
         <div ng-view>
         </div>
+        <ng-include src="'tpl/card-foxbitwallet.html'"></ng-include>
       </div>
     </div>
 
