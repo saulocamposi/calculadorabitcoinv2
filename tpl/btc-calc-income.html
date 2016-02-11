@@ -3,40 +3,37 @@
     <ng-include src="'tpl/nav-calculator.html'"></ng-include>
   </div>
 
+  <div class="form-group">
 
+    <div class="well">
+      <span class=""> BRL : </span>
+      <span class=""> {{ brlref * bitcoin | number : 2}} </span>
+    </div>
+    <div class="well">
+      <span class="">BTC :</span>
+      <span class=""> {{ brl / brlref | number : 8 }} </span>
+    </div>
 
+    <input class="form-control" type="text" name="brlrefname" value="" ng-model="brlref" ng-required="number" placeholder="BTC Preço">
+    <input class="form-control" type="text" name="brlname" value="" ng-model="brl" ng-required="number" placeholder="Reais">
+    <input class="form-control" type="text" name="btcname" value="" ng-model="bitcoin" required="number" placeholder="BTC">
+  </div>
 
-      <div class="results">
-        <span class="labelPrice labelPrice-income"> BRL : </span>
-        <span class="price price-income"> {{ brlref * bitcoin | number : 2}} </span>
-      </div>
+  <div class="well">
+    <span class=""> BRL : </span>
+    <span class=""> {{ brlrefincome * bitcoinincome | number : 2}} </span>
+  </div>
 
-        <div class="results">
-        <span class="labelPrice labelPrice-income">BTC :</span>
-        <span class="price price-income"> {{ brl / brlref | number : 8 }} </span>
-        </div>
+  <div class="well">
+    <span class="">BTC :</span>
+    <span class=""> {{ brlincome / brlrefincome | number : 8 }} </span>
+  </div>
 
-      <div class="form-group">
-        <input class="inputcalc" type="text" name="brlrefname" value="" ng-model="brlref" ng-required="number" placeholder="BTC Preço">
-        <input class="inputcalc" type="text" name="brlname" value="" ng-model="brl" ng-required="number" placeholder="Reais">
-        <input class="inputcalc" type="text" name="btcname" value="" ng-model="bitcoin" required="number" placeholder="BTC">
-      </div>
-
-      <div class="results">
-        <span class="labelPrice labelPrice-income"> BRL : </span>
-        <span class="price price-income"> {{ brlrefincome * bitcoinincome | number : 2}} </span>
-      </div>
-
-      <div class="results">
-        <span class="labelPrice labelPrice-income ">BTC :</span>
-        <span class="price price-income"> {{ brlincome / brlrefincome | number : 8 }} </span>
-      </div>
-
-      <div class="form-group">
-        <input class="inputcalc" type="text" name="brlrefname" value="" ng-model="brlrefincome" ng-required="number" placeholder="BTC Preço">
-        <input class="inputcalc" type="text" name="brlname" value="" ng-model="brlincome" ng-required="number" placeholder="Reais">
-        <input class="inputcalc" type="text" name="btcname" value="" ng-model="bitcoinincome" required="number" placeholder="BTC">
-      </div>
+  <div class="form-group">
+    <input class="form-control" type="text" name="brlrefname" value="" ng-model="brlrefincome" ng-required="number" placeholder="BTC Preço">
+    <input class="form-control" type="text" name="brlname" value="" ng-model="brlincome" ng-required="number" placeholder="Reais">
+    <input class="form-control" type="text" name="btcname" value="" ng-model="bitcoinincome" required="number" placeholder="BTC">
+  </div>
 
 
 </div>
