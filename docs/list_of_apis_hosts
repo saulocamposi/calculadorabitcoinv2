@@ -11,3 +11,12 @@ https://mercadobitcoin.net/api/ticker
 https://api.flowbtc.com:8400/GetTicker/BTCBRL/
 
 ##### list of APIs with Foreign exchanges  ##################
+
+https://getsatisfaction.com/tradingview/topics/add-the-largest-bitcoin-exchange-in-the-brazil-foxbit-fjei0yey3psuh
+https://api.blinktrade.com/api/v1/BRL/trades?crypto_currency=BTC
+
+https://www.bitmex.com/api/explorer/
+
+https://bleutrade.com/help/API
+https://bleutrade.com/api/v2/public/getmarketsummary?market=BLEU_DCR
+https://bleutrade.com/api/v2/public/getcurrencies
