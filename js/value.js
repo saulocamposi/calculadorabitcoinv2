@@ -47,6 +47,10 @@ var mbCtrl = function($scope, $http, $resource) {
     $scope.foxbit = response.data;
   });
 
+  $http.get("services/orders_foxbit_services.php").then(function(response) {
+    $scope.foxbitorders = response.data;
+  });
+  
   $http.get("services/bitvalor_services.php").then(function(response) {
     $scope.bitvalor = response.data;
   });
