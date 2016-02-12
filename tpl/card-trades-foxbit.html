@@ -1,0 +1,24 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <span>Trades Foxbit</span>
+  </div>
+
+    <table class="table table-fixed">
+      <thead>
+        <tr>
+          <th class="col-xs-4">Preço</th>
+          <th class="col-xs-4">Quantidade</th>
+          <th class="col-xs-4">Tipo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="x in foxbittrades">
+          <td class="col-xs-4">{{x.price}}</td>
+          <td class="col-xs-4">{{x.amount}}</td>
+          <td class="col-xs-4">{{x.side}}</td>
+
+        </tr>
+      </tbody>
+    </table>
+
+</div>

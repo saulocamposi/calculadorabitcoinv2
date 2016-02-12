@@ -50,7 +50,11 @@ var mbCtrl = function($scope, $http, $resource) {
   $http.get("services/orders_foxbit_services.php").then(function(response) {
     $scope.foxbitorders = response.data;
   });
-  
+
+  $http.jsonp("https://api.blinktrade.com/api/v1/BRL/trades?crypto_currency=BTC&callback=JSON_CALLBACK").then(function(response) {
+    $scope.foxbittrades = response.data;
+  });
+
   $http.get("services/bitvalor_services.php").then(function(response) {
     $scope.bitvalor = response.data;
   });
