@@ -25,3 +25,7 @@ https://www.bitmex.com/api/explorer/
 https://bleutrade.com/help/API
 https://bleutrade.com/api/v2/public/getmarketsummary?market=BLEU_DCR
 https://bleutrade.com/api/v2/public/getcurrencies
+
+
+### Ok Coin API #####
+https://www.okcoin.cn/api/ticker.do?symbol=ltc_cny
