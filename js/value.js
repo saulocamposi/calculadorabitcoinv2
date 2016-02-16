@@ -59,11 +59,13 @@ var mbCtrl = function($scope, $http, $resource) {
     $scope.bitvalor = response.data;
   });
 
-/*
-  $http.get("promasters_services.php").then(function(response) {
-    $scope.promasters = response.data;
+  $http.get("services/agenciaideias_services.php").then(function(response) {
+    $scope.agenciaideias = response.data;
   });
-*/
+
+  $http.get("services/forex_services.php").then(function(response) {
+    $scope.forex = response.data;
+  });
 
   $http.get("services/doge_polionex_services.php").then(function(response) {
     $scope.doge = response.data;
