@@ -10,9 +10,9 @@ https://api.flowbtc.com:8400/GetTicker/BTCBRL/
 
 ##### BlinkTrade APIs #############
 https://github.com/blinktrade/bitex/issues/19
-https://getsatisfaction.com/tradingview/topics/add-the-largest-bitcoin-exchange-in-the-brazil-foxbit-fjei0yey3psuh
 https://api.blinktrade.com/api/v1/BRL/trades?crypto_currency=BTC
 https://api.blinktrade.com/api/v1/BRL/orderbook?crypto_currency=BTC
+https://getsatisfaction.com/tradingview/topics/add-the-largest-bitcoin-exchange-in-the-brazil-foxbit-fjei0yey3psuh
 
 ##### list of APIs with Foreign exchanges  ##################
 https://www.bitmex.com/api/explorer/
