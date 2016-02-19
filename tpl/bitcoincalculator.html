@@ -8,6 +8,11 @@
       <span class="price"> {{ brlref * bitcoin | number : 2}} </span>
     </div>
 
+
+<ng-include src="'tpl/btc-calc-income-buttons.html'"></ng-include>
+
+
+
     <div class="results">
       <span class="labelPrice">Bitcoin :</span>
       <span class="price"> {{ brl / brlref | number : 8 }} </span>
