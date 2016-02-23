@@ -9,14 +9,14 @@
   }
 
   if($_GET['brand'] == "flowbtc"){
-    echo $bitvalor =  file_get_contents("https://api.flowbtc.com:8400/GetTicker/BTCBRL/");
+    echo $flowbtc =  file_get_contents("https://api.flowbtc.com:8400/GetTicker/BTCBRL/");
   }
 
   if($_GET['brand'] == "mtc"){
     echo $mtc =  file_get_contents("https://www.mercadobitcoin.net/api/ticker");
   }
 
-  if($_GET['brand'] == "bitvalor"){
-    echo $bitvalor =  json_decode(file_get_contents("http://api.bitvalor.com/v1/ticker.json"));
+  if($_GET['brand'] == "coinbr"){
+    echo $coinbr =  file_get_contents("https://www.coinbr.net/pubticker");
   }
 ?>

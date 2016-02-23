@@ -27,6 +27,10 @@ var routes = function($routeProvider){
 
 var mbCtrl = function($scope, $http, $resource) {
 
+  $http.get("services/services.php?brand=coinbr").then(function(response) {
+    $scope.coinbr = response.data;
+  });
+
   $http.get("services/services.php?brand=mtc").then(function(response) {
     $scope.mtc = response.data;
   });

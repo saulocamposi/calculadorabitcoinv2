@@ -1,0 +1,43 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <span>Bitcoin Varejo</span>
+  </div>
+
+  <table class="table">
+    <tr>
+      <th>
+        Empresa
+      </th>
+      <th>
+        Venda
+      </th>
+      <th>
+        Compra
+      </th>
+      <th>
+        Cotação Dolar
+      </th>
+      <th>
+        Compra em Dolar
+      </th>
+    </tr>
+
+    <tr>
+      <td>
+        Coinbr
+      </td>
+      <td>
+        {{coinbr.sell | number : 2}}
+      </td>
+      <td>
+        {{coinbr.buy | number : 2}}
+      </td>
+      <td>
+        {{coinbr.usdbrl | number : 2}}
+      </td>
+      <td>
+        {{coinbr.usd_sell | number : 2}}
+      </td>
+    </tr>
+  </table>
+</div>
