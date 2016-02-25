@@ -8,8 +8,17 @@ https://www.bitcointoyou.com/api/ticker.aspx
 https://mercadobitcoin.net/api/ticker
 https://api.flowbtc.com:8400/GetTicker/BTCBRL/
 https://www.coinbr.net/pubticker
+
+
+##### Bitinka ################
+https://www.bitinka.pe/api/apinka/order_book
+https://www.bitinka.pe/api/apinka/ticker
+https://www.bitinka.pe/api/apinka/volumen24
+
+
 ##### BlinkTrade APIs #############
 
+Issues
 https://github.com/blinktrade/bitex/issues/19
 
 BRL - FoxBit in Brazil
