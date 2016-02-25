@@ -117,6 +117,10 @@ var mbCtrl = function($scope, $http, $resource) {
     $scope.wfoxhot = response.data;
   });
 
+  $http.get("services/bitinka_services.php").then(function(response) {
+    $scope.bitinka = response.data;
+  });
+
 }
 
 app.controller("mbCtrl", ["$scope", "$http", mbCtrl]);

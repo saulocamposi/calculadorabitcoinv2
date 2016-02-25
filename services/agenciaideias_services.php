@@ -24,13 +24,4 @@
    $ticker = json_encode($ticker);
 
    echo $ticker;
-
-
-
-
-
-
-
-
-
 ?>
