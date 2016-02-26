@@ -23,6 +23,10 @@
   border-bottom-width: 0;
 }
 
-.margin-pannel{  
+.margin-pannel{
   padding: 0.5%;
+}
+
+.tradingview{
+ height: 500px;
 }
