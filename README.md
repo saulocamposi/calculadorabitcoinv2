@@ -6,7 +6,10 @@
  
  The first version we tried to understand more about public Brazilians APIs for Bitcoin, the second version we tought about usability and increase the number of index that make a sense for us. 
  
- Normally the websites for index around the world has a focus on OkCoin, BitStamp or Kraken, but here in South America we have a good place to sell ours bitcoins and I good area to do arbitrage. Think serius about that . 
+ Normally the websites for index around the world has a focus on OkCoin, BitStamp or Kraken, but here in South America we have a good place to sell ours bitcoins and I good area to do arbitrage. Think serious about that . 
+ 
+ Now we have indexes of Brazil, Venezuela that's is the most important volume in South America, but we also have Bitinka ticker which exchange in diferentes currenies, Bolivian currency, Venezuelan currency and others . 
+ 
  
 Calculadora para converter bitcoins em BRL, vice-versa e conferir os principais indicadores de Bitcoin no Brasil
 
