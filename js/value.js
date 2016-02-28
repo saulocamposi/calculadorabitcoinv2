@@ -121,6 +121,21 @@ var mbCtrl = function($scope, $http, $resource) {
     $scope.bitinka = response.data;
   });
 
+
+  $scope.averageBTC = function(){
+    //{{}}(brlref + mtc.ticker.last + foxbit.last + btctoyou.ticker.last + negociecoins.last) / 4
+    /*numbersofexchange = 10;
+    foxbitlast = $scope.foxbit.last >= 0 ? $scope.foxbit.last : 0 ;
+    mtclast = $scope.mtc.last >= 0 ? $scope.mtc.last : 0 ;
+    btctoyoulast = $scope.btctoyou.ticker.last >= 0 ? $scope.btctoyou.ticker.last : 0 ;
+    negociecoinslast  = $scope.negociecoins.last >= 0 ? $scope.negociecoins.last : 0 ;
+    sumof = foxbitlast + mtclast + btctoyoulast + negociecoinslast;
+    $scope.brlref =  sumof / 10;
+*/
+$scope.brlref = $scope.foxbit.last;
+  }
+
+
 }
 
 app.controller("mbCtrl", ["$scope", "$http", mbCtrl]);

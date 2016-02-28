@@ -1,6 +1,6 @@
 <div class="panel panel-info">
   <div class="panel-heading">
-  <ng-include src="'tpl/nav-calculator.html'"></ng-include> 
+    <ng-include src="'tpl/nav-calculator.html'"></ng-include>
   </div>
   <div class="mainresults">
     <div class="results">
@@ -18,4 +18,5 @@
     <input class="inputcalc" type="text" name="brlname" value="" ng-model="brl" ng-required="number" placeholder="Valor em Reais">
     <input class="inputcalc" type="text" name="btcname" value="" ng-model="bitcoin" required="number" placeholder="Valor em Bitcoins">
   </div>
+  <button ng-Click="averageBTC()" class="input calc btn btn-primary">BTC</a>
 </div>
