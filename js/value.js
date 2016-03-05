@@ -4,22 +4,22 @@ var routes = function($routeProvider){
   $routeProvider
          // route for the bitcoincalculator page
          .when('/', {
-             templateUrl : 'tpl/bitcoincalculator.html',
+             templateUrl : 'tpl/calc/bitcoincalculator.html',
              controller  : 'mbCtrl'
          })
          // route for the satoshicalculator page
            .when('/satoshi', {
-               templateUrl : 'tpl/satoshicalculator.html',
+               templateUrl : 'tpl/calc/satoshicalculator.html',
                controller  : 'mbCtrl'
            })
            // route for the bitcalculator page
              .when('/bit', {
-                 templateUrl : 'tpl/bitcalculator.html',
+                 templateUrl : 'tpl/calc/bitcalculator.html',
                  controller  : 'mbCtrl'
              })
              // route for the btc calc income page
                .when('/income', {
-                   templateUrl : 'tpl/btc-calc-income.html',
+                   templateUrl : 'tpl/calc/btc-calc-income.html',
                    controller  : 'mbCtrl'
                })
 }
@@ -132,7 +132,7 @@ var mbCtrl = function($scope, $http, $resource) {
     sumof = foxbitlast + mtclast + btctoyoulast + negociecoinslast;
     $scope.brlref =  sumof / 10;
 */
-$scope.brlref = $scope.foxbit.last;
+  $scope.brlref = $scope.foxbit.last;
   }
 
 

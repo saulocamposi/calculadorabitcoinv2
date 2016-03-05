@@ -14,15 +14,19 @@
 
 <body ng-controller="mbCtrl">
 
-  <div class=container>
-
-    <div class="header">
-      <img src="img/calculadoraBitcoinLogoWeb.png" alt="" />
-      <span class="title-logo">Calculadora Bitcoin</span>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <img src="img/calculadoraBitcoinLogoWeb.png" alt="" />
+        <span class="title-logo">Calculadora Bitcoin</span>
+      </div>
     </div>
 
+  </nav>
+
+  <div class="container-fluid">
     <div class="row">
-      <div class="col-md-6">
+      <div class="col-lg-6">
         <ng-include src="'tpl/card-exchanges.html'"></ng-include>
         <ng-include src="'tpl/card-btcvarejo.html'"></ng-include>
         <ng-include src="'tpl/card-bitinka.html'"></ng-include>
@@ -31,7 +35,7 @@
         <ng-include src="'tpl/card-orderbook-foxbit.html'"></ng-include>
         <ng-include src="'tpl/card-trades-foxbit.html'"></ng-include>
       </div>
-      <div class="col-md-6">
+      <div class="col-lg-6">
         <div ng-view>
         </div>
         <ng-include src="'tpl/card-tradingview.html'"></ng-include>

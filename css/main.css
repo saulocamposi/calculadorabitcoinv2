@@ -2,10 +2,15 @@ html {
   font-family: sans-serif;
   background-color:#E5E5E1;
 }
+
+body{
+  padding-top:4%;
+}
 .header {
   font-size: 2em;
   margin-top: 1%;
   margin-bottom: 1%;
+  position: fixed;
 }
 
 .title-logo{
