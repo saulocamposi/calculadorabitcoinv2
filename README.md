@@ -14,10 +14,24 @@
 Calculadora para converter bitcoins em BRL, vice-versa e conferir os principais indicadores de Bitcoin no Brasil
 
 #To contribute
-That is simple, just try to understand a little bit of project, try to do a clone, and than try to propose some issues here, next you can implement troughuot the same process, solicited the pull request, and buum you a have a commit . 
+That is simple, just try to figure out a little bit of the technologies around the project, do a clone of master repository, and than try out to propose some issues here, next you can implement troughuot the same process, solicited the pull request, and buum you a have a commit . 
 
 This is interesting to learning JavaScript language, frameworks like Angular and the process of GitHub.
 
+# Technologies of the project 
+
+This project is composed by:
+
+HTML 5 
+CSS 3
+BootStrap 3
+AngularJS 1.x
+PHP 5
+
+
+
+
+# Versão em Portugues
 Esse projeto tem como objetivo servir como base de indexadores das exchanges no Brasil e no mundo. 
 
 A princípio ele iniciou como uma simples calculadora, e com o passar do tempo, foram surgindo necessidades diversas, hoje contamos com oito indicadores, e quatro calculadoras que estão constantemente sendo atualizadas para prover o a melhor experiência ao usuário.
