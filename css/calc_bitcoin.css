@@ -1,0 +1,18 @@
+/* styles about font size */
+.labelPrice {
+  font-size: 2em;
+}
+
+.labelPrice-income {
+  font-size: 1.3em;
+}
+
+.price {
+  font-size: 2em;
+  font-style: arial;
+}
+
+.price-income {
+  font-size: 1.3em;
+  font-style: arial;
+}

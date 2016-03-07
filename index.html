@@ -5,11 +5,14 @@
   <meta charset="utf-8">
   <title>Calculadora Bitcoin</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap-custom.css">
+  <link rel="stylesheet" type="text/css" href="css/card.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/main_calculator.css">
-  <link rel="stylesheet" type="text/css" href="css/card.css">
-  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="css/bootstrap-custom.css">
+  <link rel="stylesheet" type="text/css" href="css/calc_bitcoin.css">
+  <link rel="stylesheet" type="text/css" href="css/calc_income.css">
 </head>
 
 <body ng-controller="mbCtrl">
@@ -27,21 +30,21 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-lg-6">
-        <ng-include src="'tpl/card-exchanges.html'"></ng-include>
-        <ng-include src="'tpl/card-btcvarejo.html'"></ng-include>
-        <ng-include src="'tpl/card-bitinka.html'"></ng-include>
-        <ng-include src="'tpl/card-blinktrade.html'"></ng-include>
-        <ng-include src="'tpl/card-polionex.html'"></ng-include>
-        <ng-include src="'tpl/card-orderbook-foxbit.html'"></ng-include>
-        <ng-include src="'tpl/card-trades-foxbit.html'"></ng-include>
+        <ng-include src="'tpl/cards/card-exchanges.html'"></ng-include>
+        <ng-include src="'tpl/cards/card-btcvarejo.html'"></ng-include>
+        <ng-include src="'tpl/cards/card-bitinka.html'"></ng-include>
+        <ng-include src="'tpl/cards/card-blinktrade.html'"></ng-include>
+        <ng-include src="'tpl/cards/card-polionex.html'"></ng-include>
+        <ng-include src="'tpl/cards/card-orderbook-foxbit.html'"></ng-include>
+        <ng-include src="'tpl/cards/card-trades-foxbit.html'"></ng-include>
       </div>
       <div class="col-lg-6">
         <div ng-view>
         </div>
-        <ng-include src="'tpl/card-tradingview.html'"></ng-include>
-        <ng-include src="'tpl/card-agenciaideias.html'"></ng-include>
-        <ng-include src="'tpl/card-bitvalor.html'"></ng-include>
-        <ng-include src="'tpl/card-foxbitwallet.html'"></ng-include>
+        <ng-include src="'tpl/cards/card-tradingview.html'"></ng-include>
+        <ng-include src="'tpl/cards/card-agenciaideias.html'"></ng-include>
+        <ng-include src="'tpl/cards/card-bitvalor.html'"></ng-include>
+        <ng-include src="'tpl/cards/card-foxbitwallet.html'"></ng-include>
       </div>
     </div>
 

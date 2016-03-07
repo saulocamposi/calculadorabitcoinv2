@@ -2,27 +2,22 @@
   <div class="panel-heading">
     <ng-include src="'tpl/calc/nav-calculator.html'"></ng-include>
   </div>
-  <div class="mainresults">
-    <div class="results">
-      <span class="labelPrice"> BRL : </span>
-      <span class="price"> {{ brlref * bitcoin | number : 2}} </span>
-    </div>
-    <div class="results">
-      <span class="labelPrice">Bitcoin :</span>
-      <span class="price"> {{ brl / brlref | number : 8 }} </span>
-    </div>
-    <ng-include src="'tpl/calc/btc-calc-income-buttons.html'"></ng-include>
-  </div>
-  <div class="inputCalculator">
-    <div class="container-fluid">
-      <div class="col-xs-9">
-        <input class="inputcalc" type="text" name="brlrefname" value="" ng-model="brlref" ng-required="number" placeholder="Digite o preço do Bitcoin">
-        <input class="inputcalc" type="text" name="brlname" value="" ng-model="brl" ng-required="number" placeholder="Valor em Reais">
-        <input class="inputcalc" type="text" name="btcname" value="" ng-model="bitcoin" required="number" placeholder="Valor em Bitcoins">
+  <div class="container-fluid">
+    <div class="col-md-9">
+      <div class="">
+        <span class=""> BRL : </span>
+        <span class=""> {{ brlref * bitcoin | number : 2}} </span>
       </div>
-      <div class="col-xs-3">
-        <button ng-Click="averageBTC()" class="btn btn-primary">BTC</a>
+      <div class="">
+        <span class="">Bitcoin :</span>
+        <span class=""> {{ brl / brlref | number : 8 }} </span>
       </div>
+      <input class="" type="text" name="brlrefname" value="" ng-model="brlref" ng-required="number" placeholder="Digite o preço do Bitcoin">
+      <input class="" type="text" name="brlname" value="" ng-model="brl" ng-required="number" placeholder="Valor em Reais">
+      <input class="" type="text" name="btcname" value="" ng-model="bitcoin" required="number" placeholder="Valor em Bitcoins">
+    </div>
+    <div class="col-md-2">
+      <ng-include src="'tpl/calc/btc-calc-income-buttons.html'"></ng-include>
     </div>
   </div>
 
