@@ -3,25 +3,38 @@
     <ng-include src="'tpl/calc/nav-calculator.html'"></ng-include>
   </div>
   <div class="container-fluid">
-    <div class="col-md-9">
-      <div class="">
+
+
+      <div class="col-md-4">
         <span class=""> BRL : </span>
         <span class=""> {{ brlref * bitcoin | number : 2}} </span>
-      </div>
-      <div class="">
+
         <span class="">Bitcoin :</span>
         <span class=""> {{ brl / brlref | number : 8 }} </span>
       </div>
+      <div class="col-md-6">
 
-      <div class="">
-        <input class="" type="text" name="brlrefname" value="" ng-model="brlref" ng-required="number" placeholder="Bitcoin Mercado">
-        <input class="" type="text" name="btcname" value="" ng-model="bitcoin" required="number" placeholder="BTC">
-        <input class="" type="text" name="brlname" value="" ng-model="brl" ng-required="number" placeholder="BRL">
+        <div class="input-group">
+          <span class="input-group-addon" id="lbl-btc-calc-base">BTC</span>
+          <input class="form-control" type="text" name="brlrefname" aria-label="lbl-btc-calc-base" ng-model="brlref" ng-required="number" placeholder="Bitcoin Mercado">
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-addon" id="lbl-btc-calc-input">BTC</span>
+          <input class="form-control" type="text" name="btcname" aria-label="lbl-btc-calc-input" ng-model="bitcoin" required="number" placeholder="BTC">
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-addon" id="lbl-btc-calc-input">BRL</span>
+          <input class="form-control" type="text" name="brlname" value="" ng-model="brl" ng-required="number" placeholder="BRL">
+        </div>
+
       </div>
 
-    </div>
-    <div class="col-md-2">
-      <ng-include src="'tpl/calc/btc-calc-income-buttons.html'"></ng-include>
-    </div>
+      <div class="col-md-2">
+        <ng-include src="'tpl/calc/btc-calc-income-buttons.html'"></ng-include>
+      </div>
+    
+
   </div>
 </div>
