@@ -3,24 +3,46 @@
     <ng-include src="'tpl/calc/nav-calculator.html'"></ng-include>
   </div>
 
-  <div class="mainresults">
-    <div class="results">
+
+
+  <div class="container-fluid">
+    <div class="col-md-4">
       <span class="labelPrice">BRL : </span>
       <span class="price"> {{ brlref * bitcoin / 1000000 | number : 5}} </span>
-    </div>
 
-    <div class="results">
       <span class="labelPrice">Bit :</span>
       <span class="price"> {{ brl / brlref * 100 | number : 8 }} </span>
     </div>
 
-    <ng-include src="'tpl/calc/btc-calc-income-buttons.html'"></ng-include>
+
+    <div class="col-md-6">
+
+
+      <div class="input-group">
+        <span class="input-group-addon" id="lbl-btc-calc-input">BTC</span>
+        <input class="form-control" type="text" name="brlrefname" value="" ng-model="brlref" ng-required="number" placeholder="Digite o preço do Bitcoin">
+      </div>
+
+      <div class="input-group">
+        <span class="input-group-addon" id="lbl-btc-calc-input">BRL</span>
+        <input class="form-control" type="text" name="brlname" value="" ng-model="brl" ng-required="number" placeholder="Valor em Reais">
+      </div>
+
+      <div class="input-group">
+        <span class="input-group-addon" id="lbl-btc-calc-input">BITS</span>
+        <input class="form-control" type="text" name="btcname" value="" ng-model="bitcoin" required="number" placeholder="Valor em Bits" maxlength="8">
+      </div>
+
+    </div>
+
+    <div class="col-md-2">
+      <ng-include src="'tpl/calc/btc-calc-income-buttons.html'"></ng-include>
+    </div>
+
+
 
   </div>
 
-  <div class="inputCalculator">
-    <input class="inputcalc" type="text" name="brlrefname" value="" ng-model="brlref" ng-required="number" placeholder="Digite o preço do Bitcoin">
-    <input class="inputcalc" type="text" name="brlname" value="" ng-model="brl" ng-required="number" placeholder="Valor em Reais">
-    <input class="inputcalc" type="text" name="btcname" value="" ng-model="bitcoin" required="number" placeholder="Valor em Bits" maxlength="8">
-  </div>
+
+
 </div>
