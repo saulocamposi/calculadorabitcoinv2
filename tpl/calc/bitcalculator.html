@@ -6,12 +6,16 @@
 
 
   <div class="container-fluid">
-    <div class="col-md-4">
-      <span class="labelPrice">BRL : </span>
-      <span class="price"> {{ brlref * bitcoin / 1000000 | number : 5}} </span>
 
-      <span class="labelPrice">Bit :</span>
-      <span class="price"> {{ brl / brlref * 100 | number : 8 }} </span>
+    <div class="col-md-4">
+      <div class="results">
+        <span class="labelPrice">BRL : </span>
+        <span class="price"> {{ brlref * bitcoin / 1000000 | number : 2}} </span>
+      </div>
+      <div class="results">
+        <span class="labelPrice">Bit :</span>
+        <span class="price"> {{ brl / brlref * 100 | number : 8 }} </span>
+      </div>
     </div>
 
 
@@ -35,7 +39,7 @@
 
     </div>
 
-    <div class="col-md-2">
+    <div class="col-md-2 btn-cal-func">
       <ng-include src="'tpl/calc/btc-calc-income-buttons.html'"></ng-include>
     </div>
 
