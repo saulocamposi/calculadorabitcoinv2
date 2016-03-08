@@ -12,13 +12,16 @@
         <span class="">Bitcoin :</span>
         <span class=""> {{ brl / brlref | number : 8 }} </span>
       </div>
-      <input class="" type="text" name="brlrefname" value="" ng-model="brlref" ng-required="number" placeholder="Digite o preço do Bitcoin">
-      <input class="" type="text" name="brlname" value="" ng-model="brl" ng-required="number" placeholder="Valor em Reais">
-      <input class="" type="text" name="btcname" value="" ng-model="bitcoin" required="number" placeholder="Valor em Bitcoins">
+
+      <div class="">
+        <input class="" type="text" name="brlrefname" value="" ng-model="brlref" ng-required="number" placeholder="Bitcoin Mercado">
+        <input class="" type="text" name="btcname" value="" ng-model="bitcoin" required="number" placeholder="BTC">
+        <input class="" type="text" name="brlname" value="" ng-model="brl" ng-required="number" placeholder="BRL">
+      </div>
+
     </div>
     <div class="col-md-2">
       <ng-include src="'tpl/calc/btc-calc-income-buttons.html'"></ng-include>
     </div>
   </div>
-
 </div>
