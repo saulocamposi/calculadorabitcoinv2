@@ -109,6 +109,14 @@ var mbCtrl = function($scope, $http, $resource) {
 
 
   }
+
+  $scope.viewCalculator= function(value){
+    $scope.viewCalc = value;    
+  }
+
+
+
+
 }
 
 app.controller("mbCtrl", ["$scope", "$http", mbCtrl]);

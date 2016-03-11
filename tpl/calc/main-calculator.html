@@ -1,0 +1,14 @@
+<div class="" ng-switch="viewCalc">
+  <div class="" ng-switch-when="bit">
+    <ng-include src="'tpl/calc/bitcalculator.html'"></ng-include>
+  </div>
+  <div class="" ng-switch-when="satoshi">
+    <ng-include src="'tpl/calc/satoshicalculator.html'"></ng-include>
+  </div>
+  <div class="" ng-switch-when="btc">
+    <ng-include src="'tpl/calc/bitcoincalculator.html'"></ng-include>
+  </div>
+  <div class="" ng-switch-default>
+    <ng-include src="'tpl/calc/bitcoincalculator.html'"></ng-include>
+  </div>
+</div>
