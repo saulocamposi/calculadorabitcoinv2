@@ -1,17 +1,16 @@
 # CalculadoraBitcoin
 
- This document is for the website www.calculadorabitcoin.com.br one of the most important index Bitcoin of Latin America. 
+#Presentation
+ This document is developed to the website www.calculadorabitcoin.com.br which is the one of the most important Bitcoin Indexer of Latin America. 
  
- In the begining this project had to main target create a simple calculator to convert Bitcoin in Brazilian Real, but every   we has developing to create the best experience for the user and give best index to invest in Bitcoin. 
+#History 
+ In the begining this project had to main target create a simple calculator to convert Bitcoin in Brazilian Real, and show up the prices of Bitcoin in Brazil.
  
- The first version we tried to understand more about public Brazilians APIs for Bitcoin, the second version we tought about usability and increase the number of index that make a sense for us. 
+ The first version we tried to got data of the all Bitcoin public APIs here in Brazili, the second version we tought about usability and increase the number of index that make a sense for us. 
  
- Normally the websites for index around the world has a focus on OkCoin, BitStamp or Kraken, but here in South America we have a good place to sell ours bitcoins and I good area to do arbitrage. Think serious about that . 
+ Normally the Indexer websites  has a focus on OkCoin, BitStamp or Kraken, but here in South America we have a good place to sell ours bitcoins and is a good area to play on arbitrage.
  
- Now we have indexes of Brazil, Venezuela that's is the most important volume in South America, but we also have Bitinka ticker which exchange in diferentes currenies, Bolivian currency, Venezuelan currency and others . 
- 
- 
-Calculadora para converter bitcoins em BRL, vice-versa e conferir os principais indicadores de Bitcoin no Brasil
+ Now we have indexes of Brazil, Venezuela that's is the most important volume in South America, but we also have Bitinka ticker which exchange in diferentes currenies: Bolivian currency, Venezuelan currency, Peruvian currency, Chile currency and others . 
 
 #To contribute
 That is simple, just try to figure out a little bit of the technologies around the project, do a clone of master repository, and than try out to propose some issues here, next you can implement troughuot the same process, solicited the pull request, and buum you a have a commit . 
@@ -28,10 +27,9 @@ BootStrap 3
 AngularJS 1.x
 PHP 5
 
-
-
-
 # Versão em Portugues
+Calculadora para converter bitcoins em BRL, vice-versa e conferir os principais indicadores de Bitcoin no Brasil
+
 Esse projeto tem como objetivo servir como base de indexadores das exchanges no Brasil e no mundo. 
 
 A princípio ele iniciou como uma simples calculadora, e com o passar do tempo, foram surgindo necessidades diversas, hoje contamos com oito indicadores, e quatro calculadoras que estão constantemente sendo atualizadas para prover o a melhor experiência ao usuário.
