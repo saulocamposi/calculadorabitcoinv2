@@ -105,7 +105,9 @@ var mbCtrl = function($scope, $http, $resource) {
     sumof = foxbitlast + mtclast + btctoyoulast + negociecoinslast;
     $scope.brlref =  sumof / 10;
 */
-  $scope.brlref = $scope.foxbit.last;
+  $scope.brlref = parseInt($scope.foxbit.last);
+
+
   }
 }
 
