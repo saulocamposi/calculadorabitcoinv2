@@ -21,17 +21,17 @@
 
       <div class="input-group">
         <span class="input-group-addon" id="lbl-btc-calc-base">BTC</span>
-        <input class="form-control" type="number" name="brlrefname" aria-label="lbl-btc-calc-base" ng-model="brlref" ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" step="0.01"  placeholder="Bitcoin Mercado" required />
+        <input class="form-control" type="number" name="brlrefname" aria-label="lbl-btc-calc-base" ng-model="brlref" step="0.01"  placeholder="Bitcoin Mercado" required />
       </div>
 
       <div class="input-group">
         <span class="input-group-addon" id="lbl-btc-calc-input">BTC</span>
-        <input class="form-control" type="number" name="btcname" aria-label="lbl-btc-calc-input" ng-model="bitcoin" required="number" placeholder="BTC" ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" step="0.01" required />
+        <input class="form-control" type="number" name="btcname" aria-label="lbl-btc-calc-input" ng-model="bitcoin" required="number" placeholder="BTC" required />
       </div>
 
       <div class="input-group">
         <span class="input-group-addon" id="lbl-btc-calc-input">BRL</span>
-        <input class="form-control" type="number" name="brlname" value="" ng-model="brl" ng-required="number" placeholder="BRL" ng-pattern="/^[0-9]+(\.[0-9]{1,2})?$/" step="0.01" required />
+        <input class="form-control" type="number" name="brlname" value="" ng-model="brl" ng-required="number" placeholder="BRL" required />
       </div>
 
     </div>
