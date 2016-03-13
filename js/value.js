@@ -1,5 +1,12 @@
 var mbCtrl = function($scope, $http, $resource) {
 
+  $http.get("services/youtube-search.php").then(function(response) {
+    $scope.dailydecrypt = response.data;
+  });
+
+  /**************************************************/
+/*          Main Card                              */
+/*************************************************/
   $http.get("services/services.php?brand=coinbr").then(function(response) {
     $scope.coinbr = response.data;
   });
@@ -111,7 +118,7 @@ var mbCtrl = function($scope, $http, $resource) {
   }
 
   $scope.viewCalculator= function(value){
-    $scope.viewCalc = value;    
+    $scope.viewCalc = value;
   }
 
 
