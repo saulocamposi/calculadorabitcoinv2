@@ -3,11 +3,11 @@
 
    $items = $service->items;
 
-   $movie1 = "https://www.youtube.com/embed/" . $items[0]->id->videoId;
-   $movie2 = "https://www.youtube.com/embed/" . $items[1]->id->videoId;
-   $movie3 = "https://www.youtube.com/embed/" . $items[2]->id->videoId;
-   $movie4 = "https://www.youtube.com/embed/" . $items[3]->id->videoId;
-   $movie5 = "https://www.youtube.com/embed/" . $items[4]->id->videoId;
+   $movie1 =  $items[0]->id->videoId;
+   $movie2 =  $items[1]->id->videoId;
+   $movie3 =  $items[2]->id->videoId;
+   $movie4 =  $items[3]->id->videoId;
+   $movie5 =  $items[4]->id->videoId;
 
    $movie =
    array(
