@@ -27,6 +27,13 @@ BootStrap 3
 AngularJS 1.x
 PHP 5
 
+#Process of development Cards
+The Cards are deveploped as indivual content to can show many kinds of content
+
+#Process of development Calculators
+
+
+
 # Versão em Portugues
 Calculadora para converter bitcoins em BRL, vice-versa e conferir os principais indicadores de Bitcoin no Brasil
 
