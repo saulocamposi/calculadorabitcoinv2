@@ -34,7 +34,8 @@ The Cards are deveploped as indivual content to can show many kinds of content
 
 #Process of development Calculators
 
-
+#To donate
+We really need your help to improve the http:www.calculadorabitcoin.com.br give us a donation, you can sugest new features,use our banner, and put public your donation, you can send a message for community.
 
 # Versão em Portugues
 Calculadora para converter bitcoins em BRL, vice-versa e conferir os principais indicadores de Bitcoin no Brasil
