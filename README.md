@@ -1,12 +1,12 @@
 # CalculadoraBitcoin
 
 #Presentation
- This document are in constantly development for the website www.calculadorabitcoin.com.br which is the one of the most important Bitcoin Indexer of Latin America. 
+ This document are constantly in development for the website www.calculadorabitcoin.com.br which is the one of the most important Bitcoin Indexer of Latin America. 
  
-Our target are consolidate the best indexers and analysis of Bitcoin environment 
+Our target are consolidate the best indexers and analysis of Bitcoin environment. 
  
 #History 
- In the begining this project start just with one calculator and one table of blockchain prices of Bitcoin from Blockchain.io , next we improve with indexers of Brazilians Exchanges and than we have worked to understanding of necessity of the market and understand more about wicht is most important to give decision for trade.
+ In the begining this project was just a calculator and one table prices of blockchain.info, next we improve with Brazilians indexers of  local exchanges and then we have worked to understanding of what the user want of the market trade and understand more about witch is the most important tool for give you the best decision for trade.
  
  The first version we tried to got data of the all Bitcoin public APIs here in Brazili, the second version we tought about usability and increase the number of index that make a sense for us. 
  
