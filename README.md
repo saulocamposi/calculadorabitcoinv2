@@ -15,9 +15,9 @@ Our target are consolidate the best indexers and analysis of Bitcoin environment
  Now we have indexers of Brazil, Venezuela that's is the most important volume in South America, but we also have Bitinka ticker which exchanges in diferentes currencies like that: Bolivian, Venezuelan, Peruvian and Chile currency. 
 
 #To contribute
-That is simple, just try to figure out a little bit of the technologies around the project, do a clone of master repository, and than try out to propose some issues here, next you can implement troughuot the same process, solicited the pull request, and buum you a have a commit . 
+That is simple, just try to figure out a little bit of the technologies around the project, make a clone of master repository, propose some issues on the project, make a branch for you and ask for pull request, we will codereview as soon as possible and then you a commit on the project.
 
-This is interesting to learning JavaScript language, frameworks like Angular and the process of GitHub.
+You can as well contribute as a writer, of wiki an issues (bussiness rules), you can send tips, suggestions and donations.
 
 # Technologies of the project 
 
