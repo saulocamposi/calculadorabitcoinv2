@@ -1,21 +1,23 @@
 # CalculadoraBitcoin
 
 #Presentation
- This document is developed to the website www.calculadorabitcoin.com.br which is the one of the most important Bitcoin Indexer of Latin America. 
+ This document are constantly in development for the website www.calculadorabitcoin.com.br which is the one of the most important Bitcoin Indexer of Latin America. 
+ 
+Our target are consolidate the best indexers and analysis of Bitcoin environment. 
  
 #History 
- In the begining this project had to main target create a simple calculator to convert Bitcoin in Brazilian Real, and show up the prices of Bitcoin in Brazil.
+ In the begining this project was just a calculator and one table prices of blockchain.info, next we improve with Brazilians indexers of  local exchanges and then we have worked to understanding of what the user want of the market trade and understand more about witch is the most important tool for give you the best decision for trade.
  
- The first version we tried to got data of the all Bitcoin public APIs here in Brazili, the second version we tought about usability and increase the number of index that make a sense for us. 
+ The first version we tried to get data of the all public APIs of Bitcoin here in Brazil, the second version we tought about usability and increase the number of cards (indexer display) that make sense for us. 
  
  Normally the Indexer websites  has a focus on OkCoin, BitStamp or Kraken, but here in South America we have a good place to sell ours bitcoins and is a good area to play on arbitrage.
  
- Now we have indexes of Brazil, Venezuela that's is the most important volume in South America, but we also have Bitinka ticker which exchange in diferentes currenies: Bolivian currency, Venezuelan currency, Peruvian currency, Chile currency and others . 
+ Now we have indexers of Brazil, Venezuela that's is the most important volume in South America, but we also have Bitinka ticker which exchanges in diferentes currencies like that: Bolivian, Venezuelan, Peruvian and Chile currency. 
 
 #To contribute
-That is simple, just try to figure out a little bit of the technologies around the project, do a clone of master repository, and than try out to propose some issues here, next you can implement troughuot the same process, solicited the pull request, and buum you a have a commit . 
+That is simple, just try to figure out a little bit of the technologies around the project, make a clone of master repository, propose some issues on the project, make a branch for you and ask for pull request, we will codereview as soon as possible and then you a commit on the project.
 
-This is interesting to learning JavaScript language, frameworks like Angular and the process of GitHub.
+You can as well contribute as a writer, of wiki an issues (bussiness rules), you can send tips, suggestions and donations.
 
 # Technologies of the project 
 
@@ -32,7 +34,8 @@ The Cards are deveploped as indivual content to can show many kinds of content
 
 #Process of development Calculators
 
-
+#To donate
+We really need your help to improve the http:www.calculadorabitcoin.com.br give us a donation, you can sugest new features,use our banner, and put public your donation, you can send a message for community.
 
 # Versão em Portugues
 Calculadora para converter bitcoins em BRL, vice-versa e conferir os principais indicadores de Bitcoin no Brasil
