@@ -33,11 +33,15 @@ AngularJS 1.x
 
 PHP 5
 
+Karma and Jasmine
 
 #Process of development Cards
 The Cards are deveploped as indivual content to can show many kinds of content
 
 #Process of development Calculators
+
+#Tests
+CalculadoraBitcoin have been gaining behaviors test and integration test with Jasmine and Karma
 
 #To donate
 We really need your help to improve the http:www.calculadorabitcoin.com.br give us a donation, you can sugest new features,use our banner, and put public your donation, you can send a message for community.
