@@ -24,10 +24,15 @@ You can as well contribute as a writer, of wiki an issues (bussiness rules), you
 This project is composed by:
 
 HTML 5 
+
 CSS 3
+
 BootStrap 3
+
 AngularJS 1.x
+
 PHP 5
+
 
 #Process of development Cards
 The Cards are deveploped as indivual content to can show many kinds of content
@@ -37,8 +42,14 @@ The Cards are deveploped as indivual content to can show many kinds of content
 #To donate
 We really need your help to improve the http:www.calculadorabitcoin.com.br give us a donation, you can sugest new features,use our banner, and put public your donation, you can send a message for community.
 
-# Versão em Portugues
-Calculadora para converter bitcoins em BRL, vice-versa e conferir os principais indicadores de Bitcoin no Brasil
+#Communitty
+
+#License
+Open Source License
+
+# Calculadora Bitcoin - PT_BR
+
+Calculadora para converter bitcoins em BRL,vice-versa e conferir os principais indicadores de Bitcoin no Brasil
 
 Esse projeto tem como objetivo servir como base de indexadores das exchanges no Brasil e no mundo. 
 
