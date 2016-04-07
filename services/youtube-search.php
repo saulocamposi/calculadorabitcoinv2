@@ -6,16 +6,12 @@
    $movie1 =  $items[0]->id->videoId;
    $movie2 =  $items[1]->id->videoId;
    $movie3 =  $items[2]->id->videoId;
-   $movie4 =  $items[3]->id->videoId;
-   $movie5 =  $items[4]->id->videoId;
 
    $movie =
    array(
      "movie1" => $movie1 ,
      "movie2" => $movie2 ,
      "movie3" => $movie3 ,
-     "movie4" => $movie4 ,
-     "movie5" => $movie5 ,
      );
 
    $movies = json_encode($movie);
