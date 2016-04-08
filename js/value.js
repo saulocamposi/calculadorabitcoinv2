@@ -1,4 +1,4 @@
-var mbCtrl = function($scope, $http, $resource) {
+/*var mbCtrl = function($scope, $http, $resource) {
 
   $http.get("services/youtube-search.php").then(function(response) {
     $scope.dailydecrypt = response.data;
@@ -7,7 +7,7 @@ var mbCtrl = function($scope, $http, $resource) {
   /**************************************************/
 /*          Main Card                              */
 /*************************************************/
-  $http.get("services/services.php?brand=coinbr").then(function(response) {
+  /*$http.get("services/services.php?brand=coinbr").then(function(response) {
     $scope.coinbr = response.data;
   });
 
@@ -31,7 +31,7 @@ var mbCtrl = function($scope, $http, $resource) {
   /****************************************/
   /*             FOX BIT SERVICES         */
    /****************************************/
-  $http.jsonp("https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC&callback=JSON_CALLBACK").then(function(response) {
+  /*$http.jsonp("https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC&callback=JSON_CALLBACK").then(function(response) {
     $scope.foxbit = response.data;
   });
 
@@ -47,7 +47,7 @@ var mbCtrl = function($scope, $http, $resource) {
   /*             BLINKTRADE SERVICES         */
   /****************************************/
 
-  $http.jsonp("https://api.blinktrade.com/api/v1/VEF/ticker?crypto_currency=BTC&callback=JSON_CALLBACK").then(function(response) {
+  /*$http.jsonp("https://api.blinktrade.com/api/v1/VEF/ticker?crypto_currency=BTC&callback=JSON_CALLBACK").then(function(response) {
     $scope.surbitcoin = response.data;
   });
 
@@ -61,7 +61,7 @@ var mbCtrl = function($scope, $http, $resource) {
 
 /********************************************/
 
-  $http.get("services/bitvalor_services.php").then(function(response) {
+  /*$http.get("services/bitvalor_services.php").then(function(response) {
     $scope.bitvalor = response.data;
   });
 
@@ -112,7 +112,7 @@ var mbCtrl = function($scope, $http, $resource) {
     sumof = foxbitlast + mtclast + btctoyoulast + negociecoinslast;
     $scope.brlref =  sumof / 10;
 */
-  $scope.brlref = parseInt($scope.foxbit.last);
+/*  $scope.brlref = parseInt($scope.foxbit.last);
 
 
   }
@@ -145,3 +145,4 @@ app.directive('myYoutube', function($sce) {
     }
   };
 });
+*/

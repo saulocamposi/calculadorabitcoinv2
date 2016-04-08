@@ -1,4 +1,4 @@
-var routes = function($routeProvider){
+/*var routes = function($routeProvider){
   $routeProvider
          // route for the bitcoincalculator page
          .when('/', {
@@ -23,3 +23,4 @@ var routes = function($routeProvider){
 }
 
 app.config(routes);
+*/
