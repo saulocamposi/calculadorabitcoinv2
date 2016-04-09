@@ -29,16 +29,19 @@ CSS 3
 
 BootStrap 3
 
-AngularJS 1.x
+AngularJS 1.5
 
 PHP 5
+
+WebPack
 
 Karma and Jasmine
 
 #Process of development Cards
-The Cards are deveploped as indivual content to can show many kinds of content
+The Cards are developed as an individual block content that have comes up with Indexers and media. The front end based has used BootStrap 3 
 
 #Process of development Calculators
+
 
 #Tests
 CalculadoraBitcoin have been gaining behaviors test and integration test with Jasmine and Karma
