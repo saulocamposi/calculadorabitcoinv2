@@ -5,7 +5,10 @@
   <meta charset="utf-8">
   <title>Calculadora Bitcoin</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script src="public/assets/app.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="./css/main.css" media="screen" title="no title" charset="utf-8">
+  <link rel="stylesheet" href="./css/bootstrap-custom.css" media="screen" title="no title" charset="utf-8">
 </head>
 
 <body ng-controller="mbCtrl">
@@ -30,6 +33,7 @@
         <ng-include src="'tpl/cards/card-trades-foxbit.html'"></ng-include>
         <ng-include src="'tpl/cards/card-bitinka.html'"></ng-include>
       </div>
+
       <div class="col-lg-6">
         <ng-include src="'tpl/calc/main-calculator.html'"></ng-include>
         <ng-include src="'tpl/cards/card-tradingview.html'"></ng-include>
@@ -38,6 +42,13 @@
         <ng-include src="'tpl/cards/card-foxbitwallet.html'"></ng-include>
         <ng-include src="'tpl/cards/card-orderbook-foxbit.html'"></ng-include>
       </div>
+
+
+
+    </div>
+
+
+
     </div>
 
     <div class="footer">
