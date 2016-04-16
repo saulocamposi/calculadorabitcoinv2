@@ -4,6 +4,7 @@
 .inputCalculator {
   margin-bottom: 4%;
 }
+
 .inputcalc {
   border-radius: 3px;
   margin-top: 3%;
@@ -18,9 +19,7 @@
 .inputcalc-income {
   width: 20%;
 }
-.left-calc {
 
-}
 .right-calc {
   float: right;
   display: block;
