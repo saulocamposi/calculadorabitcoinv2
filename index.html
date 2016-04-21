@@ -12,17 +12,19 @@
 </head>
 
 <body ng-controller="mbCtrl">
+<div class="container-fluid">
 
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
-      <div class="logo">
-        <img src="img/calculadoraBitcoinLogoWeb.png" alt="" />
-        <span class="title-logo">Calculadora Bitcoin</span>
+  <div class="row">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="logo">
+          <img src="img/calculadoraBitcoinLogoWeb.png" alt="" />
+          <span class="title-logo">Calculadora Bitcoin</span>
+        </div>
       </div>
-    </div>
-  </nav>
-
-  <div class="container-fluid">
+    </nav>
+  </div>
+  
     <div class="row">
       <div class="col-lg-6">
         <ng-include src="'tpl/cards/card-daily-decrypt.html'"></ng-include>
