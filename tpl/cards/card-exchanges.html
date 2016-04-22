@@ -1,6 +1,6 @@
 <div class="panel panel-primary">
   <div class="panel-heading">
-    <span>Exchanges Brasileiras</span>
+    <span>Exchanges</span>
   </div>
 
   <table class="table table-striped">
@@ -18,7 +18,7 @@
         Menor Valor
       </th>
       <th>
-        Last Trade
+        Valor
       </th>
     </tr>
     <tr>
@@ -89,6 +89,23 @@
       </td>
       <td>
         {{negociecoins.last | number : 2}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Bitinka
+      </td>
+      <td>
+        {{bitinka.brlbtc[0]}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.brlask[0] | number : 2}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.brlbid[0] | number : 2}}
+      </td>
+      <td>
+        {{bitinka.brllast[0] | number : 2}}
       </td>
     </tr>
     <tr>
