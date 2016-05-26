@@ -49,3 +49,7 @@ https://bleutrade.com/api/v2/public/getcurrencies
 
 ### Ok Coin API #####
 https://www.okcoin.cn/api/ticker.do?symbol=ltc_cny
+
+
+### Forex Apis ###
+http://api.promasters.net.br/cotacao/v1/valores
