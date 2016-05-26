@@ -1,10 +1,7 @@
 var app = require('../manager-module.js');
 
-app.factory('forex', function() {
-
-     var hello = "hello";
-
-     return hello;
-
-
+app.factory('serviceforex', function() {
+  return "hello";
 });
+
+module.exports = app;
