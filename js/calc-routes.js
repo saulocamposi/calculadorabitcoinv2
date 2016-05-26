@@ -21,6 +21,5 @@
                    controller  : 'mbCtrl'
                })
 }
-
 app.config(routes);
 */
