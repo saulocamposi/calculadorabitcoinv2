@@ -1,9 +1,10 @@
-
 require("angular");
 require("angular-route");
-require("./manager-module.js");
-require("./calc-routes.js");
 require("./value.js");
+require("./manager-module.js");
+require("./services/forex.js");
+
+
 
 
 require("../css/bootstrap-custom.css");
