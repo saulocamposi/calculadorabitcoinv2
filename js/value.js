@@ -1,10 +1,10 @@
 var app = require('./manager-module.js');
 
-var mbCtrl = function($scope, $http, $resource, forex) {
+var mbCtrl = function($scope, $http, serviceforex) {
 
- $scope.forex = forex;
-
- console.log(forex);
+$scope.helloforex = serviceforex;
+ console.log(serviceforex);
+ console.log($scope.helloforex);
 
 var restServices = function() {
   $http.get("services/services.php?brand=coinbr").then(function(response) {
@@ -31,11 +31,9 @@ var restServices = function() {
   $http.get("services/services.php?brand=negociecoins").then(function(response) {
     $scope.negociecoins = response.data;
   });
-
-};
+  };
 
 restServices();
-
 
   $http.get("services/youtube-search.php").then(function(response) {
     $scope.dailydecrypt = response.data;
@@ -135,8 +133,7 @@ restServices();
   }
 }
 
-app.controller("mbCtrl", ["$scope", "$http","forex",  mbCtrl ]);
-
+app.controller('mbCtrl', ['$scope', '$http','serviceforex',  mbCtrl ]);
 
 app.directive('myYoutube', function($sce) {
   return {
