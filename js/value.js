@@ -2,6 +2,39 @@ var app = require('./manager-module.js');
 
 var mbCtrl = function($scope, $http, $resource, forex) {
 
+ $scope.forex = forex;
+
+ console.log(forex);
+
+var restServices = function() {
+  $http.get("services/services.php?brand=coinbr").then(function(response) {
+    $scope.coinbr = response.data;
+  });
+
+  /**************************************************/
+  /*          Main Card                              */
+  /*************************************************/
+
+
+  $http.get("services/services.php?brand=mtc").then(function(response) {
+    $scope.mtc = response.data;
+  });
+
+  $http.get("services/services.php?brand=btctoyou").then(function(response) {
+    $scope.btctoyou = response.data;
+  });
+
+  $http.get("services/services.php?brand=flowbtc").then(function(response) {
+    $scope.flowbtc = response.data;
+  });
+
+  $http.get("services/services.php?brand=negociecoins").then(function(response) {
+    $scope.negociecoins = response.data;
+  });
+
+};
+
+restServices();
 
 
   $http.get("services/youtube-search.php").then(function(response) {
