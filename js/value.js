@@ -1,37 +1,17 @@
-/*var mbCtrl = function($scope, $http, $resource) {
+var app = require('./manager-module.js');
+
+var mbCtrl = function($scope, $http, $resource, forex) {
+
+
 
   $http.get("services/youtube-search.php").then(function(response) {
     $scope.dailydecrypt = response.data;
   });
 
-  /**************************************************/
-/*          Main Card                              */
-/*************************************************/
-  /*$http.get("services/services.php?brand=coinbr").then(function(response) {
-    $scope.coinbr = response.data;
-  });
-
-  $http.get("services/services.php?brand=mtc").then(function(response) {
-    $scope.mtc = response.data;
-  });
-
-  $http.get("services/services.php?brand=btctoyou").then(function(response) {
-    $scope.btctoyou = response.data;
-  });
-
-  $http.get("services/services.php?brand=flowbtc").then(function(response) {
-    $scope.flowbtc = response.data;
-  });
-
-  $http.get("services/services.php?brand=negociecoins").then(function(response) {
-    $scope.negociecoins = response.data;
-  });
-
-
   /****************************************/
   /*             FOX BIT SERVICES         */
-   /****************************************/
-  /*$http.jsonp("https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC&callback=JSON_CALLBACK").then(function(response) {
+  /****************************************/
+  $http.jsonp("https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC&callback=JSON_CALLBACK").then(function(response) {
     $scope.foxbit = response.data;
   });
 
@@ -47,7 +27,7 @@
   /*             BLINKTRADE SERVICES         */
   /****************************************/
 
-  /*$http.jsonp("https://api.blinktrade.com/api/v1/VEF/ticker?crypto_currency=BTC&callback=JSON_CALLBACK").then(function(response) {
+  $http.jsonp("https://api.blinktrade.com/api/v1/VEF/ticker?crypto_currency=BTC&callback=JSON_CALLBACK").then(function(response) {
     $scope.surbitcoin = response.data;
   });
 
@@ -59,9 +39,9 @@
     $scope.urdubit = response.data;
   });
 
-/********************************************/
+  /********************************************/
 
-  /*$http.get("services/bitvalor_services.php").then(function(response) {
+  $http.get("services/bitvalor_services.php").then(function(response) {
     $scope.bitvalor = response.data;
   });
 
@@ -102,9 +82,9 @@
   });
 
 
-  $scope.averageBTC = function(){
-    //{{}}(brlref + mtc.ticker.last + foxbit.last + btctoyou.ticker.last + negociecoins.last) / 4
-    /*numbersofexchange = 10;
+  //$scope.averageBTC = function(){
+  //{{}}(brlref + mtc.ticker.last + foxbit.last + btctoyou.ticker.last + negociecoins.last) / 4
+  /*numbersofexchange = 10;
     foxbitlast = $scope.foxbit.last >= 0 ? $scope.foxbit.last : 0 ;
     mtclast = $scope.mtc.last >= 0 ? $scope.mtc.last : 0 ;
     btctoyoulast = $scope.btctoyou.ticker.last >= 0 ? $scope.btctoyou.ticker.last : 0 ;
@@ -112,37 +92,34 @@
     sumof = foxbitlast + mtclast + btctoyoulast + negociecoinslast;
     $scope.brlref =  sumof / 10;
 */
-/*  $scope.brlref = parseInt($scope.foxbit.last);
+  //$scope.brlref = parseInt($scope.foxbit.last);
 
 
-  }
+//}
 
-  $scope.viewCalculator= function(value){
+  $scope.viewCalculator = function(value) {
     $scope.viewCalc = value;
   }
-
-
-
-
 }
 
-app.controller("mbCtrl", ["$scope", "$http", mbCtrl]);
+app.controller("mbCtrl", ["$scope", "$http","forex",  mbCtrl ]);
 
 
 app.directive('myYoutube', function($sce) {
   return {
     restrict: 'EA',
-    scope: { code:'=' },
+    scope: {
+      code: '='
+    },
     replace: true,
     template: '<iframe style="overflow:hidden;width=100%;height=100%;margin-left:6%" width="560" height="315" src="{{url}}" frameborder="0" allowfullscreen></iframe>',
-    link: function (scope) {
-        console.log('here');
-        scope.$watch('code', function (newVal) {
-           if (newVal) {
-               scope.url = $sce.trustAsResourceUrl("http://www.youtube.com/embed/" + newVal);
-           }
-        });
+    link: function(scope) {
+      console.log('here');
+      scope.$watch('code', function(newVal) {
+        if (newVal) {
+          scope.url = $sce.trustAsResourceUrl("http://www.youtube.com/embed/" + newVal);
+        }
+      });
     }
   };
 });
-*/
