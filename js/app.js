@@ -5,9 +5,6 @@ require("./manager-module.js");
 require("./services/forex.js");
 require("./controllers/exchangecontroller.js");
 
-
-
-
 require("../css/bootstrap-custom.css");
 require("../css/calc_bitcoin.css");
 require("../css/calc_income.css");
