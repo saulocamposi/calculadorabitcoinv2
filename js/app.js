@@ -3,6 +3,7 @@ require("angular-route");
 require("./value.js");
 require("./manager-module.js");
 require("./services/forex.js");
+require("./controllers/exchangecontroller.js");
 
 
 
