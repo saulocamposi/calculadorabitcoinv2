@@ -11,8 +11,13 @@
   <link rel="stylesheet" href="./css/bootstrap-custom.css" media="screen" title="no title" charset="utf-8">
 </head>
 
-<body ng-controller="mbCtrl">
-  <div class="container-fluid">
+<body>
+
+<div ng-controller="exchangecontroller">
+{{exchangeservice}}
+</div>
+
+  <div class="container-fluid" ng-controller="mbCtrl">
 
     <div class="row">
       <nav class="navbar navbar-default navbar-fixed-top">
