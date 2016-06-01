@@ -3,8 +3,8 @@ var app = require('./manager-module.js');
 var mbCtrl = function($scope, $http, serviceforex) {
 
 $scope.helloforex = serviceforex;
- console.log(serviceforex);
- console.log($scope.helloforex);
+ console.log("First Log" + serviceforex);
+ console.log("Second Log" + $scope.helloforex);
 
 var restServices = function() {
   $http.get("services/services.php?brand=coinbr").then(function(response) {
