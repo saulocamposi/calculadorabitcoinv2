@@ -3,7 +3,12 @@ require("angular-route");
 require("./value.js");
 require("./manager-module.js");
 require("./services/forex.js");
-require("./controllers/exchangecontroller.js");
+require("./controllers/exchangescontroller.js");
+require("./controllers/foxbitcontroller.js");
+require("./controllers/blinktradecontroller.js");
+require("./controllers/polionexcontroller.js");
+
+
 
 require("../css/bootstrap-custom.css");
 require("../css/calc_bitcoin.css");
