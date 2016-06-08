@@ -53,3 +53,6 @@ https://www.okcoin.cn/api/ticker.do?symbol=ltc_cny
 
 ### Forex Apis ###
 http://api.promasters.net.br/cotacao/v1/valores
+
+#### Bitfinex ###
+https://api.bitfinex.com/v1/pubticker/btcusd
