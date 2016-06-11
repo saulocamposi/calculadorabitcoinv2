@@ -23,13 +23,13 @@ $scope.helloforex = serviceforex;
     $scope.bitvalor = response.data;
   });
 
-  $http.get("services/agenciaideias_services.php").then(function(response) {
+  /*$http.get("services/agenciaideias_services.php").then(function(response) {
     $scope.agenciaideias = response.data;
-  });
+  });*/
 
   $http.get("services/forex_services.php").then(function(response) {
     $scope.forex = response.data;
-  });  
+  });
 
   $http.get("services/walletfoxbit_cold_services.php").then(function(response) {
     $scope.wfoxcold = response.data;
