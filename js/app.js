@@ -1,5 +1,7 @@
 require("angular");
 require("angular-route");
+require("angular-google-chart");
+require("angular-busy");
 require("./value.js");
 require("./manager-module.js");
 require("./services/forex.js");
@@ -8,7 +10,7 @@ require("./controllers/foxbitcontroller.js");
 require("./controllers/blinktradecontroller.js");
 require("./controllers/polionexcontroller.js");
 
-
+require("./services/exchangesChartService.js");
 
 require("../css/bootstrap-custom.css");
 require("../css/calc_bitcoin.css");
