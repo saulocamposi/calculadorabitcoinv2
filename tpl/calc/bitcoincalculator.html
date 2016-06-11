@@ -26,7 +26,7 @@
 
       <div class="input-group">
         <span class="input-group-addon" id="lbl-btc-calc-input">BTC</span>
-        <input class="form-control" type="number" name="btcname" aria-label="lbl-btc-calc-input" ng-model="bitcoin" required="number" placeholder="BTC" step="0.00000001" required />
+        <input class="form-control" type="number" name="btcname" value="{{ brlref * bitcoin | number : 2}}" aria-label="lbl-btc-calc-input" ng-model="bitcoin" required="number" placeholder="BTC" step="0.00000001" required />
       </div>
 
       <div class="input-group">
