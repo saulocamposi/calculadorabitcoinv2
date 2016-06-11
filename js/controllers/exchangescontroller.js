@@ -1,11 +1,9 @@
 var app = require('../manager-module.js');
 
-app.controller('exchangescontroller', ['$scope','$http', 'exchange', function($scope, $http, exchange) {
-    $scope.exchangeservice = exchange;
+app.controller('exchangescontroller', ['$scope','$http', 'exchangesChartService', function($scope, $http, exchangesChartService) {
 
-    /**************************************************/
-    /*          Main Card                              */
-    /*************************************************/
+    $scope.chart = exchangesChartService;
+
     $http.jsonp("https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC&callback=JSON_CALLBACK").then(function(response) {
       $scope.foxbit = response.data;
     });
@@ -26,9 +24,4 @@ app.controller('exchangescontroller', ['$scope','$http', 'exchange', function($s
       $scope.negociecoins = response.data;
     });
 
-
-  }])
-  .factory('exchange', ['$http', function($http) {
-    console.log($http);
-    return "hello";
   }]);
