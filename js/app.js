@@ -11,6 +11,7 @@ require("./controllers/blinktradecontroller.js");
 require("./controllers/polionexcontroller.js");
 
 require("./services/exchangesChartService.js");
+require("./services/blinktradeChartService.js");
 
 require("../css/bootstrap-custom.css");
 require("../css/calc_bitcoin.css");
