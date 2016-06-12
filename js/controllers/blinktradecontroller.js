@@ -1,11 +1,7 @@
 var app = require('../manager-module.js');
 
-app.controller('blinktradecontroller', ['$scope','$http', 'exchange', function($scope, $http, exchange) {
-    $scope.exchangeservice = exchange;
-
-    /****************************************/
-    /*             BLINKTRADE SERVICES         */
-    /****************************************/
+app.controller('blinktradecontroller', ['$scope','$http', 'blinktradeChartService', function($scope, $http, blinktradeChartService) {
+    $scope.chart = blinktradeChartService;
 
     $http.jsonp("https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC&callback=JSON_CALLBACK").then(function(response) {
       $scope.foxbit = response.data;
@@ -23,9 +19,4 @@ app.controller('blinktradecontroller', ['$scope','$http', 'exchange', function($
       $scope.urdubit = response.data;
     });
 
-
-  }])
-  .factory('exchange', ['$http', function($http) {
-    console.log($http);
-    return "hello";
   }]);
