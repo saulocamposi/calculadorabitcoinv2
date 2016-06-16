@@ -2,6 +2,7 @@ require("angular");
 require("angular-route");
 require("angular-google-chart");
 require("angular-busy");
+require("angular-animate");
 require("./value.js");
 require("./manager-module.js");
 require("./services/forex.js");
