@@ -17,6 +17,7 @@ require("./controllers/bitinkacontroller.js");
 require("./services/exchangesChartService.js");
 require("./services/blinktradeChartService.js");
 require("./services/bitinkaChartService.js");
+require("./services/polionexChartService.js");
 
 require("../css/bootstrap-custom.css");
 require("../css/calc_bitcoin.css");
