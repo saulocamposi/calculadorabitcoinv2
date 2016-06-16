@@ -3,21 +3,10 @@ var app = require('./manager-module.js');
 var mbCtrl = function($scope, $http, serviceforex) {
 
 $scope.helloforex = serviceforex;
- console.log("First Log" + serviceforex);
- console.log("Second Log" + $scope.helloforex);
-
-
- $http.get("services/services.php?brand=coinbr").then(function(response) {
-   $scope.coinbr = response.data;
- });
 
   $http.get("services/youtube-search.php").then(function(response) {
     $scope.dailydecrypt = response.data;
   });
-
-
-
-  /********************************************/
 
   $http.get("services/bitvalor_services.php").then(function(response) {
     $scope.bitvalor = response.data;
@@ -31,19 +20,6 @@ $scope.helloforex = serviceforex;
     $scope.forex = response.data;
   });
 
-  $http.get("services/walletfoxbit_cold_services.php").then(function(response) {
-    $scope.wfoxcold = response.data;
-  });
-
-  $http.get("services/walletfoxbit_hot_services.php").then(function(response) {
-    $scope.wfoxhot = response.data;
-  });
-
-  $http.get("services/bitinka_services.php").then(function(response) {
-    $scope.bitinka = response.data;
-  });
-
-
   //$scope.averageBTC = function(){
   //{{}}(brlref + mtc.ticker.last + foxbit.last + btctoyou.ticker.last + negociecoins.last) / 4
   /*numbersofexchange = 10;
@@ -54,8 +30,6 @@ $scope.helloforex = serviceforex;
     sumof = foxbitlast + mtclast + btctoyoulast + negociecoinslast;
     $scope.brlref =  sumof / 10;
 */
-  //$scope.brlref = parseInt($scope.foxbit.last);
-
 
 //}
 
