@@ -5,8 +5,8 @@ var blinktradeChartService = function() {
     "type": "PieChart",
     "options": {
       "pointSize": 100,
-      "width": 600,
-      "height": 250,
+      /*"width": 600,
+      "height": 250,*/
       "chartArea": {
         left: 90,
         top: 40,
@@ -22,7 +22,7 @@ var blinktradeChartService = function() {
         "type": "string"
       }, {
         "id": "",
-        "label": "Preço",
+        "label": "Volume",
         "pattern":"",
         "type": "number"
       }],
