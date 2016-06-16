@@ -10,9 +10,13 @@ require("./controllers/exchangescontroller.js");
 require("./controllers/foxbitcontroller.js");
 require("./controllers/blinktradecontroller.js");
 require("./controllers/polionexcontroller.js");
+require("./controllers/coinbrcontroller.js");
+require("./controllers/walletfoxbitcontroller.js");
+require("./controllers/bitinkacontroller.js");
 
 require("./services/exchangesChartService.js");
 require("./services/blinktradeChartService.js");
+require("./services/bitinkaChartService.js");
 
 require("../css/bootstrap-custom.css");
 require("../css/calc_bitcoin.css");
