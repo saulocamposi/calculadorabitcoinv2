@@ -1,12 +1,6 @@
 var app = require('../manager-module.js');
 
-app.controller('foxbitcontroller', ['$scope','$http', 'exchange', function($scope, $http, exchange) {
-    $scope.exchangeservice = exchange;
-
-    /****************************************/
-    /*             FOX BIT SERVICES         */
-    /****************************************/
-    
+app.controller('foxbitcontroller', ['$scope','$http', function($scope, $http) {
 
     $http.get("services/orders_foxbit_services.php").then(function(response) {
       $scope.foxbitorders = response.data;
@@ -16,8 +10,4 @@ app.controller('foxbitcontroller', ['$scope','$http', 'exchange', function($scop
       $scope.foxbittrades = response.data;
     });
 
-  }])
-  .factory('exchange', ['$http', function($http) {
-    console.log($http);
-    return "hello";
   }]);
