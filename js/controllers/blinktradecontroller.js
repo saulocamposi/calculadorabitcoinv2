@@ -31,4 +31,6 @@ app.controller('blinktradecontroller', ['$scope', '$http', 'blinktradeChartServi
   blinktradeChartService.data.rows = dataChart;
   $scope.chart = blinktradeChartService;
 
+  //$scope.brlref = parseInt($scope.foxbit.last);
+
 }]);
