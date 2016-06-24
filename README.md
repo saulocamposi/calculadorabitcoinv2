@@ -1,25 +1,36 @@
 # CalculadoraBitcoin
 
 #Presentation
- This document are constantly in development for the website www.calculadorabitcoin.com.br which is the one of the most important Bitcoin Indexer of Latin America. 
+ This document has constantly edited for Calculadorabitcoin group, which is the most important BTC Indexer of Latin America. 
  
-Our target are consolidate the best indexers and analysis of Bitcoin environment. 
+ Our target has consolidated index and analysis of Brazilian market and another countries in America. 
  
 #History 
- In the begining this project was just a calculator and one table prices of blockchain.info, next we improve with Brazilians indexers of  local exchanges and then we have worked to understanding of what the user want of the market trade and understand more about witch is the most important tool for give you the best decision for trade.
+ In the begining this project started as BTC calculator and  blockchain.info tickers, next we improve with Brazilians exchanges and then we have improved to put more indexers and fix the bugs of system to give a tool for trade.
  
- The first version we tried to get data of the all public APIs of Bitcoin here in Brazil, the second version we tought about usability and increase the number of cards (indexer display) that make sense for us. 
+ The first version we got data of the all Brazilians BTC public APIs, the second version we tought about usability and increase the number of cards (indexer display) that make sense for us. 
  
- Normally the Indexer websites  has a focus on OkCoin, BitStamp or Kraken, but here in South America we have a good place to sell ours bitcoins and is a good area to play on arbitrage.
- 
- Now we have indexers of Brazil, Venezuela that's is the most important volume in South America, but we also have Bitinka ticker which exchanges in diferentes currencies like that: Bolivian, Venezuelan, Peruvian and Chile currency. 
+ CalculadoraBitcoin has numbers of Brazil, Venezuela that's is the most important volume in South America, but also have Bitinka ticker with diferentes currencies as Bolivian, Venezuelan, Peruvian and Chile currency. 
 
 #To contribute
-That is simple, just try to figure out a little bit of the technologies around the project, make a clone of master repository, propose some issues on the project, make a branch for you and ask for pull request, we will codereview as soon as possible and then you a commit on the project.
+You can colaborate with : 
 
-You can as well contribute as a writer, of wiki an issues (bussiness rules), you can send tips, suggestions and donations.
+Documentation 
+Improve documentation for user and developers
 
-# Technologies of the project 
+Test
+Make unit tests, behavior tests and integration tests
+
+Code
+Develop a card with a new indexers
+
+Fix Bugs and Issues 
+Improve speed and treat the APis exceptions to give the best experience for users
+
+Support
+You can donate and support this project for you
+
+#Project Technologies
 
 This project is composed by:
 
@@ -33,33 +44,24 @@ AngularJS 1.5
 
 PHP 5
 
-WebPack
-
-For test
+Webpack
 
 Karma and Jasmine
 
-#Process of development Cards
-The Cards are developed as an individual block content that have comes up with Indexers and media. The front end based has used BootStrap 3 
+#To Build
 
-#Process of development Calculators
+Clone the project -  git clone project 
 
+Install dependencies - npm install
 
-#Tests
-CalculadoraBitcoin have been gaining behaviors test and integration test with Jasmine and Karma
+Package - webpack
+
+Set apache for root project 
+
+That's all
 
 #To donate
-We really need your help to improve the http:www.calculadorabitcoin.com.br give us a donation, you can sugest new features,use our banner, and put public your donation, you can send a message for community.
-
-#Communitty
+We really need your help to improve the calculadorabitcoin.com.br, please give us a donation, you can sugest new features.
 
 #License
-Open Source License
-
-# Calculadora Bitcoin - PT_BR
-
-Calculadora para converter bitcoins em BRL,vice-versa e conferir os principais indicadores de Bitcoin no Brasil
-
-Esse projeto tem como objetivo servir como base de indexadores das exchanges no Brasil e no mundo. 
-
-A princípio ele iniciou como uma simples calculadora, e com o passar do tempo, foram surgindo necessidades diversas, hoje contamos com oito indicadores, e quatro calculadoras que estão constantemente sendo atualizadas para prover o a melhor experiência ao usuário.
+Open Source License MIT
