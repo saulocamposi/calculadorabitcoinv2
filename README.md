@@ -1,5 +1,4 @@
-# CalculadoraBitcoin
-
+# CalculadoraBitcoin V2
 #Presentation
  This document has constantly edited for Calculadorabitcoin group, which is the most important BTC Indexer of Latin America. 
  
