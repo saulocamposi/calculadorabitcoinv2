@@ -63,4 +63,4 @@ That's all
 We really need your help to improve the calculadorabitcoin.com.br, please give us a donation, you can sugest new features.
 
 #License
-Open Source License MIT
+Open Source License
