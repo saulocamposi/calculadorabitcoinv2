@@ -1,6 +1,6 @@
 # CalculadoraBitcoin V2
 #Presentation
- This document has constantly edited for Calculadorabitcoin group, which is the most important BTC Indexer of Latin America. 
+ CalculadoraBitcoin comes up the most importants BTC Indexers of Latin America. 
  
  Our target has consolidated index and analysis of Brazilian market and another countries in America. 
  
@@ -61,6 +61,9 @@ That's all
 
 #To donate
 We really need your help to improve the calculadorabitcoin.com.br, please give us a donation, you can sugest new features.
+
+#To contribute
+This document has constantly edited for Calculadorabitcoin group
 
 #License
 Open Source License
