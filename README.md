@@ -12,7 +12,8 @@
  CalculadoraBitcoin has numbers of Brazil, Venezuela that's is the most important volume in South America, but also have Bitinka ticker with diferentes currencies as Bolivian, Venezuelan, Peruvian and Chile currency. 
 
 #To contribute
-You can colaborate with : 
+
+This document has constantly edited for Calculadorabitcoin group
 
 Documentation 
 Improve documentation for user and developers
@@ -61,9 +62,6 @@ That's all
 
 #To donate
 We really need your help to improve the calculadorabitcoin.com.br, please give us a donation, you can sugest new features.
-
-#To contribute
-This document has constantly edited for Calculadorabitcoin group
 
 #License
 Open Source License
