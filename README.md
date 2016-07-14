@@ -1,8 +1,8 @@
 # CalculadoraBitcoin V2
 #Presentation
- CalculadoraBitcoin comes up the most importants BTC Indexers of Latin America. 
+ CalculadoraBitcoin comes up the most important BTC Index of Brazil and some countries of South America. 
  
- Our target has consolidated index and analysis of Brazilian market and another countries in America. 
+ Our target is to group exchanges and use APIs from there for indexer and analysis.
  
 #History 
  In the begining this project started as BTC calculator and  blockchain.info tickers, next we improve with Brazilians exchanges and then we have improved to put more indexers and fix the bugs of system to give a tool for trade.
