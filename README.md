@@ -1,6 +1,6 @@
 # CalculadoraBitcoin V2
 #Presentation
- CalculadoraBitcoin comes up the most important BTC Index of Brazil and some countries of South America. 
+ CalculadoraBitcoin show BTC Index of Brazil and some countries of South America. 
  
  Our target is to group exchanges and use APIs from there for indexer and analysis.
  
