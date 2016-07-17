@@ -1,0 +1,26 @@
+.results {
+  border-radius: 3px;
+  width: 100%;
+  padding: 2%;
+  margin-top: 3%;
+  background-color: #CCCCCC;
+}
+
+.mainresults {
+  padding: 1%;
+}
+
+.results-income{
+  width: 95%;
+}
+
+.left-results {
+  float: left;
+  width: 50%;
+  margin-bottom: 3%;
+}
+.right-results {
+  float: right;
+  width: 50%;
+  margin-bottom: 3%;
+}
