@@ -19,9 +19,9 @@ require("./services/blinktradeChartService.js");
 require("./services/bitinkaChartService.js");
 require("./services/polionexChartService.js");
 
-require("../css/bootstrap-custom.css");
-require("../css/calc_bitcoin.css");
-require("../css/calc_income.css");
-require("../css/card.css");
-require("../css/main.css");
-require("../css/main_calculator.css");
+require("../app/css/bootstrap-custom.css");
+require("../app/css/calc_bitcoin.css");
+require("../app/css/calc_income.css");
+require("../app/css/card.css");
+require("../app/css/main.css");
+require("../app/css/main_calculator.css");
