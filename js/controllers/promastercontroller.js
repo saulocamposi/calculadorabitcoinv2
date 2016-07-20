@@ -3,7 +3,7 @@ var app = require('../manager-module.js');
 app.controller('polionexcontroller', ['$scope','$http', 'exchange', function($scope, $http, exchange) {
     $scope.exchangeservice = exchange;
 
-    $http.get("services/promaster_services.php").then(function(response) {
+    $http.get("app/services/promaster_services.php").then(function(response) {
       $scope.doge = response.data;
     });
 
