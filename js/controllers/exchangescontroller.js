@@ -10,25 +10,25 @@ app.controller('exchangescontroller', ['$scope','$http', 'exchangesChartService'
       $scope.foxbit = datafoxbit;
     });
 
-    $http.get("services/services.php?brand=mtc").then(function(response) {
+    $http.get("app/services/services.php?brand=mtc").then(function(response) {
       var datamtc = response.data;
       dataChart.push({"c" : [{"v" : "MTC", "f": null},{"v" : datamtc.last, "f": null}]});
       $scope.mtc = datamtc;
     });
 
-    $http.get("services/services.php?brand=btctoyou").then(function(response) {
+    $http.get("app/services/services.php?brand=btctoyou").then(function(response) {
       var databtctoyou = response.data;
       dataChart.push({"c" : [{"v" : "btctoyou", "f": null},{"v" : databtctoyou.last, "f": null}]});
       $scope.btctoyou = databtctoyou;
     });
 
-    $http.get("services/services.php?brand=flowbtc").then(function(response) {
+    $http.get("app/services/services.php?brand=flowbtc").then(function(response) {
       var dataflowbtc = response.data;
       dataChart.push({"c" : [{"v" : "flowbtc", "f": null},{"v" : dataflowbtc.last, "f": null}]});
       $scope.flowbtc = dataflowbtc;
     });
 
-    $http.get("services/services.php?brand=negociecoins").then(function(response) {
+    $http.get("app/services/services.php?brand=negociecoins").then(function(response) {
       var datanegociecoins = response.data;
       dataChart.push({"c" : [{"v" : "negociecoins", "f": null},{"v" : datanegociecoins.last, "f": null}]});
       $scope.negociecoins = datanegociecoins;
