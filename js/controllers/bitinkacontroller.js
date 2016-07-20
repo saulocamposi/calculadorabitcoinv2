@@ -3,7 +3,7 @@ var app = require('../manager-module.js');
 app.controller('bitinkacontroller', ['$scope','$http','bitinkaChartService', function($scope, $http, bitinkaChartService) {
  var dataChart = [];
 
-    $http.get("services/bitinka_services.php").then(function(response) {
+    $http.get("app/services/bitinka_services.php").then(function(response) {
       var bitinka = response.data;
       $scope.bitinka = bitinka;
 
