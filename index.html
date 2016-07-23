@@ -6,7 +6,7 @@
   <title>Calculadora Bitcoin</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <script src="public/assets/app.js" charset="utf-8"></script>  
+  <script src="public/assets/app.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -14,38 +14,38 @@
   <div class="container-fluid" ng-controller="mbCtrl">
 
     <div class="row">
-      <ng-include src="'tpl/nav.html'"></ng-include>
+      <ng-include src="'app/tpl/nav.html'"></ng-include>
     </div>
 
     <div class="row">
       <div class="col-lg-6">
-        <!-- XXX:  <ng-include src="'tpl/cards/graphs/card-graph-exchanges.html'"></ng-include>-->
-        <ng-include src="'tpl/cards/card-exchanges.html'"></ng-include>
-        <ng-include src="'tpl/cards/card-btcvarejo.html'"></ng-include>
+        <!-- XXX:  <ng-include src="'app/tpl/cards/graphs/card-graph-exchanges.html'"></ng-include>-->
+        <ng-include src="'app/tpl/cards/card-exchanges.html'"></ng-include>
+        <ng-include src="'app/tpl/cards/card-btcvarejo.html'"></ng-include>
 
-        <ng-include src="'tpl/cards/graphs/card-graph-blinktrade.html'"></ng-include>
-        <ng-include src="'tpl/cards/card-blinktrade.html'"></ng-include>
-          <!-- XXX:  <ng-include src="'tpl/cards/graphs/card-graph-polionex.html'"></ng-include>-->
-        <ng-include src="'tpl/cards/card-polionex.html'"></ng-include>
-        <!-- XXX:  <ng-include src="'tpl/cards/graphs/card-graph-bitinka.html'"></ng-include>-->
-        <ng-include src="'tpl/cards/card-bitinka.html'"></ng-include>
-        <ng-include src="'tpl/cards/card-trades-foxbit.html'"></ng-include>
-        <!-- XXX:  <ng-include src="'tpl/cards/card-agenciaideias.html'"></ng-include>-->
+        <ng-include src="'app/tpl/cards/graphs/card-graph-blinktrade.html'"></ng-include>
+        <ng-include src="'app/tpl/cards/card-blinktrade.html'"></ng-include>
+          <!-- XXX:  <ng-include src="'app/tpl/cards/graphs/card-graph-polionex.html'"></ng-include>-->
+        <ng-include src="'app/tpl/cards/card-polionex.html'"></ng-include>
+        <!-- XXX:  <ng-include src="'app/tpl/cards/graphs/card-graph-bitinka.html'"></ng-include>-->
+        <ng-include src="'app/tpl/cards/card-bitinka.html'"></ng-include>
+        <ng-include src="'app/tpl/cards/card-trades-foxbit.html'"></ng-include>
+        <!-- XXX:  <ng-include src="'app/tpl/cards/card-agenciaideias.html'"></ng-include>-->
       </div>
 
       <div class="col-lg-6">
-        <ng-include src="'tpl/calc/main-calculator.html'"></ng-include>
-        <ng-include src="'tpl/cards/card-tradingview.html'"></ng-include>
-        <ng-include src="'tpl/cards/card-bitvalor.html'"></ng-include>
-        <ng-include src="'tpl/cards/card-foxbitwallet.html'"></ng-include>
-        <ng-include src="'tpl/cards/card-orderbook-foxbit.html'"></ng-include>
-        <ng-include src="'tpl/cards/card-daily-decrypt.html'"></ng-include>
+        <ng-include src="'app/tpl/calc/main-calculator.html'"></ng-include>
+        <ng-include src="'app/tpl/cards/card-tradingview.html'"></ng-include>
+        <ng-include src="'app/tpl/cards/card-bitvalor.html'"></ng-include>
+        <ng-include src="'app/tpl/cards/card-foxbitwallet.html'"></ng-include>
+        <ng-include src="'app/tpl/cards/card-orderbook-foxbit.html'"></ng-include>
+        <ng-include src="'app/tpl/cards/card-daily-decrypt.html'"></ng-include>
       </div>
     </div>
   </div>
 
   <div class="footer">
-    <ng-include src="'tpl/footer.html'"></ng-include>
+    <ng-include src="'app/tpl/footer.html'"></ng-include>
   </div>
 
   <script>
