@@ -1,0 +1,178 @@
+<div class="panel panel-default panel-accent-orange" ng-controller="bitinkacontroller">
+  <div class="panel-heading">
+    <span>Bitinka Ticker</span>
+  </div>
+
+  <table class="table table-striped">
+    <tr>
+      <th>
+        Moeda
+      </th>
+      <th>
+        Vol. BTC
+      </th>
+      <th class="hidden-xs hidden-md">
+        Vol. FIAT
+      </th>
+      <th class="hidden-xs hidden-md">
+        ASK
+      </th>
+      <th class="hidden-xs hidden-md">
+        BID
+      </th>
+      <th>
+        LAST
+      </th>
+    </tr>
+
+    <tr>
+      <td>
+        USD
+      </td>
+      <td>
+        {{bitinka.usdbtc[0]}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.usd[0] | number : 2}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.usdask[0] | number : 2}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.usdbid[0] | number : 2}}
+      </td>
+      <td>
+        {{bitinka.usdlast[0] | number : 2}}
+      </td>
+    </tr>
+
+
+    <tr>
+      <td>
+        BSF
+      </td>
+      <td>
+        {{bitinka.bsfbtc[0]}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.bsf[0] | number : 2}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.bsfask[0] | number : 2}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.bsfbid[0] | number : 2}}
+      </td>
+      <td>
+        {{bitinka.bsflast[0] | number : 2}}
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        ARS
+      </td>
+      <td>
+        {{bitinka.arsbtc[0]}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.ars[0] | number : 2}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.arsask[0] | number : 2}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.arsbid[0] | number : 2}}
+      </td>
+      <td>
+        {{bitinka.arslast[0] | number : 2}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+        PEN
+      </td>
+      <td>
+        {{bitinka.penbtc[0]}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.pen[0] | number : 2}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.penask[0] | number : 2}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.penbid[0] | number : 2}}
+      </td>
+      <td>
+        {{bitinka.penlast[0] | number : 2}}
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        BOB
+      </td>
+      <td>
+        {{bitinka.bobbtc[0]}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.bob[0] | number : 2}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.bobask[0] | number : 2}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.bobbid[0] | number : 2}}
+      </td>
+      <td>
+        {{bitinka.boblast[0] | number : 2}}
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        BRL
+      </td>
+      <td>
+        {{bitinka.brlbtc[0]}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.brl[0] | number : 2}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.brlask[0] | number : 2}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.brlbid[0] | number : 2}}
+      </td>
+      <td>
+        {{bitinka.brllast[0] | number : 2}}
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+        COP
+      </td>
+      <td>
+        {{bitinka.copbtc[0]}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.cop[0] | number : 2}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.copask[0] | number : 1}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{bitinka.copbid[0] | number : 1}}
+      </td>
+      <td>
+        {{bitinka.coplast[0] | number : 1}}
+      </td>
+
+    </tr>
+
+
+  </table>
+</div>
