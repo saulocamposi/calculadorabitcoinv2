@@ -1,0 +1,43 @@
+<div class="panel panel-default panel-accent-blue" ng-controller="coinbrcontroller">
+  <div class="panel-heading">
+    <span>Bitcoin Câmbio Rápido</span>
+  </div>
+
+  <table class="table">
+    <tr>
+      <th>
+        Empresa
+      </th>
+      <th>
+        Venda
+      </th>
+      <th>
+        Compra
+      </th>
+      <th class="hidden-xs hidden-md">
+        Cotação Dolar
+      </th>
+      <th class="hidden-xs hidden-md">
+        Compra em Dolar
+      </th>
+    </tr>
+
+    <tr>
+      <td>
+        Coinbr
+      </td>
+      <td>
+        {{coinbr.sell | number : 2}}
+      </td>
+      <td>
+        {{coinbr.buy | number : 2}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{coinbr.usdbrl | number : 2}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{coinbr.usd_sell | number : 2}}
+      </td>
+    </tr>
+  </table>
+</div>
