@@ -1,0 +1,40 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <span>Cotação Mercado</span>
+  </div>
+  <table class="table table-striped">
+    <tr>
+      <td>
+      Dolar
+      </td>
+      <td>
+      {{agenciaideias.dolar_cotacao | number : 2}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+      Euro
+      </td>
+      <td>
+      {{agenciaideias.dolar_variacao}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+      Peso
+      </td>
+      <td>
+      {{agenciaideias.euro_cotacao | number : 2}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+      Libra Esterlina
+      </td>
+      <td>
+      {{agenciaideias.euro_variacao}}
+      </td>
+    </tr>
+  </table>
+
+</div>
