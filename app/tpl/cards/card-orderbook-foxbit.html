@@ -1,0 +1,40 @@
+<div class="panel panel-default panel-accent-blue" ng-controller="foxbitcontroller">
+  <div class="panel-heading">
+    <span>Ordens Foxbit</span>
+  </div>
+
+    <table class="table table-fixed">
+      <thead>
+        <tr>
+          <th class="col-xs-4">Ordens de Compra</th>
+          <th class="col-xs-3">Qtd</th>
+          <th class="col-xs-3">Preco</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="x in foxbitorders.bids">
+          <td class="col-xs-4">{{$index}}</td>
+          <td class="col-xs-3">{{x[1]}}</td>
+          <td class="col-xs-3">{{x[0] | number : 2}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table table-fixed">
+      <thead>
+        <tr>
+          <th class="col-xs-4">Ordens de Venda</th>
+          <th class="col-xs-3">Qtd</th>
+          <th class="col-xs-3">Preco</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="x in foxbitorders.asks">
+          <td class="col-xs-4">{{$index}}</td>
+          <td class="col-xs-3">{{x[1]}}</td>
+          <td class="col-xs-3">{{x[0] | number : 2}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+</div>
