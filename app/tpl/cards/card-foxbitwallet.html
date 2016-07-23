@@ -1,0 +1,68 @@
+<div class="panel panel-default panel-accent-blue" ng-controller="walletfoxbitcontroller">
+  <div class="panel-heading">
+    <span>Carteiras FoxBit</span>
+  </div>
+  <table class="table">
+    <tr colspan=1>
+      <td>
+      Carteira Quente
+      </td>
+    </tr>
+    <tr>
+      <td>
+      Total recebido em BTC
+      </td>
+      <td>
+      {{wfoxhot.received}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+      Total Enviado em BTC
+      </td>
+      <td>
+        {{wfoxhot.sent}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+      Balanço Final em BTC
+      </td>
+      <td>
+      {{wfoxhot.balance}}
+      </td>
+    </tr>
+  </table>
+
+  <table class="table">
+    <tr colspan=1>
+      <td>
+      Carteira Fria
+      </td>
+    </tr>
+    <tr>
+      <td>
+      Total recebido em BTC
+      </td>
+      <td>
+      {{wfoxcold.received}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+      Total Enviado em BTC
+      </td>
+      <td>
+        {{wfoxcold.sent}}
+      </td>
+    </tr>
+    <tr>
+      <td>
+      Balanço Final em BTC
+      </td>
+      <td>
+      {{wfoxcold.balance}}
+      </td>
+    </tr>
+  </table>
+</div>
