@@ -1,7 +1,7 @@
 # CalculadoraBitcoin V2
 #Presentation
 
- Calculadora Bitcoin shows the most BTC Indexers of Brazil and some countries of South America. We are a open source group that is proud to code for BTC and cryptocoins. The sections are divided in Cards with values and graphs.
+ Calculadora Bitcoin shows the most BTC Indexers of Brazil and some countries of South America. We are a open source group that is proud to code for BTC and cryptocoins. Our aim is to increase the number of cards and sections with differente values of exhanges and miners abroad. 
  
 #History 
  In the begining this project started as BTC calculator and  blockchain.info ticker,then anothers tickers was inserted, the most part of Brazilians exchanges and now we have Brazilians, south  america, tradindview graphic and channel.
