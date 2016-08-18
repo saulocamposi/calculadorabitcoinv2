@@ -5,9 +5,9 @@
  
 #History 
 
- In the begining this project were a just a BTC calculator, and a blockchain.info ticker. Then anothers tickers was inserted, the most part of Brazilians exchanges and now we have Brazilians, South  America index, tradindview graphic and channel.
+ In the begining this project were a just a BTC calculator, and a blockchain.info ticker. Then anothers tickers was inserted, the most part of Brazilians exchanges and now we have Brazilians, South  America indexers, tradindview graphic and youtube channel.
  
- The first version we got data of the all Brazilians BTC public APIs, the second version we tought about usability and increase the number of cards (indexer display) that make sense for us. 
+ Talking about technology, the CalculadoraBitcoin has increase your number of API clients. The first version were all Brazilians Exchanges public APIs, the second version we coded more for layout and usability, increasing the number of cards (indexer display) that make sense for us. 
  
  CalculadoraBitcoin has numbers of Brazil, Venezuela that's is the most important volume in South America, but also have Bitinka ticker with diferentes currencies as Bolivian, Venezuelan, Peruvian and Chile currency. 
 
