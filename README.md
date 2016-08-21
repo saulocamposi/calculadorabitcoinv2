@@ -5,7 +5,7 @@
  
 #History 
 
- In the begining this project were a just a BTC calculator, and a blockchain.info ticker. Then anothers tickers was inserted, the most part of Brazilians exchanges and now we have Brazilians, South  America indexers, tradindview graphic and youtube channel.
+ In the begining this project were a just a BTC calculator, and a blockchain.info ticker. Then anothers tickers was inserted, in general Brazilians exchanges and now we have Brazilians, South  America indexers, tradindview graphic and youtube channel.
  
  Talking about technology, the CalculadoraBitcoin has increase your number of API clients. The first version were all Brazilians Exchanges public APIs, the second version we coded more for layout and usability, increasing the number of cards (indexer display) that make sense for us. 
  
