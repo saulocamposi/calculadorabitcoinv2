@@ -1,13 +1,13 @@
 # CalculadoraBitcoin V2
 #Presentation
 
- Calculadora Bitcoin shows the most BTC Indexers of Brazil and some countries of South America. Everyday we have improved this project with more code and documentation always as a open source group that is proud to code for BTC and cryptocoins. Our aim is to increase the number of cards and sections with differente values of exhanges and miners abroad. 
+ Calculadora Bitcoin shows the most BTC Indexers of Brazil and some countries of South America. Everyday we have improved this project with more code and documentation and always as a open source group that is proud to code for BTC and cryptocoins. Our aim is to increase the number of cards and sections with differente values of exhanges and miners abroad.
  
 #History 
 
- In the begining this project were a just a BTC calculator, and a blockchain.info ticker. Then anothers tickers was inserted, in general Brazilians exchanges and then new exchanges abroud South  Americas, and plugins like tradindview graphic and youtube channel.
+ In the begining this project were a just a BTC calculator, and a blockchain.info ticker. Then anothers tickers was inserted, in general Brazilians exchanges and then new exchanges abroud South  Americas and plugins like tradindview graphic and youtube channel.
  
- Talking about technology, the CalculadoraBitcoin has increase your number of API clients. The first version were all Brazilians Exchanges public APIs, the second version we coded more for layout and usability, increasing the number of cards (indexer display) that make sense for us. 
+ Talking about technology the CalculadoraBitcoin has increase your number of API clients. The first version were all Brazilians Exchanges public APIs, the second version we coded more for layout and usability, increasing the number of cards (indexer display) that make sense for us, and our main has been improving the front-end presentation.
  
  CalculadoraBitcoin has numbers of Brazil, Venezuela that's is the most important volume in South America, but also have Bitinka ticker with diferentes currencies as Bolivian, Venezuelan, Peruvian and Chile currency. 
 
