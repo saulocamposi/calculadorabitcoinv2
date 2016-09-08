@@ -13,7 +13,7 @@
 
 #To contribute
 
-This document has constantly edited for Calculadorabitcoin group
+Follow Github Rules
 
 Documentation 
 Improve documentation for user and developers
