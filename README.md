@@ -15,6 +15,8 @@
 
 Follow Github Rules
 
+Our aim is the topics below:
+
 Documentation 
 Improve documentation for user and developers
 
