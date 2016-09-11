@@ -36,7 +36,7 @@ You can donate and support this project for you
 
 This project is composed by:
 
-HTML 5 
+HTML 5
 
 CSS 3
 
@@ -60,10 +60,8 @@ Package - webpack
 
 Set apache for root project 
 
-That's all
-
 #To donate
-We really need your help to improve the calculadorabitcoin.com.br, please give us a donation, you can sugest new features.
+Donate through QR code below 
 
 #License
 Open Source License
