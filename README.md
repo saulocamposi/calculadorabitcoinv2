@@ -56,7 +56,9 @@ Clone the project -  git clone project
 
 Install dependencies - npm install
 
-Package - webpack
+Package - run webpack command
+
+Run Python command - python -m HTTPSimpleServer
 
 Set apache for root project 
 
