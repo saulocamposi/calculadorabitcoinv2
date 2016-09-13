@@ -13,18 +13,16 @@
 
 #To contribute
 
-Follow Github Rules
-
-Our aim is the topics below:
+Our aim is the topics below, join us.
 
 Documentation 
-Improve documentation for user and developers
+Improve documentation for users and developers
 
-Test
+Tests
 Make unit tests, behavior tests and integration tests
 
 Code
-Develop a card with a new indexers
+Front-end and Back-end prospectives
 
 Fix Bugs and Issues 
 Improve speed and treat the APis exceptions to give the best experience for users
