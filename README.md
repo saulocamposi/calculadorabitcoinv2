@@ -19,7 +19,10 @@ Documentation
 Improve documentation for users and developers
 
 Tests
+
 Make unit tests, behavior tests and integration tests
+In planning to advance our test give us the best confident of our steps.
+
 
 Code
 Front-end and Back-end prospectives
