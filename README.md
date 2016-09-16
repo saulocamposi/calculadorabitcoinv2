@@ -64,7 +64,7 @@ Run Python command - python -m HTTPSimpleServer
 Set apache for root project 
 
 #To donate
-Donate through QR code below 
+Donate Bitcoins through QR code below the site
 
 #License
 Open Source License
