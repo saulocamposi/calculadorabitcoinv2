@@ -9,7 +9,7 @@
  
  About technology the CalculadoraBitcoin has increase your number of API clients. The first version were all Brazilians Exchanges public APIs, the second version we coded more for layout and usability, increasing the number of cards (indexer display) that make sense for us, and our main has been improving the front-end presentation.
  
- CalculadoraBitcoin has numbers of Brazil, Venezuela that's is the most important volume in South America, but also have Bitinka ticker with diferentes currencies as Bolivian, Venezuelan, Peruvian and Chile currency. 
+ CalculadoraBitcoin has data values from Brazil, Venezuela that's is the most important volume in South America, but also have Bitinka ticker with diferentes currencies as Bolivian, Venezuelan, Peruvian and Chile currency. 
 
 #To contribute
 
