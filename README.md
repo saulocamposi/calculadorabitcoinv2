@@ -53,15 +53,15 @@ Karma and Jasmine
 
 #To Build
 
-Clone the project -  git clone project 
+Clone the project to repository -  git clone <project> 
 
-Install dependencies - npm install
+Install dependencies from NPM repository- npm install
 
-Package - run webpack command
+Package the project with Webpack- wepack
 
-Run Python command - python -m HTTPSimpleServer
+Run Python HTTP WebServer - python -m HTTPSimpleServer
 
-Set apache for root project 
+For more convinient you can use Apache as VirtualHost
 
 #To donate
 Donate Bitcoins through QR code below the site
