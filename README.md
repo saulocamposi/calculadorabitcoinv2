@@ -43,11 +43,11 @@ CSS 3
 
 BootStrap 3
 
-AngularJS 1.5
+AngularJS 1.5 - Its used to databinding
 
-PHP 5
+PHP 5 - Its used to consume APIs
 
-Webpack
+Webpack - Build all assets and package in one file
 
 Karma and Jasmine
 
