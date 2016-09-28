@@ -13,7 +13,7 @@
 
 #To contribute
 
-Our aim is the topics below, join us.
+Our aim is on the topics below,how much more people a thinking in the same propose, most we are much more stronger.Join Us.
 
 Documentation 
 Improve documentation for users and developers
