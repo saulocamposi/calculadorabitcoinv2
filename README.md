@@ -64,7 +64,7 @@ Run Python HTTP WebServer - python -m HTTPSimpleServer
 For more convinient you can use Apache as VirtualHost
 
 #To donate
-Donate Bitcoins through QR code below the site
+Donate Bitcoins through QR code below the website
 
 #License
 Open Source License
