@@ -13,7 +13,7 @@
 
 #To contribute
 
-Our aim is on the topics below,but you a open to propose wherever topics you want and feel confident. How many people are thinking in the same propose,we are more strengh .Join Us and enjoy to code
+Our aim is on the topics below,but you are open to propose wherever topics you want and that you feel confident. Much more people thinking in the same achievement, we are more strengh .Join Us and enjoy to code
 
 Documentation 
 Improve documentation for users and developers
