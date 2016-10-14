@@ -13,7 +13,7 @@
 
 #To contribute
 
-Our aim is on the topics below,but you are open to propose wherever topics you want and that you feel confident. Much more people thinking in the same achievement, we are more strengh .Join Us and enjoy to code
+Our aim is on the topics below,but you are open to propose wherever topics you want and that you feel confident. Much more people thinking in the same achievement we are more strengh.  Join Us and enjoy to code
 
 Documentation 
 Improve documentation for users and developers
@@ -22,6 +22,9 @@ Tests
 
 Make unit tests, behavior tests and integration tests
 In planning to advance our test give us the best confident of our steps.
+
+IOT perspectives
+Coding small engines that communicate each other
 
 
 Code
