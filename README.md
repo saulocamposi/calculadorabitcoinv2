@@ -13,7 +13,7 @@
 
 #To contribute
 
-Our aim is on the topics below but you are open to propose wherever topics you want and that you feel confident.Much more people thinking in the same achievement we are more strengh. We are working to improve the assyncronous webservices  collectting in differents endpoints and dynamic presentations with angular 1.5. Join Us and enjoy to code
+Our aim is on the topics below but you are open to propose wherever topics you want and that you feel confident.Much more people thinking in the same achievement we are strengh. We are still working to improve the assyncronous webservices that are  collectting in differents endpoints and dynamic presentations with angular 1.5. Join Us and enjoy to code
 
 Documentation 
 Improve documentation for users and developers
