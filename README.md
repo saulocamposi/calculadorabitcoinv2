@@ -16,7 +16,7 @@
 Our aim is on the topics below but you are open to propose wherever topics you want and that you feel confident.Much more people thinking in the same achievement we are strengh.Our team still working to improve the asyncronous webservices that consume in differents endpoints, in general public APIs, another challenge is the front-end, dynamic presentations, animations, asyncronous loading using angular 1.5. Join Us and enjoy to code
 
 Documentation 
-Improve documentation for users and developers, improve de base documentantion and maintain a wiki.
+The documentation consist of README actually and a future wiki for users and developers. 
 
 Tests
 
