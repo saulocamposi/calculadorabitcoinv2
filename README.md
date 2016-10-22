@@ -23,9 +23,6 @@ Tests
 Make unit tests, behavior tests and integration tests
 In planning to advance our test give us the best confident of our steps.
 
-IOT perspectives
-Coding small engines that communicate each other
-
 
 Code
 Front-end and Back-end prospectives
@@ -35,6 +32,10 @@ Improve speed and treat the APis exceptions to give the best experience for user
 
 Support
 You can donate and support this project for you
+
+#Microservices perspectives
+This system has to aim growth using microservices with differente archteures and languages. We could use the frond of website with PHP and the backend rails talking via webservices using small machines on the cloud.
+
 
 #Project Technologies
 
