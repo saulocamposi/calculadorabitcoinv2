@@ -34,7 +34,7 @@ Support
 You can donate and support this project for you
 
 #Microservices perspectives
-This system has to aim growth using microservices with differente archteures and languages. We could use the frond of website with PHP and the backend rails talking via webservices using small machines on the cloud.
+This system has to aim growth using microservices with differente architectures and languages. Our front-end in the moment were madewith PHP,but the back-end could be in rails and each other can share content via webservices using small machines on the cloud.
 
 
 #Project Technologies
