@@ -34,7 +34,7 @@ Support
 You can donate and support this project for you
 
 #Microservices perspectives
-This system has to aim growth using microservices with differents architectures and languages. Our front-end in the moment were made with pure HTML 5, Angular 1.5 and PHP on the back-end. We gonna start other services in rails that can share contents via webservices using small machines on the cloud.
+This system has to aim growth using microservices with differents architectures and languages. Our front-end in the moment were made with pure HTML 5, Angular 1.5 and PHP on the back-end. We will start other services in rails which will be the base of ORM back-end sharing contents via webservices using small machines on the cloud.
 
 
 #Project Technologies
