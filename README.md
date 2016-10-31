@@ -19,8 +19,9 @@ Documentation
 The documentation consist README mainly and for the future a wiki.
 
 Tests
-
-Make unit tests, behavior tests and integration tests
+Cover controller Angular with unit tests, 
+Cover calculadora actions withbehavior tests 
+Cover speed of Apis with integration tests
 In planning to advance our test give us the best confident of our steps.
 
 
