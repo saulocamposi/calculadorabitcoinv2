@@ -16,7 +16,7 @@
 Our aim is on the topics below but you are open to propose wherever topics you want and that you feel confident. Much more people thinking in the same achievement the things goes better. Our team still working to improve the asyncronous webservices which consume in differents endpoints, in general public APIs. Another challenge is the front-end, dynamic presentations, animations, asyncronous loading using angular 1.5. Join Us and enjoy to code
 
 Documentation 
-The documentation consist README mainly and for the future a wiki.
+The documentation consist README mainly and the future wiki.
 
 Tests
 Cover controller Angular with unit tests, 
@@ -32,7 +32,7 @@ Fix Bugs and Issues
 Improve speed and treat the APis exceptions to give the best experience for users
 
 Support
-You can donate and support this project for you
+You can donate bitcoins on the hash of the site bottom 
 
 #Microservices perspectives
 This system has to aim growth using microservices with differents architectures and languages. Our front-end in the moment were made with pure HTML 5, Angular 1.5 and PHP on the back-end. We will start other services in rails which will be the base of ORM back-end sharing contents via webservices using small machines on the cloud.
