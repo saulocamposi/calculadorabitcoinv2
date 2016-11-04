@@ -27,8 +27,8 @@ In planning to advance our test give us the best confident of our steps.
 Code
 Front-end and Back-end prospectives
 
-Fix Bugs and Issues 
-Improve speed and treat the APis exceptions to give the best experience for users
+Issues 
+The project are open to post issues, many subjects and proposes
 
 #Microservices perspectives
 This system has to aim growth using microservices with differents architectures and languages. Our front-end in the moment were made with pure HTML 5, Angular 1.5 and PHP on the back-end. We will start other services in rails which will be the base of ORM back-end sharing contents via webservices using small machines on the cloud.
