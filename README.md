@@ -19,10 +19,9 @@ Our aim is on the topics below but you are open to propose wherever topics you w
 The documentation consist README mainly and the future wiki.
 
 #Test Coverage
-Cover controller Angular with unit tests, 
-Cover calculadora actions withbehavior tests 
-Cover speed of Apis with integration tests
-In planning to advance our test give us the best confident of our steps.
+Calculadora bitcoin has to be coverage with three important topics: unit test, behavior test and integration Test
+The Angular controllers could be tested the logic of method with unit tests,the behavior has to test calculadora actions and 
+one of most important test is the integration Apis, testing performance and latency.
 
 Code
 Front-end and Back-end prospectives
