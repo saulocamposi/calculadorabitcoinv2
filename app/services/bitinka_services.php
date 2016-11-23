@@ -1,5 +1,6 @@
 <?php
-   $bitinka =  simplexml_load_string(file_get_contents("https://www.bitinka.pe/api/apinka/ticker"));
+$content = file_get_contents( "https://www.bitinka.pe/api/apinka/ticker" );
+$bitinka =  simplexml_load_string( $content );
 
 $usdbtc = $bitinka->USD->volumen24hours->BTC;
 $usd = $bitinka->USD->volumen24hours->USD;
@@ -43,52 +44,51 @@ $copask = $bitinka->COP->ask;
 $copbid = $bitinka->COP->bid;
 $coplast = $bitinka->COP->last;
 
-$ticker =
-array(
-"usdbtc" => $usdbtc,
-"usd" => $usd,
-"usdask" => $usdask,
-"usdbid" => $usdbid,
-"usdlast" => $usdlast,
+$ticker = array(
+  "usdbtc" => $usdbtc,
+  "usd" => $usd,
+  "usdask" => $usdask,
+  "usdbid" => $usdbid,
+  "usdlast" => $usdlast,
 
-"bsfbtc" => $bsfbtc,
-"bsf" => $bsf,
-"bsfask" => $bsfask,
-"bsfbid" => $bsfbid,
-"bsflast" => $bsflast,
+  "bsfbtc" => $bsfbtc,
+  "bsf" => $bsf,
+  "bsfask" => $bsfask,
+  "bsfbid" => $bsfbid,
+  "bsflast" => $bsflast,
 
-"arsbtc" => $arsbtc,
-"ars" => $ars,
-"arsask" => $arsask,
-"arsbid" => $arsbid,
-"arslast" => $arslast,
+  "arsbtc" => $arsbtc,
+  "ars" => $ars,
+  "arsask" => $arsask,
+  "arsbid" => $arsbid,
+  "arslast" => $arslast,
 
-"penbtc" => $penbtc,
-"pen" => $pen,
-"penask" => $penask,
-"penbid" => $penbid,
-"penlast" => $penlast,
+  "penbtc" => $penbtc,
+  "pen" => $pen,
+  "penask" => $penask,
+  "penbid" => $penbid,
+  "penlast" => $penlast,
 
-"bobbtc" => $bobbtc,
-"bob" => $bob,
-"bobask" => $bobask,
-"bobbid" => $bobbid,
-"boblast" => $boblast,
+  "bobbtc" => $bobbtc,
+  "bob" => $bob,
+  "bobask" => $bobask,
+  "bobbid" => $bobbid,
+  "boblast" => $boblast,
 
-"brlbtc" => $brlbtc,
-"brl" => $brl,
-"brlask" => $brlask,
-"brlbid" => $brlbid,
-"brllast" => $brllast,
+  "brlbtc" => $brlbtc,
+  "brl" => $brl,
+  "brlask" => $brlask,
+  "brlbid" => $brlbid,
+  "brllast" => $brllast,
 
-"copbtc" => $copbtc,
-"cop" => $copbtc,
-"copask" => $copask,
-"copbid" => $copbid,
-"coplast" => $coplast
-);
+  "copbtc" => $copbtc,
+  "cop" => $copbtc,
+  "copask" => $copask,
+  "copbid" => $copbid,
+  "coplast" => $coplast
+  );
 
-$ticker = json_encode($ticker);
+$ticker = json_encode( $ticker );
 
 echo $ticker;
 ?>
