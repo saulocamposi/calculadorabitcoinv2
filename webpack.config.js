@@ -6,7 +6,7 @@ module.exports = {
 
   entry: [
     'bootstrap-loader',
-    './js/app.js',
+    './app/js/app.js',
   ],
   output: {
     path: path.join(__dirname, 'public', 'assets'),
