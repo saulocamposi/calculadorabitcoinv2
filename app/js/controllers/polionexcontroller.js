@@ -1,6 +1,7 @@
 var app = require('../manager-module.js');
 
-app.controller('polionexcontroller', ['$scope','$http', 'polionexChartService', function($scope, $http, polionexChartService) {
+
+var polionexcontroller = function($scope, $http, polionexChartService, googleChartApiPromise) {
 
     var dataChart = [];
 
@@ -28,6 +29,12 @@ app.controller('polionexcontroller', ['$scope','$http', 'polionexChartService', 
       dataChart.push({"c" : [{"v" : "FoxBit", "f": null},{"v" : ether.volume, "f": null}]});
     });
 
+    console.log(dataChart);
     polionexChartService.data.rows = dataChart;
     $scope.chart = polionexChartService;
-  }]);
+  }
+
+
+polionexcontroller.$inject = ['$scope', 'googleChartApiPromise'];
+
+app.controller('polionexcontroller', ['$scope','$http', 'polionexChartService', polionexcontroller ]);
