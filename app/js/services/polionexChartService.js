@@ -26,9 +26,9 @@ var polionexChartService = function() {
       }]
     }
   };
-return chart;
+  return chart;
 }
 
-app.factory('polionexChartService', [polionexChartService]);
+app.factory('polionexChartService', [ polionexChartService ]);
 
 module.exports = app;
