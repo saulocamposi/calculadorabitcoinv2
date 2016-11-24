@@ -23,6 +23,8 @@ app.controller('bitinkacontroller', ['$scope','$http','bitinkaChartService', fun
       dataChart.push({"c" : [{"v" : "BRL", "f": null},{"v" : brl, "f": null}]});
       dataChart.push({"c" : [{"v" : "COP", "f": null},{"v" : cop, "f": null}]});
 
+      console.log(dataChart);
+
 
     });
 
