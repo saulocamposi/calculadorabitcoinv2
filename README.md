@@ -5,9 +5,9 @@
  
 #History 
 
- In the begining this project were just a BTC calculator and one table of bitcoin prices in different currencies (blockchain.info ticker). Now we have division of information through cards with different values from  public apis. Some Brazilian exchanges, but also  South  Americas exchanges as well. Another interesting feature is the web socket plugin from tradindview and youtube channel.
+ In the begining this project were just a BTC calculator and one table of bitcoin prices in different currencies (blockchain.info ticker). Now we have division of information through cards with different values from  public apis. Some Brazilian exchanges, but also  South  Americas exchanges as well. Another interesting features are the web socket plugin from tradindview and youtube channel.
  
- About technology the CalculadoraBitcoin has increase your number of API clients. The first version were all Brazilians Exchanges public APIs, the second version we coded more for layout and usability, increasing the number of cards (indexer display) that make sense for us, and our main has been improving the front-end presentation.
+The initial propose were increase consuming of BTC public APIs and showing them as a simple board trade. The first version gained efforts to get more endpoints of public APIs and the second version the aim was layout and usability, increasing the number of cards that can bring informations tickers, volume, fiat currency and others, improving the front-end presentation.
  
  CalculadoraBitcoin has data values from Brazil, Venezuela that's is the most important volume in South America, but also have Bitinka ticker with diferentes currencies as Bolivian, Venezuelan, Peruvian and Chile currency. 
 
