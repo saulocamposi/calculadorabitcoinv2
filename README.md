@@ -16,7 +16,7 @@ The initial propose were increase consuming of BTC public APIs and showing them 
 Our aim is on the topics below, but you are open to propose wherever topics you want which you feel confident. Much more people thinking in the same achievement the things goes better. Our team still working to improve the asyncronous webservices which consumes in differents endpoints, in general public APIs. Another challenge is the front-end, dynamic presentations, animations, asyncronous loading using angular 1.5. Join Us and enjoy to code.
 
 #Documentation 
-The documentation consist README mainly and the future wiki.
+The documentation consist of a README mainly, but we pretend to start a wiki with informations about technologies and installation, architecture and code .
 
 #Test Coverage
 Calculadora bitcoin has to be coverage with three important topics: unit test, behavior test and integration Test
