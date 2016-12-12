@@ -16,12 +16,11 @@ The initial propose were increase consuming of BTC public APIs and showing them 
 Our aim is on the topics below, but you are open to propose wherever topics you want which you feel confident. Much more people thinking in the same achievement the things goes better. Our team still working to improve the asyncronous webservices which consumes in differents endpoints, in general public APIs. Another challenge is the front-end, dynamic presentations, animations, asyncronous loading using angular 1.5. Join Us and enjoy to code.
 
 #Documentation 
-The documentation consist of a README mainly, but we pretend to start a wiki with informations about technologies and installation, architecture and code .
+The documentation consist of a README mainly, but we pretend to start a wiki with informations about technologies and installation, architecture and code.
 
 #Test Coverage
-Calculadora bitcoin has to be coverage with three important topics: unit test, behavior test and integration Test
-The Angular controllers could be tested the logic of method with unit tests,the behavior has to test calculadora actions and 
-one of most important test is the integration Apis, testing performance and latency.
+Calculadora bitcoin has to coverage with three important topics: unit test, behavior test and integration Test.
+Unit test could be usefull for Angular controllers to test the logic of method, the behavior has to test calculadora actions and one of most important test is the integration Apis, testing performance and latency.
 
 Code
 Front-end and Back-end prospectives
