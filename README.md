@@ -25,8 +25,8 @@ Unit test could be usefull for Angular controllers to test the logic of method, 
 Code
 Front-end and Back-end prospectives
 
-Issues 
-The project are open to post issues, many subjects and proposes
+#Issues 
+The project are open to post issues, in general are bugs to solve and implementations or refactore . 
 
 #Microservices perspectives
 This system has to aim growth using microservices with differents architectures and languages. Our front-end in the moment were made with pure HTML 5, Angular 1.5 and PHP on the back-end. We will start other services in rails which will be the base of ORM back-end sharing contents via webservices using small machines on the cloud.
