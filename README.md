@@ -31,23 +31,18 @@ The project are open to post issues, in general are bugs to solve and implementa
 #Microservices perspectives
 This system has to aim growth using microservices with differents architectures and languages. Our front-end in the moment were made with pure HTML 5, Angular 1.5 and PHP on the back-end. We will start other services in rails which will be the base of ORM back-end sharing contents via webservices using small machines on the cloud.
 
+#Archteture Project
 
-#Project Technologies
+This project is composed by front-end :HTML 5,CSS 3,BootStrap 3, AngularJS 1.5 - Its used to databinding   
 
-This project is composed by:
-
-HTML 5
-
-CSS 3
-
-BootStrap 3
-
-AngularJS 1.5 - Its used to databinding
+Backend
 
 PHP 5 - Its used to consume APIs
 
+Build 
 Webpack - Build all assets and package in one file
 
+Test
 Karma and Jasmine
 
 #To Build
