@@ -22,7 +22,7 @@ The documentation consist of a README mainly, but we pretend to start a wiki wit
 Calculadora bitcoin has to coverage with three important topics: unit test, behavior test and integration Test.
 Unit test could be usefull for Angular controllers to test the logic of method, the behavior has to test calculadora actions and one of most important test is the integration Apis, testing performance and latency.
 
-Code
+#Code
 Front-end and Back-end prospectives
 
 #Issues 
