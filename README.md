@@ -42,7 +42,7 @@ PHP 5 - Its used to consume APIs
 Build 
 Webpack - Build all assets and package in one file
 
-Test
+# Test Coverage
 Karma and Jasmine
 
 #To Build
