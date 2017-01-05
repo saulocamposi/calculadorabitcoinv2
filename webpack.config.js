@@ -43,6 +43,6 @@ module.exports = {
   },
 
   postcss: [autoprefixer],
-  //devtool: 'sourcemap',
-  devtool: null,
+  devtool: 'sourcemap',
+  //devtool: null,
 };
