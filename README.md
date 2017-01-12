@@ -42,9 +42,6 @@ PHP 5 - Its used to consume APIs
 Build 
 Webpack - Build all assets and package in one file
 
-# Test Coverage
-Karma and Jasmine
-
 #To Build
 
 Clone the project to repository -  git clone <project> 
