@@ -4,11 +4,11 @@ var mbCtrl = function($scope, $http, serviceforex) {
 
 $scope.helloforex = serviceforex;
 
-  $http.get("app/services/youtube-search.php").then(function(response) {
+  $http.get("http://localhost/calculadorabitcoinv2/app/services/youtube-search.php").then(function(response) {
     $scope.dailydecrypt = response.data;
   });
 
-  $http.get("app/services/bitvalor_services.php").then(function(response) {
+  $http.get("http://localhost/calculadorabitcoinv2/app/services/bitvalor_services.php").then(function(response) {
     $scope.bitvalor = response.data;
   });
 
@@ -16,7 +16,7 @@ $scope.helloforex = serviceforex;
     $scope.agenciaideias = response.data;
   });*/
 
-  $http.get("app/services/forex_services.php").then(function(response) {
+  $http.get("http://localhost/calculadorabitcoinv2/app/services/forex_services.php").then(function(response) {
     $scope.forex = response.data;
   });
 
