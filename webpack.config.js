@@ -1,48 +1,35 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
-const autoprefixer = require('autoprefixer');
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
-
   entry: [
-    'bootstrap-loader',
     './app/js/app.js',
   ],
   output: {
     path: path.join(__dirname, 'public', 'assets'),
     filename: 'app.js',
-    publicPath: '/public/assets/',
+    publicPath: '/public/assets/'
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './index.html'
+    }),
+    new CopyWebpackPlugin([
+      { from: 'app/tpl', to: 'tpl' },
+      { from: 'app/img', to: 'app/img' }
+    ])
+  ],
   module: {
-    loaders: [{
-        test: /\.css$/,
-        loaders: ['style', 'css', 'postcss']
-      }, {
-        test: /\.scss$/,
-        loaders: ['style', 'css', 'postcss', 'sass']
-      }, {
-        test: /bootstrap-sass\/assets\/javascripts\//,
-        loader: 'imports?jQuery=jquery'
-      },
-      //      {
-      // test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-      // loader: "url?limit=10000"
-      // },
-      // {
-      // test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
-      // loader: 'file'
-      // },
+    rules: [
       {
-        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
-        loader: 'url-loader?limit=30000&name=[name]-[hash].[ext]'
+        test: /\.css$/,
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" },
+        ],
       }
-
-      // Bootstrap 3
-
-    ],
-  },
-
-  postcss: [autoprefixer],
-  devtool: 'sourcemap',
-  //devtool: null,
+    ]
+  }
 };
