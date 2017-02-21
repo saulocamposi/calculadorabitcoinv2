@@ -35,12 +35,16 @@ This system has to aim growth using microservices with differents architectures 
 
 This project is composed by front-end :HTML 5,CSS 3,BootStrap 3, AngularJS 1.5 - Its used to databinding   
 
-Backend
+#Front-End
+The fisrt version calculadorabitcoin were coded using plan css, angular 1.5, for second version were addded bootstrap 3.
+For the thrird version we are migrating for React instead of angular, but could be possible to run all versions and package as well
 
-PHP 5 - Its used to consume APIs
+#Backend
+Most of all services are coded with PHP 5 to consume public APIs from Exchanges
 
-Build 
-Webpack - Build all assets and package in one file
+#Build 
+The Webpack 1.5 (current version) - To build all assets, chunk and package. 
+We are migrating for 2.0 version
 
 #To Build
 
