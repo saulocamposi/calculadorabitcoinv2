@@ -1,5 +1,9 @@
 <?php
 
+  if($_GET['brand'] == "fox"){
+    echo $foxbit =  file_get_contents("https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC");
+  }
+
   if($_GET['brand'] == "btctoyou"){
     echo $bitcointoyou =  file_get_contents("https://www.bitcointoyou.com/api/ticker.aspx");
   }
