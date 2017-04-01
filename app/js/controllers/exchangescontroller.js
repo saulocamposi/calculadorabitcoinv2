@@ -4,7 +4,7 @@ app.controller('exchangescontroller', ['$scope','$http', 'exchangesChartService'
 
   var dataChart = [];
 
-    $http.jsonp("https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC&callback=JSON_CALLBACK").then(function(response) {
+    $http.get("app/services/services.php?brand=fox").then(function(response) {
       var datafoxbit = response.data;
       dataChart.push({"c" : [{"v" : "FoxBit", "f": null},{"v" : datafoxbit.last, "f": null}]});
       $scope.foxbit = datafoxbit;
