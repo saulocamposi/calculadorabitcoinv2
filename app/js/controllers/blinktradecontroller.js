@@ -4,25 +4,32 @@ app.controller('blinktradecontroller', ['$scope', '$http', 'blinktradeChartServi
 
    var dataChart = [];
 
-  $http.jsonp("https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC&callback=JSON_CALLBACK").then(function(response) {
+   var urlfox = "app/services/blinktrade_fox_services.php";
+   var urlsur = "app/services/blinktrade_sur_services.php";
+   var urlchile = "app/services/blinktrade_chile_services.php";
+   var urlurdu = "app/services/blinktrade_urdu_services.php";
+
+
+  $http.get(urlfox).then(function(response) {
      var dataFox = response.data;
      dataChart.push({"c" : [{"v" : "FoxBit", "f": null},{"v" : dataFox.vol, "f": null}]});
      $scope.foxbit = dataFox;
   });
 
-  $http.jsonp("https://api.blinktrade.com/api/v1/VEF/ticker?crypto_currency=BTC&callback=JSON_CALLBACK").then(function(response) {
+
+  $http.get(urlsur).then(function(response) {
     var dataSurbitcoin = response.data;
     dataChart.push({"c" : [{"v" : "SurBitcoin", "f": null},{"v" : dataSurbitcoin.vol, "f": null}]});
     $scope.surbitcoin = dataSurbitcoin;
   });
 
-  $http.jsonp("https://api.blinktrade.com/api/v1/CLP/ticker?crypto_currency=BTC&callback=JSON_CALLBACK").then(function(response) {
+  $http.get(urlchile).then(function(response) {
     var datachilebit = response.data;
     dataChart.push({"c" : [{"v" : "Chilebit", "f": null},{"v" : datachilebit.vol, "f": null}]});
     $scope.chilebit = datachilebit;
   });
 
-  $http.jsonp("https://api.blinktrade.com/api/v1/PKR/ticker?crypto_currency=BTC&callback=JSON_CALLBACK").then(function(response) {
+  $http.get(urlurdu).then(function(response) {
     var dataUrdubit = response.data;
     dataChart.push({"c" : [{"v" : "Urdubit", "f": null},{"v" : dataUrdubit.vol, "f": null}]});
     $scope.urdubit = dataUrdubit;
