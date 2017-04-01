@@ -24,17 +24,17 @@ https://api.blinktrade.com/api/v1/BRL/trades?crypto_currency=BTC
 https://api.blinktrade.com/api/v1/BRL/orderbook?crypto_currency=BTC
 
 VEF - SurBitcoin in Venezuela
-https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC
+https://api.blinktrade.com/api/v1/VEF/ticker?crypto_currency=BTC
 https://api.blinktrade.com/api/v1/VEF/trades?crypto_currency=BTC
 https://api.blinktrade.com/api/v1/VEF/orderbook?crypto_currency=BTC
 
 CLP - ChileBit in Chile
-https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC
+https://api.blinktrade.com/api/v1/CLP/ticker?crypto_currency=BTC
 https://api.blinktrade.com/api/v1/CLP/trades?crypto_currency=BTC
 https://api.blinktrade.com/api/v1/CLP/orderbook?crypto_currency=BTC
 
 PKR - UrduBit in Pakistan
-https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC
+https://api.blinktrade.com/api/v1/PKR/ticker?crypto_currency=BTC
 https://api.blinktrade.com/api/v1/PKR/trades?crypto_currency=BTC
 https://api.blinktrade.com/api/v1/PKR/orderbook?crypto_currency=BTC
 
