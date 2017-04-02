@@ -6,7 +6,7 @@ app.controller('foxbitcontroller', ['$scope','$http', function($scope, $http) {
       $scope.foxbitorders = response.data;
     });
 
-    $http.jsonp("https://api.blinktrade.com/api/v1/BRL/trades?crypto_currency=BTC&callback=JSON_CALLBACK").then(function(response) {
+    $http.get("app/services/trades_foxbit_services.php").then(function(response) {
       $scope.foxbittrades = response.data;
     });
 
