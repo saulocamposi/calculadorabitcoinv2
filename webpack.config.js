@@ -24,14 +24,14 @@ module.exports = {
         test: /bootstrap-sass\/assets\/javascripts\//,
         loader: 'imports?jQuery=jquery'
       },
-      //      {
-      // test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-      // loader: "url?limit=10000"
-      // },
-      // {
-      // test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
-      // loader: 'file'
-      // },
+      {
+       test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+       loader: "url?limit=10000"
+       },
+       {
+       test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
+       loader: 'file'
+       },
       {
         test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
         loader: 'url-loader?limit=30000&name=[name]-[hash].[ext]'
@@ -43,6 +43,6 @@ module.exports = {
   },
 
   postcss: [autoprefixer],
-  //devtool: 'sourcemap',
-  devtool: null,
+  devtool: 'sourcemap'
+  //devtool: null,
 };
