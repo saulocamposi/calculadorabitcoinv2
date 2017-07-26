@@ -11,18 +11,13 @@
     }
 
     $sql = "CREATE DATABASE myDB";
-    
+
     if(mysqli_query($connect,$sql)){
       echo "Success";
     } else {
       echo "Error insert" + mysqli_error($connect);
     };
 
-
     mysqli_close($connect);
-
-
-
-    //echo $poloniex =  file_get_contents("https://poloniex.com/public?command=returnTicker");
 
 ?>

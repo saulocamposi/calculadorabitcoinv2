@@ -22,10 +22,4 @@
       echo "Error insert \r\n" . mysqli_error($connect);
     };
 
-
-
-
-
-    //echo $poloniex =  file_get_contents("https://poloniex.com/public?command=returnTicker");
-
 ?>
