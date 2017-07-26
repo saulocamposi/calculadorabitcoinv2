@@ -11,7 +11,7 @@
     }
 
     $sql = "CREATE DATABASE myDB";
-    //$sql = "insert into cronlog (1,1)";
+    
     if(mysqli_query($connect,$sql)){
       echo "Success";
     } else {
