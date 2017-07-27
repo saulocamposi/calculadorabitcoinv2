@@ -5,7 +5,6 @@ const autoprefixer = require('autoprefixer');
 module.exports = {
 
   entry: [
-    'bootstrap-loader',
     './app/js/app.js',
   ],
   output: {
@@ -20,9 +19,6 @@ module.exports = {
       }, {
         test: /\.scss$/,
         loaders: ['style', 'css', 'postcss', 'sass']
-      }, {
-        test: /bootstrap-sass\/assets\/javascripts\//,
-        loader: 'imports?jQuery=jquery'
       },
       {
        test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
