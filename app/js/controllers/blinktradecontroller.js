@@ -4,10 +4,12 @@ app.controller('blinktradecontroller', ['$scope', '$http', 'blinktradeChartServi
 
    var dataChart = [];
 
-   var urlfox = "app/services/blinktrade_fox_services.php";
-   var urlsur = "app/services/blinktrade_sur_services.php";
-   var urlchile = "app/services/blinktrade_chile_services.php";
-   var urlurdu = "app/services/blinktrade_urdu_services.php";
+   var root_path = "backend/ws/services/";
+
+   var urlfox = root_path + "blinktrade_fox_services.php";
+   var urlsur = root_path + "blinktrade_sur_services.php";
+   var urlchile = root_path + "blinktrade_chile_services.php";
+   var urlurdu = root_path + "blinktrade_urdu_services.php";
 
 
   $http.get(urlfox).then(function(response) {

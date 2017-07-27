@@ -4,11 +4,14 @@ var mbCtrl = function($scope, $http, serviceforex) {
 
 $scope.helloforex = serviceforex;
 
-  $http.get("app/services/youtube-search.php").then(function(response) {
+  var root_path = "backend/ws/services/";
+
+
+  $http.get(root_path + "youtube-search.php").then(function(response) {
     $scope.dailydecrypt = response.data;
   });
 
-  $http.get("app/services/bitvalor_services.php").then(function(response) {
+  $http.get(root_path + "bitvalor_services.php").then(function(response) {
     $scope.bitvalor = response.data;
   });
 
@@ -16,7 +19,7 @@ $scope.helloforex = serviceforex;
     $scope.agenciaideias = response.data;
   });*/
 
-  $http.get("app/services/forex_services.php").then(function(response) {
+  $http.get( root_path + "forex_services.php").then(function(response) {
     $scope.forex = response.data;
   });
 
