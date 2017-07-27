@@ -1,4 +1,4 @@
-# CalculadoraBitcoin V2 - xcoinspread.com
+# CalculadoraBitcoin V2
 # Presentation
 
  Calculadora Bitcoin has to target show the price, volume, and data relevant from Exchanges wich provide public APIs.  Actualy the most BTC Indexers of Brazil and South America countries. We are continuously improving this project with more code and documentation. How always as open source group which is proud to code for BTC and cryptocoins. Our aim is to increase the number of the cards that represents the blocks of information displayed and through it display sections contents with a sort of informations about Bitcoin Exchanges and stock markets around the world - prices, miner difficult, arbitrage and altcoins.
