@@ -55,3 +55,10 @@ http://api.promasters.net.br/cotacao/v1/valores
 
 #### Bitfinex ###
 https://api.bitfinex.com/v1/pubticker/btcusd
+
+#### Kraken ####
+https://api.kraken.com/0/public/Ticker?pair=XBTEUR
+https://api.kraken.com/0/public/Ticker?pair=XBTUSD
+https://api.kraken.com/0/public/Ticker?pair=DASHEUR
+https://api.kraken.com/0/public/Ticker?pair=XMRXBT
+https://api.kraken.com/0/public/Ticker?pair=XMREUR
