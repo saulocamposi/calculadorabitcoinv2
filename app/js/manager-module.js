@@ -1,6 +1,2 @@
-var app = angular.module('calcbtc', ['ngRoute','googlechart','cgBusy','ngAnimate']).
-  config(['$httpProvider',function($httpProvider){
-    $httpProvider.defaults.timeout = 1000;
-  }]);
-
+var app = angular.module('calcbtc', ['ngRoute','googlechart','cgBusy','ngAnimate']);
 module.exports = app;
