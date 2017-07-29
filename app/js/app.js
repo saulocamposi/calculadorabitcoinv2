@@ -3,9 +3,10 @@ require("angular-route");
 require("angular-google-chart");
 require("angular-busy");
 require("angular-animate");
-require("./value.js");
+
 require("./manager-module.js");
-require("./services/forex.js");
+
+require("./controllers/value.js");
 require("./controllers/exchangescontroller.js");
 require("./controllers/foxbitcontroller.js");
 require("./controllers/blinktradecontroller.js");
@@ -14,6 +15,7 @@ require("./controllers/coinbrcontroller.js");
 require("./controllers/walletfoxbitcontroller.js");
 require("./controllers/bitinkacontroller.js");
 
+require("./services/forex.js");
 require("./services/exchangesChartService.js");
 require("./services/blinktradeChartService.js");
 require("./services/bitinkaChartService.js");
