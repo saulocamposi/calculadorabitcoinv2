@@ -3,8 +3,10 @@ require("angular-route");
 require("angular-google-chart");
 require("angular-busy");
 require("angular-animate");
+require("angular-translate");
 
 require("./manager-module.js");
+require("./translate-provider.js");
 
 require("./controllers/value.js");
 require("./controllers/exchangescontroller.js");
