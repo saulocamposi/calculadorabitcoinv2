@@ -1,9 +1,17 @@
 <?php
+
+  $create_db = false;
+  $message = "TABLE TICKER FLOWBTC CREATED";
+
   $sql = "CREATE TABLE ticker_flowbtc (
-          id int,
+          id int NOT NULL AUTO_INCREMENT,
           volume int ,
           min int ,
-          max int
+          max int,
+          created_at DATE,
+          PRIMARY KEY (`id`)
           )";
-  include( dirname(__FILE__) . "/create_table_db.php");
+
+  include( dirname(__FILE__) . "/pool_db.php");
+
 ?>

@@ -1,4 +1,17 @@
 <?php
-  $sql = "CREATE TABLE ticker ( hour int , transaction int )";
-  include( dirname(__FILE__) . "/create_table_db.php");
+
+  $create_db = false;
+  $message = "TABLE TICKER BITCOINTOYOU CREATED";
+
+  $sql = "CREATE TABLE ticker_bitcointoyou (
+          id INT NOT NULL AUTO_INCREMENT,
+          volume INT ,
+          min INT ,
+          max INT,
+          created_at DATE,
+          PRIMARY KEY (`id`)
+          )";
+
+  include( dirname(__FILE__) . "/pool_db.php");
+
 ?>
