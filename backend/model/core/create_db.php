@@ -1,23 +1,8 @@
 <?php
 
-    include( dirname(__FILE__) . "/connection_db.php");
-
-    $connect = mysqli_connect($servername, $user, $password);
-
-    if (!$connect) {
-      die("Connection failed: " . mysqli_connect_error() );
-    } else {
-      echo "Connection Sucess";
-    }
-
+    $create_db = true;
+    $message = "CREATE DATABASE myDB";
     $sql = "CREATE DATABASE myDB";
 
-    if(mysqli_query($connect,$sql)){
-      echo "Success";
-    } else {
-      echo "Error insert" + mysqli_error($connect);
-    };
-
-    mysqli_close($connect);
-
+    include( dirname(__FILE__) . "/pool_db.php");
 ?>
