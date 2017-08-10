@@ -5,7 +5,7 @@
   $sql = "CREATE TABLE cronlog (
           id int(11) NOT NULL AUTO_INCREMENT,
           transaction int,
-          created_at DATE,
+          created_at int,
           PRIMARY KEY (`id`)
           )";
 
