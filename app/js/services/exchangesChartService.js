@@ -6,8 +6,6 @@ var exchangesChartService = function() {
     "options": {
       "title": "Exchanges Brazil",
       "pointSize": 100,
-      "width": 600,
-      "height": 250,
       "chartArea": {
         left: 90,
         top: 40,
