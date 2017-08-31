@@ -4,16 +4,12 @@
 
     $message = "INSERTED ROW";
 
-    $time = time();
-    $transaction = 2;
-    $mysqltime = date ($time);
-
-    $sql = "INSERT INTO ticker_mtc (
-              id,
-              volume,
-              min,
-              max,
-              created_at )
+    $sql = "INSERT INTO ticker_flowbtc (
+            id,
+            volume,
+            min,
+            max,
+            created_at )
             VALUES (
               NULL,
               $ticker->vol,
