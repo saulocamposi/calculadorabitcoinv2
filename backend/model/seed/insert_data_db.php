@@ -8,9 +8,15 @@
     $transaction = 2;
     $mysqltime = date ($time);
 
-    $sql = "INSERT INTO cronlog ( id, transaction, created_at ) values ( NULL, $transaction , $mysqltime );";
+    $sql = "INSERT INTO cronlog (
+            id,
+            transaction,
+            created_at )
+            VALUES (
+              NULL,
+              $transaction,
+              $mysqltime );";
 
-    echo $sql . "\r\n";
     include( dirname( __FILE__ , 2 ) . "/core//pool_db.php");
 
 ?>
