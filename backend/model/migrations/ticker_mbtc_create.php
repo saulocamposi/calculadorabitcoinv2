@@ -1,6 +1,5 @@
 <?php
-
-  $create_db = false;
+  
   $message = "TABLE TICKERMTC CREATED";
 
   $sql = "CREATE TABLE ticker_mbtc (

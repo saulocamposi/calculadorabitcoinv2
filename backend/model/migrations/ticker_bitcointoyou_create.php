@@ -1,6 +1,5 @@
 <?php
 
-  $create_db = false;
   $message = "TABLE TICKER BITCOINTOYOU CREATED";
 
   $sql = "CREATE TABLE ticker_bitcointoyou (

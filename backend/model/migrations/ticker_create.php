@@ -1,6 +1,5 @@
 <?php
 
-  $create_db = false;
   $message = "TABLE TICKER CREATED";
 
   $sql = "CREATE TABLE ticker (

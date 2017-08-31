@@ -1,6 +1,5 @@
 <?php
 
-  $create_db = false;
   $message = "TABLE TICKER FLOWBTC CREATED";
 
   $sql = "CREATE TABLE ticker_flowbtc (

@@ -1,6 +1,5 @@
 <?php
-
-  $create_db = false;
+  
   $message = "TABLE TICKER FOXBIT CREATED";
 
   $sql = "CREATE TABLE ticker_foxbit (
