@@ -4,9 +4,6 @@
 
     $message = "INSERTED ROW";
 
-    $time = time();
-    $mysqltime = date ($time);
-
     $sql = "INSERT INTO ticker_foxbit (
             id,
             volume,
