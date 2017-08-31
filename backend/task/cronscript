@@ -1,1 +1,5 @@
 /usr/local/bin/php -q /home/[user_host]/public_html/ws_services/insert_data_db.php
+/usr/local/bin/php -q /home/[user_host]/public_html/ws_services/insert_ticker_flowbtc.php
+/usr/local/bin/php -q /home/[user_host]/public_html/ws_services/insert_ticker_foxbit.php
+/usr/local/bin/php -q /home/[user_host]/public_html/ws_services/insert_ticker_mbtc.php
+/usr/local/bin/php -q /home/[user_host]/public_html/ws_services/insert_ticker_coinbr.php
