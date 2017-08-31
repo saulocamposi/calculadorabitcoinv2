@@ -3,9 +3,8 @@
   $create_db = false;
   $message = "TABLE TICKERMTC CREATED";
 
-  $sql = "CREATE TABLE ticker_mtc (
+  $sql = "CREATE TABLE ticker_mbtc (
           id int NOT NULL AUTO_INCREMENT,
-          value int,
           volume int ,
           min int ,
           max int,
