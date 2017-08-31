@@ -4,10 +4,6 @@
 
     $message = "INSERTED ROW";
 
-    $time = time();
-    $transaction = 2;
-    $mysqltime = date ($time);
-
     $sql = "INSERT INTO ticker_mtc (
             id,
             volume,
