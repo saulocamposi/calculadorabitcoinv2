@@ -1,6 +1,5 @@
 <?php
 
-    $create_db = true;
     $message = "CREATE DATABASE myDB";
     $sql = "CREATE DATABASE myDB";
 
