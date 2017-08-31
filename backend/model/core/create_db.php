@@ -1,7 +1,7 @@
 <?php
 
-    $message = "CREATE DATABASE myDB";
-    $sql = "CREATE DATABASE myDB";
+    $message = "CREATE DATABASE exchanges";
+    $sql = "CREATE DATABASE exchanges";
 
     include( dirname(__FILE__) . "/pool_db.php");
 ?>
