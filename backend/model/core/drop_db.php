@@ -1,7 +1,7 @@
 <?php
 
-    $message = "DROP DATABASE myDB";
-    $sql = "DROP DATABASE myDB";
+    $message = "DROP DATABASE exchanges";
+    $sql = "DROP DATABASE exchanges";
 
     include( dirname(__FILE__) . "/pool_db.php");
 ?>
