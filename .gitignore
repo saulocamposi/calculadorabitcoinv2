@@ -1,4 +1,5 @@
 /backend/model/core/connection_db.php
+/backend/task/cronscript
 
 /node_modules
 /public
