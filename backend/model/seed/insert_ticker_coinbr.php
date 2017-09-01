@@ -4,7 +4,7 @@
 
     $message = "INSERTED ROW";
 
-    $sql = "INSERT INTO ticker_mtc (
+    $sql = "INSERT INTO ticker_coinbr (
             id,
             volume,
             min,
