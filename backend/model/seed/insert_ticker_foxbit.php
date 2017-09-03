@@ -6,9 +6,9 @@
 
     $sql = "INSERT INTO ticker_foxbit (
             id,
-            volume,
-            min,
-            max,
+            vol,
+            low,
+            high,
             created_at )
             VALUES (
               NULL,
