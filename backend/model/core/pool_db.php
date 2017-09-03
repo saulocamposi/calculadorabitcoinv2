@@ -19,12 +19,19 @@
 
     if($result = mysqli_query( $connect, $sql )){
       if($log){
+
         echo $message . "\r\n";
-        echo $sql . "\r\n";
+        if($sql_log) {
+          echo $sql . "\r\n";
+        }
+
       }
     } else {
       if ($log) {
-        echo $sql . "\r\n";
+        if($sql_log) {
+          echo $sql . "\r\n";
+        }
+
         echo "Error query\r\n" . mysqli_error( $connect ). "\r\n";
       }
 
