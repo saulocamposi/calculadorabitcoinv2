@@ -1,7 +1,12 @@
 <?php
 
   if($_GET['brand'] == "fox"){
-    echo $foxbit =  file_get_contents("https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC");
+
+    include( dirname( __FILE__ , 3 ) . "/model/selects/ticker_foxbit_select.php");
+
+    echo json_encode($row);
+
+    //echo $foxbit =  file_get_contents("https://api.blinktrade.com/api/v1/BRL/ticker?crypto_currency=BTC");
   }
 
   if($_GET['brand'] == "btctoyou"){
