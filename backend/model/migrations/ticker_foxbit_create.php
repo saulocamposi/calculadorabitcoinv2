@@ -4,10 +4,10 @@
 
   $sql = "CREATE TABLE ticker_foxbit (
           id int NOT NULL AUTO_INCREMENT,
-          vol int ,
-          low int ,
-          high int,
-          last int,
+          vol decimal(16,8) ,
+          low decimal(16,8) ,
+          high decimal(16,8) ,
+          last decimal(16,8) ,
           created_at DATE,
           PRIMARY KEY (`id`)
           )";

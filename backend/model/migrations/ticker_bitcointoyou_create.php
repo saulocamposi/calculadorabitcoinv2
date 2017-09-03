@@ -4,9 +4,10 @@
 
   $sql = "CREATE TABLE ticker_bitcointoyou (
           id INT NOT NULL AUTO_INCREMENT,
-          volume INT ,
-          min INT ,
-          max INT,
+          vol decimal(16,8) ,
+          low decimal(16,8) ,
+          high decimal(16,8) ,
+          last decimal(16,8) ,
           created_at DATE,
           PRIMARY KEY (`id`)
           )";

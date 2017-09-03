@@ -4,9 +4,11 @@
 
   $sql = "CREATE TABLE ticker (
           id int NOT NULL AUTO_INCREMENT,
-          volume int ,
-          min int ,
-          max int ,
+          vol decimal(16,8) ,
+          low decimal(16,8) ,
+          high decimal(16,8) ,
+          last decimal(16,8) ,
+          exchange int ,
           created_at DATE,
           PRIMARY KEY (`id`)
           )";
