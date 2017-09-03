@@ -1,12 +1,13 @@
 <?php
-  
+
   $message = "TABLE TICKER FOXBIT CREATED";
 
   $sql = "CREATE TABLE ticker_foxbit (
           id int NOT NULL AUTO_INCREMENT,
-          volume int ,
-          min int ,
-          max int,
+          vol int ,
+          low int ,
+          high int,
+          last int,
           created_at DATE,
           PRIMARY KEY (`id`)
           )";
