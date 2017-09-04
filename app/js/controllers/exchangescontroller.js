@@ -12,13 +12,13 @@ app.controller('exchangescontroller', ['$scope','$http', 'exchangesChartService'
       $scope.foxbit = datafoxbit;
     });
 
-    $http.get( root_path + "services.php?brand=mtc").then(function(response) {
-      var datamtc = response.data;
-      dataChart.push({"c" : [{"v" : "MTC", "f": null},{"v" : datamtc.last, "f": null}]});
-      $scope.mtc = datamtc;
+    $http.get( root_path + "services.php?brand=mbtc").then(function(response) {
+      var datambtc = response.data;
+      dataChart.push({"c" : [{"v" : "MTC", "f": null},{"v" : datambtc.last, "f": null}]});
+      $scope.mbtc = datambtc;
     });
 
-    $http.get( root_path + "services.php?brand=btctoyou").then(function(response) {
+    $http.get( root_path + "services.php?brand=btctoyou" ).then( function(response) {
       var databtctoyou = response.data;
       dataChart.push({"c" : [{"v" : "btctoyou", "f": null},{"v" : databtctoyou.last, "f": null}]});
       $scope.btctoyou = databtctoyou;
