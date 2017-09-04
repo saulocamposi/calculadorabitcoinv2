@@ -12,7 +12,7 @@ require("./controllers/value.js");
 require("./controllers/exchangescontroller.js");
 require("./controllers/foxbitcontroller.js");
 require("./controllers/blinktradecontroller.js");
-require("./controllers/polionexcontroller.js");
+require("./controllers/poloniexcontroller.js");
 require("./controllers/coinbrcontroller.js");
 require("./controllers/walletfoxbitcontroller.js");
 require("./controllers/bitinkacontroller.js");
