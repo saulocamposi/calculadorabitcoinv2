@@ -1,6 +1,6 @@
 <?php
 
-  $message = "ENTITY TICKER BITCOINTOYOU SELECTED";
+  $message = "ENTITY TICKER FOXBIT SELECTED";
 
   $sql = "SELECT max(id) from ticker_foxbit";
 
