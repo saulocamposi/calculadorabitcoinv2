@@ -5,15 +5,16 @@
     $message = "INSERTED ROW";
 
     $sql = "INSERT INTO ticker_flowbtc (
-            id ,
-            vol ,
-            low ,
-            high ,
-            last ,
-            created_at  )
+              id ,
+              vol ,
+              low ,
+              high ,
+              last ,
+              created_at
+            )
             VALUES (
               NULL,
-              $ticker->vol,
+              $ticker->volume,
               $ticker->low,
               $ticker->high,
               $ticker->last,
