@@ -7,15 +7,21 @@ class PoloniexTicker
 
   function __construct( $endpoint )
   {
+
     $this->endpoint = $endpoint;
+
   }
 
   function checkEndPoint() {
     try {
+
       $this->ticker = file_get_contents( $this->endpoint );
       return true;
+
     } catch ( Exception $e ) {
+
       return false;
+
     }
   }
 
@@ -44,6 +50,6 @@ $ticker = $poloniex->getTicker();
 
 print $count = $poloniex->countTickerElements($ticker);
 
-print_r( each($ticker) );
+print_r ( each($ticker) );
 
 ?>
