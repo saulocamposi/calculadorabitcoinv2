@@ -1,19 +1,26 @@
 <?php
 use PHPUnit\Framework\TestCase;
+
 /**
  *
  */
-class PoloniexUtilsApi extends TestCase
+class PoloniexUtilsApiTest extends TestCase
 {
 
+  private $endpoint  = "https://poloniex.com/public?command=returnTicker";
 
 
-  
-
-  function __construct(argument)
-  {
-
+  public function testCheckEndpoint(){
+    $this->assertEquals("https://poloniex.com/public?command=returnTicker", $this->endpoint);
   }
+
+  public function testPoloniexClass(){
+    $this->assertTrue(new PoloniexTicker());
+  }
+
+
+
+
 }
 
  ?>
