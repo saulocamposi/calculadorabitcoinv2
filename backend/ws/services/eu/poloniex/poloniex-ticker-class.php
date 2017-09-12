@@ -10,6 +10,7 @@ class PoloniexTicker
   {
 
     $this->endpoint = $endpoint;
+    $this->checkEndPoint();
 
   }
 
@@ -50,15 +51,20 @@ class PoloniexTicker
 
   }
 
+  function getTickerFields(){
+
+  }
+
 }
 
 $endpoint = "https://poloniex.com/public?command=returnTicker";
 $poloniex = new PoloniexTicker( "https://poloniex.com/public?command=returnTicker" );
 
-print $poloniex->checkEndPoint();
 $ticker = $poloniex->getTicker();
 
-print $count = $poloniex->countTickerElements( $ticker );
+$count = $poloniex->countTickerElements( $ticker );
+
+echo "Number of elements is: " . $count . "\r\n";
 
 print_r ( each( $ticker ) );
 
