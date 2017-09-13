@@ -1,76 +1,102 @@
 <?php
 
+include( dirname(__FILE__) . "/connection-class.php" );
+
 class ActiveRecord {
 
-  __construct(Connection $connection){
+  public $conn;
 
-    }
+function __construct( Connection $conn )
+{
 
-function getConnection(){
-  if ( $this->create_db ) {
-    $connect = mysqli_connect( $this->servername, $this->user, $this->password );
-  } else {
-    $connect = mysqli_connect( $this->servername, $this->user, $this->password, $this->dbname );
-  }
+  $this->conn = $conn->getConnection();
 
-  if ( !$connect ) {
-    die("Connection failed:\r\n " . mysqli_connect_error() );
-  } else {
-    if ($log) {
-      echo "Connection Sucess\r\n";
+}
+
+function getConnection()
+{
+  $this->conn->getConnection();
+}
+
+
+function dblog( $sql )
+{
+  $log = true;
+  $sql_log  = true;
+  $message = "Connection true\r\n";
+
+  if( $log ){
+    echo $message . "\r\n";
+    if( $sql_log ) {
+      echo $sql . "\r\n";
     }
   }
 }
 
-function getEntity (){
+function dblogError( $sql )
+{
+  $log = true;
+  $sql_log  = true;
 
-    if( $result = mysqli_query( $connect, $sql ) ){
-      if( $log ){
-
-        echo $message . "\r\n";
-        if( $sql_log ) {
-          echo $sql . "\r\n";
-        }
-
-      }
-    } else {
-      if ( $log ) {
-        if( $sql_log ) {
-          echo $sql . "\r\n";
-        }
-
-        echo "Error query\r\n" . mysqli_error( $connect ). "\r\n";
-      }
-
-    };
-
-
+  if ( $log ) {
+    if( $sql_log ) {
+      echo $sql . "\r\n";
+    }
+    echo "Error query\r\n" . mysqli_error( $this->conn ). "\r\n";
   }
+}
 
-  function deleteEntity(){
 
-  }
+function getEntity ()
+{
 
-  function insertEntity(){
+  $sql = "select * from ticker_mbtc";
 
-  }
+  print_r($this->conn);
 
-  function createEntity(){
 
-  }
+    if( $result = mysqli_query( $this->conn, $sql ) ){
 
-  function destroyConnection(){
-    if(mysqli_close( $connect )){
-      if($log){
-        echo "Success Close DB\r\n";
-      }
+      $this->dblog($sql);
+
+      return $result;
 
     } else {
-      if ($log) {
-        echo "Error CloseDB \r\n" . mysqli_error( $connect ). "\r\n";
-      }
+
+      $this->dblogError($sql);
+      return false;
+
     };
+  }
+
+  function persistEntity( $sql ){
+
+      if( $result = mysqli_query( $this->conn, $sql ) ){
+
+        $this->dblog($sql);
+
+        return $result;
+
+      } else {
+
+        $this->dblogError($sql);
+        return false;
+
+      };
   }
 
 }
+
+
+print $dbname . "DBNAME\r\n";
+print $user . " USER\r\n";
+print $password . " USER\r\n";
+$conn = new Connection( $servername, $dbname, $user, $password );
+
+$active = new ActiveRecord($conn);
+print_r($active->getEntity()->fetch_assoc());
+
+
+
+
 ?>
