@@ -5,23 +5,35 @@
   class Connection
   {
 
-    private $connect;
+    public $connect;
+    public $servername;
+    public $database;
+    public $user;
+    public $password;
 
-    __construct( $servername, $database, $user, $password )
+    function __construct( $servername, $database, $user, $password )
     {
-      $this->connect = getConnection( $servername, $database, $user, $password );
+      $this->servername = $servername;
+      $this->database = $database;
+      $this->user = $user;
+      $this->password = $password;
     }
 
-    function destroyConnection($connect)
+    function destroyConnection( $connect )
     {
-      mysqli_close( $connect )
+      mysqli_close( $connect );
     }
 
-    function getConnection( $servername, $database, $user, $password )
+    function getConnection()
     {
-      return mysqli_connect( $servername, $user, $password );
+       $this->connect = mysqli_connect( $this->servername, $this->user, $this->password, $this->database );
+       return $this->connect;
     }
 
   }
+
+  //$conn = new Connection( $servername, $dbname, $user, $password );
+  //print_r($conn->getConnection());
+
 
  ?>
