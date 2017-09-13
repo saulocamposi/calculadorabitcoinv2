@@ -6,6 +6,7 @@ class PoloniexTicker
   private $endpoint = "https://poloniex.com/public?command=returnTicker";
   private $ticker;
 
+
   function __construct( $endpoint /*, $daoPoloniex */)
   {
 
