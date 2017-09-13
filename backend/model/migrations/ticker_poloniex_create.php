@@ -8,6 +8,7 @@
           low decimal(16,8) ,
           high decimal(16,8) ,
           last decimal(16,8) ,
+          pair varchar(30) ,
           created_at DATE,
           PRIMARY KEY (`id`)
           )";
