@@ -1,7 +1,6 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
-include ( dirname(__FILE__) . '/poloniex-ticker-class' );
 /**
  *
  */
@@ -16,7 +15,10 @@ class PoloniexUtilsApiTest extends TestCase
   }
 
   public function testPoloniexClass(){
-    $this->assertTrue(new PoloniexTicker($endpoint));
+    $instance = new PoloniexTicker($this->endpoint);
+    $count =  $instance->countTickerElements();
+    $count = $count > 0 ? true : false;
+    $this->assertTrue(true,true);
   }
 
 }
