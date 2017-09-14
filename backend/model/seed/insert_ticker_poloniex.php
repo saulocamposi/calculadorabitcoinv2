@@ -4,7 +4,7 @@
 
     $message = "INSERTED ROW";
 
-    $sql = "INSERT INTO ticker_mbtc (
+    $sql = "INSERT INTO ticker_poloniex (
               id ,
               vol ,
               low ,
