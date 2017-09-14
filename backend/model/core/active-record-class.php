@@ -47,10 +47,8 @@ function dblogError( $sql )
 }
 
 
-function getEntity ()
+function getEntity ( $sql )
 {
-
-  $sql = "select * from ticker_mbtc";
 
   print_r($this->conn);
 
@@ -93,10 +91,16 @@ print $user . " USER\r\n";
 print $password . " USER\r\n";
 $conn = new Connection( $servername, $dbname, $user, $password );
 
-$active = new ActiveRecord($conn);
-print_r($active->getEntity()->fetch_assoc());
+$active = new ActiveRecord( $conn );
 
+$sql = "select * from ticker_mbtc";
 
+include( dirname(__FILE__, 2) . "/selects/ticker_poloniex_select.php" );
 
+echo $sql[0] . "\r\n";
+
+$sql = $sql[0];
+
+print_r( $active->getEntity( $sql )->fetch_assoc() );
 
 ?>
