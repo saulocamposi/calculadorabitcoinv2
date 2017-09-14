@@ -18,7 +18,7 @@ class PoloniexUtilsApiTest extends TestCase
     $instance = new PoloniexTicker($this->endpoint);
     $count =  $instance->countTickerElements();
     $count = $count > 0 ? true : false;
-    $this->assertTrue(true,true);
+    $this->assertTrue($count,true);
   }
 
 }
