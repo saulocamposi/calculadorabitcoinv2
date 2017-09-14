@@ -3,7 +3,7 @@
 class PoloniexTicker
 {
 
-  private $endpoint = "https://poloniex.com/public?command=returnTicker";
+  private $endpoint;
   private $ticker;
 
 
@@ -11,67 +11,64 @@ class PoloniexTicker
   {
 
     $this->endpoint = $endpoint;
-    $this->checkEndPoint();
+    $this->initialize();
 
   }
 
-  function checkEndPoint()
+  function initialize()
   {
     try {
 
-      $this->ticker = file_get_contents( $this->endpoint );
+      $this->ticker = json_decode(file_get_contents( $this->endpoint )) ;
+      echo "Get contents return ticker";
       return true;
 
     } catch ( Exception $e ) {
 
-      return false;
+      echo "Message ". $e.getMessage();
 
     }
   }
 
   function getTicker()
   {
-    return json_decode( $this->ticker );
+    return $this->ticker;
   }
 
-  function countTickerElements ( $ticker )
+  function countTickerElements()
   {
 
     $count = 0;
 
-    foreach ( $ticker as $key => $value ) {
-      $count = $count + 1;
+    if ( $this->ticker ) {
+      foreach ( $this->ticker as $key => $value ) {
+        $count = $count + 1;
+      }
     }
 
     return $count;
 
   }
 
-  function persist ( $ticker )
+  function persist()
   {
 
   }
 
-  function getTickerFields(){
+  function getTickerFields ()
+  {
 
   }
 
 }
 
+include( dirname(__FILE__, 5) . "/model/selects/ticker_poloniex_select.php" );
+
 $endpoint = "https://poloniex.com/public?command=returnTicker";
 $poloniex = new PoloniexTicker( "https://poloniex.com/public?command=returnTicker" );
 
-$ticker = $poloniex->getTicker();
+echo "Number of elements is: " . $poloniex->countTickerElements() . "\r\n";
 
-$count = $poloniex->countTickerElements( $ticker );
-
-echo "Number of elements is: " . $count . "\r\n";
-
-print_r ( each( $ticker ) );
-
-
-
-
-
+print_r (  $poloniex->getTicker()  );
 
 ?>
