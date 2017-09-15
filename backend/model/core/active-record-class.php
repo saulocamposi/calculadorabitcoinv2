@@ -85,7 +85,7 @@ function getEntity ( $sql )
 
 }
 
-
+/*
 print $dbname . "DBNAME\r\n";
 print $user . " USER\r\n";
 print $password . " USER\r\n";
@@ -102,5 +102,5 @@ echo $sql[0] . "\r\n";
 $sql = $sql[0];
 
 print_r( $active->getEntity( $sql )->fetch_assoc() );
-
+*/
 ?>
