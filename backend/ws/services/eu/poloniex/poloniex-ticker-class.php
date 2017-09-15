@@ -1,19 +1,16 @@
 <?php
 
-include (dirname(__FILE__,5) . "/model/core/active-record-class.php");
-
+include (dirname(__FILE__, 5 ) . "/model/core/active-record-class.php");
 
 class PoloniexTicker
 {
-
   private $endpoint;
   private $ticker;
   private $activeRecord;
 
-
-  function __construct( $endpoint /*, $daoPoloniex */)
+  function __construct( $endpoint, $activeRecord )
   {
-    $this->$activeRecord = new ActiveRecord();
+    $this->activeRecord = $activeRecord;
     $this->endpoint = $endpoint;
     $this->initialize();
   }
@@ -23,7 +20,9 @@ class PoloniexTicker
     try {
 
       $this->ticker = json_decode(file_get_contents( $this->endpoint )) ;
+
       echo "Get contents return ticker";
+
       return true;
 
     } catch ( Exception $e ) {
@@ -55,7 +54,27 @@ class PoloniexTicker
 
   function postTicker()
   {
-    //$this->ticker
+    foreach ( $this->ticker as $key => $value ) {
+
+      $sql = "INSERT INTO ticker_poloniex (
+                id ,
+                vol ,
+                low ,
+                high ,
+                last ,
+                pair ,
+                created_at
+              )
+              VALUES (
+                NULL,
+                $value->baseVolume,
+                $value->lowestAsk,
+                $value->highestBid,
+                $value->last,"
+                . "'" . $key . "'" . ",
+                null );";
+      $this->activeRecord->persistEntity($sql);
+    }
   }
 
   function getTickerFields ()
@@ -64,14 +83,4 @@ class PoloniexTicker
   }
 
 }
-
-//include( dirname(__FILE__, 5) . "/model/selects/ticker_poloniex_select.php" );
-
-//$endpoint = "https://poloniex.com/public?command=returnTicker";
-//$poloniex = new PoloniexTicker( "https://poloniex.com/public?command=returnTicker" );
-
-//echo "Number of elements is: " . $poloniex->countTickerElements() . "\r\n";
-
-//print_r (  $poloniex->getTicker()  );
-
 ?>
