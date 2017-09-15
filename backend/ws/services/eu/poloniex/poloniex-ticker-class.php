@@ -1,18 +1,21 @@
 <?php
 
+include (dirname(__FILE__,5) . "/model/core/active-record-class.php");
+
+
 class PoloniexTicker
 {
 
   private $endpoint;
   private $ticker;
+  private $activeRecord;
 
 
   function __construct( $endpoint /*, $daoPoloniex */)
   {
-
+    $this->$activeRecord = new ActiveRecord();
     $this->endpoint = $endpoint;
     $this->initialize();
-
   }
 
   function initialize()
@@ -50,9 +53,9 @@ class PoloniexTicker
 
   }
 
-  function persist()
+  function postTicker()
   {
-
+    //$this->ticker
   }
 
   function getTickerFields ()
