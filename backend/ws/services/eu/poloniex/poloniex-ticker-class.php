@@ -72,7 +72,7 @@ class PoloniexTicker
                 $value->highestBid,
                 $value->last,"
                 . "'" . $key . "'" . ", '" .
-                date("Y-m-d") . "' );";
+                date("Y-m-d H:i:s") . "' );";
 
       $this->activeRecord->persistEntity($sql);
     }
