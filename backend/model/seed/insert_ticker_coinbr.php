@@ -18,7 +18,7 @@
               $ticker->low,
               $ticker->high,
               $ticker->last,
-              null );";
+              '" .  date("Y-m-d H:i:s") . "' );";
 
     include( dirname( __FILE__ , 2 ) . "/core//pool_db.php");
 

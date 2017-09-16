@@ -18,6 +18,6 @@
               $ticker->high,
               $ticker->last,
               $ticker->pair,
-              null );";
+              '" .  date("Y-m-d H:i:s") . "' );";
 
 ?>
