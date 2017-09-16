@@ -1,6 +1,6 @@
 <?php
 
-include (dirname(__FILE__, 5 ) . "/model/core/active-record-class.php");
+include (dirname(__FILE__) . "/poloniex-ticker-class.php");
 
 $endpoint = "https://poloniex.com/public?command=returnTicker";
 $conn = new Connection( $servername, $dbname, $user, $password );
