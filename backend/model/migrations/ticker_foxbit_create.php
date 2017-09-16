@@ -8,7 +8,7 @@
           low decimal(16,8) ,
           high decimal(16,8) ,
           last decimal(16,8) ,
-          created_at DATE,
+          created_at DATETIME,
           PRIMARY KEY (`id`)
           )";
 
