@@ -71,16 +71,19 @@ class PoloniexTicker
                 $value->lowestAsk,
                 $value->highestBid,
                 $value->last,"
-                . "'" . $key . "'" . ",
-                null );";
+                . "'" . $key . "'" . ", '" .
+                date("Y-m-d") . "' );";
+
       $this->activeRecord->persistEntity($sql);
     }
   }
 
-  function getTickerFields ()
+  function getTicketByPair($pair)
   {
 
   }
+
+
 
 }
 ?>
