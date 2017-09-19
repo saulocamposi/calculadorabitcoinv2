@@ -21,7 +21,7 @@ class PoloniexTicker
 
       $this->ticker = json_decode(file_get_contents( $this->endpoint )) ;
 
-      echo "Get contents return ticker";
+      //echo "Get contents return ticker";
 
       return true;
 
@@ -83,7 +83,18 @@ class PoloniexTicker
 
   }
 
+  function getLastTicker(){
+    $sql = array();
+    $sql[0] = "SELECT max(id) from ticker_poloniex";
+    $max = $this->activeRecord->getEntity( $sql[0] );
+    $sql[1] = "SELECT id, vol, low, high, last, pair, created_at from ticker_poloniex where id = " . $max['max(id)'];
+    return $this->activeRecord->getEntity($sql[1]);
+  }
 
+  function getAllLastMinuteTicker(){
+    $query = "SELECT * FROM ticker_poloniex where created_at in (SELECT max(created_at) from ticker_poloniex)";
+    return $this->activeRecord->getAll($query);
+  }
 
 }
 ?>
