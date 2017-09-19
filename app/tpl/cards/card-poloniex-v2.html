@@ -1,0 +1,43 @@
+<div class="panel panel-default panel-accent-blue" ng-controller="poloniexcontrollerv2">
+  <div class="panel-heading">
+    <span>Poloniex Exchange - Mercado de Altcoins</span>
+  </div>
+  <table class="table table-striped">
+
+    <tr>
+      <th>
+        Moeda
+      </th>
+      <th class="hidden-xs hidden-md">
+        Conversão
+      </th>
+      <th>
+        Volume
+      </th>
+      <th class="hidden-xs hidden-md">
+        LastTrade
+      </th>
+      <th>
+        Preço
+      </th>
+    </tr>
+    <tr ng-repeat="ticker in tickerpoloniex">
+      <td>
+        {{ticker[5]}}
+      </td>
+      <td>{{ticker[0]}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{ticker[1]}}
+      </td>
+
+      <td class="hidden-xs hidden-md">
+        {{ticker[4]}}
+      </td>
+      <td>
+        {{ticker[4]}}
+      </td>
+
+    </tr>
+  </table>
+</div>
