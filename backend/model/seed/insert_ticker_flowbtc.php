@@ -2,6 +2,8 @@
 
     print_r($ticker);
 
+    $create_db = false;
+    $log = false;
     $message = "INSERTED ROW";
 
     $sql = "INSERT INTO ticker_flowbtc (

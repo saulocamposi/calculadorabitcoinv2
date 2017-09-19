@@ -2,6 +2,9 @@
 
     print_r($ticker);
 
+    $create_db = false;
+    $log = false;
+    $sql_log = false;
     $message = "INSERTED ROW";
 
     $sql = "INSERT INTO ticker_bitcointoyou (
