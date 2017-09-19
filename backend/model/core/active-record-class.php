@@ -50,14 +50,12 @@ function dblogError( $sql )
 function getEntity ( $sql )
 {
 
-  print_r($this->conn);
-
-
     if( $result = mysqli_query( $this->conn, $sql ) ){
 
       $this->dblog($sql);
 
-      return $result;
+      return $result->fetch_assoc();
+      //return $result->fetch_array();
 
     } else {
 
@@ -66,6 +64,21 @@ function getEntity ( $sql )
 
     };
   }
+
+  function getAll ( $sql )
+  {
+
+      if( $result = mysqli_query( $this->conn, $sql ) ){
+
+        return mysqli_fetch_all($result);
+
+      } else {
+
+        $this->dblogError($sql);
+        return false;
+
+      };
+    }
 
   function persistEntity( $sql ){
 
