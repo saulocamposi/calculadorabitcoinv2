@@ -8,5 +8,10 @@ $activeRecord = new ActiveRecord($conn);
 $poloniex = new PoloniexTicker($endpoint, $activeRecord);
 //$ticker = $poloniex->getLastTicker();
 $ticker = $poloniex->getAllLastMinuteTicker();
-print_r($ticker);
+
+$ticker = json_encode($ticker);
+
+echo $ticker;
+
+//print_r($ticker);
 ?>
