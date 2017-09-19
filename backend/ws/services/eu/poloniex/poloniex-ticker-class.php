@@ -96,5 +96,13 @@ class PoloniexTicker
     return $this->activeRecord->getAll($query);
   }
 
+  function getAllBTCByVolumeTicker(){
+    $query = "SELECT * FROM exchanges.ticker_poloniex
+              where created_at in (SELECT max(created_at) from ticker_poloniex)
+              AND pair like 'BTC_%'
+              order by vol DESC;";
+    return $this->activeRecord->getAll($query);
+  }
+
 }
 ?>
