@@ -1,5 +1,9 @@
 <?php
 
+  $create_db = false;
+  $log = false;
+
+
   $message = "ENTITY TICKER FLOWBTC SELECTED";
 
   $sql = "SELECT max(id) from ticker_flowbtc";

@@ -1,5 +1,8 @@
 <?php
 
+  $create_db = false;
+  $log = false;
+
   $message = "ENTITY TICKER FOXBIT SELECTED";
 
   $sql = "SELECT max(id) from ticker_foxbit";

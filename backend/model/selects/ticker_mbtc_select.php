@@ -1,6 +1,9 @@
 <?php
 
+
+  $create_db = false;
   $message = "ENTITY TICKER MBTC SELECTED";
+  $log = false;
 
   $sql = "SELECT max(id) from ticker_mbtc";
 
