@@ -97,7 +97,7 @@ class PoloniexTicker
   }
 
   function getAllBTCByVolumeTicker(){
-    $query = "SELECT * FROM exchanges.ticker_poloniex
+    $query = "SELECT * FROM ticker_poloniex
               where created_at in (SELECT max(created_at) from ticker_poloniex)
               AND pair like 'BTC_%'
               order by vol DESC;";
