@@ -10,7 +10,6 @@ app.controller('poloniexcontrollerv2', ['$scope','$http', /*'polionexChartServic
     $http.get(root_path + "poloniex-task-select.php").then(function(response) {
       var ticker = response.data;
       $scope.tickerpoloniex = ticker;
-      console.log(ticker);
     });
 
   }]);
