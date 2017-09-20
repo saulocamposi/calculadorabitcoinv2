@@ -70,8 +70,11 @@ function getEntity ( $sql )
 
       if( $result = mysqli_query( $this->conn, $sql ) ){
 
-        return mysqli_fetch_all($result);
-
+        while($row = mysqli_fetch_assoc($result)) {
+            $arr[] = $row;
+        }
+        return $arr;
+        //return $result->fetch_array();
       } else {
 
         $this->dblogError($sql);
