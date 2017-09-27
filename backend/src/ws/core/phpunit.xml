@@ -1,0 +1,2 @@
+<phpunit bootstrap="ws-client-class.php">
+</phpunit>
