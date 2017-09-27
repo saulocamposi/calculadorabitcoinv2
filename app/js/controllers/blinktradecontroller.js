@@ -4,7 +4,7 @@ app.controller('blinktradecontroller', ['$scope', '$http', 'blinktradeChartServi
 
    var dataChart = [];
 
-   var root_path = "backend/src/ws/services/";
+   var root_path = "backend/src/ws/services/blinktrade/";
 
    var urlfox = root_path + "blinktrade_fox_services.php";
    var urlsur = root_path + "blinktrade_sur_services.php";
