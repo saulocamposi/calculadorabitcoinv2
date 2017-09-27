@@ -4,7 +4,7 @@ var mbCtrl = function($scope, $http, serviceforex) {
 
 $scope.helloforex = serviceforex;
 
-  var root_path = "backend/ws/services/";
+  var root_path = "backend/src/ws/services/";
 
   $http.get(root_path + "bitvalor_services.php").then(function(response) {
     $scope.bitvalor = response.data;
