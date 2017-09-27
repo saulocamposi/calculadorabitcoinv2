@@ -1,5 +1,12 @@
 {
   "require-dev": {
     "phpunit/phpunit": "^6.2"
+  },
+  "autoload" : {
+    "classmap" : [
+      "src/model/core",
+      "src/ws/services/eu/poloniex",
+      "src/ws/core"
+    ]
   }
 }
