@@ -22,12 +22,12 @@ class WsUtilsTest extends TestCase
 
   function testEndPointIsValid(){
     $remotenode = $this->instance->endPointIsValid();
-    $this->assertTrue(true, $remotenode);
+    $this->assertTrue($remotenode, true);
   }
 
   function testIsJson(){
     $remotenode = $this->instance->isJson();
-    $this->assertTrue(true, $remotenode);
+    $this->assertTrue($remotenode, true);
   }
 
 
