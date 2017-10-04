@@ -4,7 +4,7 @@ app.controller('poloniexcontroller', ['$scope','$http', 'polionexChartService', 
 
     var dataChart = [];
 
-    var root_path = "backend/src/ws/services/poloniex/";
+    var root_path = "backend/src/ws/services/poloniex/v1/";
 
 
     $http.get(root_path + "doge_poloniex_services.php").then(function(response) {
