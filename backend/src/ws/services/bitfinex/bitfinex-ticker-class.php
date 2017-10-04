@@ -1,25 +1,20 @@
 <?php
 
-include (dirname(__FILE__, 5 ) . "/model/core/active-record-class.php");
+include (dirname(__FILE__, 4 ) . "/model/core/active-record-class.php");
 
-class BitFinexTicker
+class BitfinexTicker
 {
-  private $endpoint;
   private $ticker;
   private $activeRecord;
 
-  function __construct( $endpoint, $activeRecord )
+  function __construct( $activeRecord )
   {
     $this->activeRecord = $activeRecord;
-    $this->endpoint = $endpoint;
-    $this->initialize();
   }
 
   function initialize()
   {
     try {
-
-      $this->ticker = json_decode(file_get_contents( $this->endpoint )) ;
 
       return true;
 
@@ -30,10 +25,51 @@ class BitFinexTicker
     }
   }
 
-  function getTicker()
+  function getSymbols( $endpoint ){
+
+    $symbols = [];
+
+    try {
+      $symbols = json_decode(file_get_contents( $endpoint )) ;
+
+    } catch ( Exception $e ) {
+      echo "Message ". $e.getMessage();
+    }
+
+    return $symbols;
+
+  }
+
+  function getTicker( $endpoint )
   {
+    $this->ticker = json_decode(file_get_contents( $endpoint )) ;
     return $this->ticker;
   }
+
+  function getAllTickersApi($symbolsEndpoint, $baseEndpoint)
+  {
+
+    $ticker = [];
+
+    $symbols = $this->getSymbols($symbolsEndpoint);
+
+    foreach ($symbols as $symbol) {
+      $endpoint = $baseEndpoint . $symbol;
+      //$nodeSymbol = array($symbol);
+      $nodeTicker = array($this->getTicker( $endpoint ));
+      $ticker[$symbol] = $nodeTicker;
+      sleep(1);
+    }
+
+    return $ticker;
+  }
+
+  function getTickerBySymbol($symbol){
+
+  }
+
+
+
 
   function countTickerElements()
   {
@@ -79,13 +115,7 @@ class BitFinexTicker
     }
   }
 
-  function getSymbols(){
 
-  }
-
-  function getTicketBySymbol($symbol){
-
-  }
 
   function getLastTicker(){
     $sql = array();
