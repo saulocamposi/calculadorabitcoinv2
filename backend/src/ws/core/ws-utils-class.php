@@ -25,7 +25,5 @@ class WsUtils
     return true;
   }
 
-
-
 }
- ?>
+?>
