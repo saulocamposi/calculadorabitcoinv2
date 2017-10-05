@@ -12,16 +12,23 @@ class PoloniexTicker
   {
     $this->activeRecord = $activeRecord;
     $this->endpoint = $endpoint;
-    $this->initialize();
   }
 
   function initialize()
   {
     try {
+      echo "TODO initialize";
+    } catch ( Exception $e ) {
+      echo "Message ". $e.getMessage();
+    }
+  }
+
+  function getTicker()
+  {
+
+    try {
 
       $this->ticker = json_decode(file_get_contents( $this->endpoint )) ;
-
-      //echo "Get contents return ticker";
 
       return true;
 
@@ -30,11 +37,7 @@ class PoloniexTicker
       echo "Message ". $e.getMessage();
 
     }
-  }
 
-  function getTicker()
-  {
-    return $this->ticker;
   }
 
   function countTickerElements()
@@ -52,8 +55,15 @@ class PoloniexTicker
 
   }
 
+  function getTicketByPair($pair)
+  {
+
+  }
+
   function postTicker()
   {
+    $this->getTicker();
+
     foreach ( $this->ticker as $key => $value ) {
 
       $sql = "INSERT INTO ticker_poloniex (
@@ -76,11 +86,6 @@ class PoloniexTicker
 
       $this->activeRecord->persistEntity($sql);
     }
-  }
-
-  function getTicketByPair($pair)
-  {
-
   }
 
   function getLastTicker(){
