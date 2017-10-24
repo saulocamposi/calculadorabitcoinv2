@@ -8,7 +8,7 @@ class Dao extends Dao
   private $activeRecord;
   private $sql;
 
-  function __construct($activeRecord, $sql)
+  function __construct( $activeRecord, $sql )
   {
     $this->activeRecord = $activeRecord;
     $this->sql = $sql;
@@ -16,20 +16,20 @@ class Dao extends Dao
 
   function postTicker( $sql )
   {
-    $this->activeRecord->persistEntity($sql);
+    $this->activeRecord->persistEntity( $sql );
   }
 
   function getLastTicker( $sql ){
     $max = $this->activeRecord->getEntity( $sql[0] );
-    return $this->activeRecord->getEntity($sql[1]);
+    return $this->activeRecord->getEntity( $sql[1] );
   }
 
   function getAllLastMinuteTicker( $sql ){
-    return $this->activeRecord->getAll($query);
+    return $this->activeRecord->getAll( $sql );
   }
 
   function getAllBTCByVolumeTicker( $sql ){
-    return $this->activeRecord->getAll($query);
+    return $this->activeRecord->getAll( $sql );
   }
 
 }
