@@ -19,8 +19,19 @@ $sql = "INSERT INTO ticker_poloniex (
           date("Y-m-d H:i:s") . "' );";
 
 
-$sql[0] = "SELECT max(id) from ticker_poloniex";
-$sql[1] = "SELECT id, vol, low, high, last, pair, created_at FROM ticker_poloniex WHERE id = " . $max['max(id)'];
+$sql[0] = "SELECT max(id) FROM ticker_poloniex";
+
+$sql[1] = "SELECT id,
+                  vol,
+                  low,
+                  high,
+                  last,
+                  pair,
+                  created_at
+          FROM
+          ticker_poloniex
+          WHERE
+          id = " . $max['max(id)'];
 
 $query = "SELECT * FROM ticker_poloniex WHERE created_at IN (SELECT max(created_at) FROM ticker_poloniex)";
 
