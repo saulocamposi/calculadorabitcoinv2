@@ -3,7 +3,10 @@
 /**
  *
  */
-class Dao extends Dao
+
+include ( dirname( __FILE__ ) . "/dao-interface.php" );
+
+class Dao implements DaoInterface
 {
   private $activeRecord;
   private $sql;
