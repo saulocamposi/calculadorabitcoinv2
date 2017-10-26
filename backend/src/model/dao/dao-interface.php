@@ -3,7 +3,7 @@
 /**
  *
  */
-interface Dao
+interface DaoInterface
 {
   # code...
 }
