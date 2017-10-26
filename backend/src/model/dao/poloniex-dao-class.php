@@ -3,7 +3,10 @@
 /**
  *
  */
-class PoloniexDao implements Dao
+
+ include ( dirname( __FILE__ ) . "/dao-class.php" );
+
+class PoloniexDao
 {
   private $activeRecord;
 
