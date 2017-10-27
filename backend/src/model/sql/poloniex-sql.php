@@ -6,7 +6,7 @@ $highestBid = 0;
 $last = 0;
 $key = 0;
 
-$sql = "INSERT INTO ticker_poloniex (
+$postTicker = "INSERT INTO ticker_poloniex (
           id ,
           vol ,
           low ,
@@ -24,15 +24,11 @@ $sql = "INSERT INTO ticker_poloniex (
           " . $key .  "," .
           date("Y-m-d H:i:s") . "' );";
 
+$lastId = "SELECT max(id) FROM ticker_poloniex";
 
+$max['max(id)'] = $lastId;
 
-//$sql = "INSERT INTO "
-
-$sql[0] = "SELECT max(id) FROM ticker_poloniex";
-
-$max['max(id)'] = 0;
-
-$sql[1] = "SELECT id,
+$lastTicker = "SELECT id,
                   vol,
                   low,
                   high,
@@ -44,12 +40,16 @@ $sql[1] = "SELECT id,
           WHERE
           id = " . $max['max(id)'];
 
+$all = "SELECT * FROM ticker_poloniex
+          WHERE created_at IN (SELECT max(created_at) FROM ticker_poloniex)";
 
-$query = "SELECT * FROM ticker_poloniex WHERE created_at IN (SELECT max(created_at) FROM ticker_poloniex)";
-
-$query = "SELECT * FROM ticker_poloniex
+$allByVolume = "SELECT * FROM ticker_poloniex
           WHERE created_at IN (SELECT max(created_at) FROM ticker_poloniex)
           AND pair LIKE 'BTC_%'
           ORDER BY vol DESC;";
+
+$bootstrap['sql']['allByVolume'] = $allByVolume;
+$bootstrap['sql']['postTicker'] = $postTicker;
+
 
 ?>
