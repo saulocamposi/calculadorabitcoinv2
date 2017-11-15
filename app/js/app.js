@@ -10,6 +10,7 @@ require("./translate-provider.js");
 
 require("./controllers/value.js");
 require("./controllers/exchangescontroller.js");
+require("./controllers/bitvalorcontroller.js");
 require("./controllers/foxbitcontroller.js");
 require("./controllers/blinktradecontroller.js");
 require("./controllers/poloniexcontroller.js");
