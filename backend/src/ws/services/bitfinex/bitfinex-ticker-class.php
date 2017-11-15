@@ -53,16 +53,26 @@ class BitfinexTicker
 
     $symbols = $this->getSymbols($symbolsEndpoint);
 
+    $start = microtime(true);
+
     foreach ($symbols as $symbol) {
       $endpoint = $baseEndpoint . $symbol;
       //$nodeSymbol = array($symbol);
       $nodeTicker = array($this->getTicker( $endpoint ));
-      $ticker[$symbol] = $nodeTicker;
+
+      print_r($nodeTicker);
+      //$ticker[$symbol] = $nodeTicker;
       sleep(1);
     }
 
-    return $ticker;
-  }
+    $time_elapsed_secs = microtime(true) - $start;
+
+    print $time_elapsed_secs;
+
+
+    //|return $ticker;
+    //return $endpoint;
+   }
 
   function getTickerBySymbol($symbol){
 
