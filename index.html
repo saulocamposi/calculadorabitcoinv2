@@ -7,8 +7,8 @@
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Portal com preços dos Bitcoins vendidos pelas Exchanges no Brasil e tambem com Calculadora para converter o dinheiro em Real brasileiro (BRL) a e Bitcoin (BTC).">
-  <meta name="keywords" content="Bitcoin,Altcoin,Calculadora,open-source,Angular,JavaScript,API">
+  <meta name="description" content="Acompanhe o preço do bitcoin em todas as Exchanges Brasileiras com Calculadora para converter (BRL) em Bitcoin (BTC).">
+  <meta name="keywords" content="Bitcoin, Altcoin, Calculadora Bitcoin, API, Exchanges, bitvalor, brxbt, indice, bitcoin, custa, preco, preço, valor, brasil, exchange, bolsa, compra, venda, volume, melhor, relatorio, relatório, p2p, blockchain, api, widget, rating, mercado bitcoin, foxbit, flowbtc, bitcointoyou, negociecoins, bitinvest, basebit">
   <meta name="author" content="Saulo Campos">
   <script src="public/assets/app.js" charset="utf-8"></script>
 </head>
@@ -22,45 +22,11 @@
     </div>
 
     <div class="row">
-      <div class="col-lg-6">
-        <ng-include src="'app/tpl/cards/graphs/card-graph-exchanges.html'"></ng-include>
-        <ng-include src="'app/tpl/cards/card-exchanges.html'"></ng-include>
-
-
-        <ng-include src="'app/tpl/cards/graphs/card-graph-blinktrade.html'"></ng-include>
-        <ng-include src="'app/tpl/cards/card-blinktrade.html'"></ng-include>
-
-<!-- XXX: <ng-include src="'app/tpl/cards/graphs/card-graph-polionex.html'"></ng-include> -->
-
-
-<!-- XXX:  <ng-include src="'app/tpl/cards/graphs/card-graph-bitinka.html'"></ng-include>-->
-        <!-- XXX:  <ng-include src="'app/tpl/cards/card-bitinka.html'"></ng-include>-->
-        <ng-include src="'app/tpl/cards/card-trades-foxbit.html'"></ng-include>
-        <!-- XXX:  <ng-include src="'app/tpl/cards/card-agenciaideias.html'"></ng-include>-->
-      </div>
-
-      <div class="col-lg-6">
-        <ng-include src="'app/tpl/calc/main-calculator.html'"></ng-include>
-      <!-- XXX:  <ng-include src="'app/tpl/cards/card-tradingview.html'"></ng-include> -->
-
-        <ng-include src="'app/tpl/cards/card-bitvalor.html'"></ng-include>
-        <ng-include src="'app/tpl/cards/card-btcvarejo.html'"></ng-include>
-        <ng-include src="'app/tpl/cards/card-polionex.html'"></ng-include>
-        <ng-include src="'app/tpl/cards/card-poloniex-v2.html'"></ng-include>
-
-
-        <!-- BUG:
-        <ng-include src="'app/tpl/cards/card-foxbitwallet.html'"></ng-include>
-        <ng-include src="'app/tpl/cards/card-orderbook-foxbit.html'"></ng-include>-->
-
-        <!-- XXX:  <ng-include src="'app/tpl/cards/card-daily-decrypt.html'"></ng-include>-->
-
-      </div>
+      <ng-include src="'app/tpl/cards.html'"></ng-include>
     </div>
-  </div>
-
-  <div class="footer">
-    <ng-include src="'app/tpl/footer.html'"></ng-include>
+    <div class="row">
+        <ng-include src="'app/tpl/footer.html'"></ng-include>
+    </div>
   </div>
 
   <script>
