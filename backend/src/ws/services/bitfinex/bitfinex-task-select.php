@@ -15,8 +15,11 @@ $bitfinex = new BitfinexTicker($activeRecord);
 //print_r($bitfinex->getTicker($end));
 
 
+//$a = $bitfinex->getAllTickersApi($symbolsEndpoint, $baseEndpoint);
+$a = $bitfinex->getSymbols($symbolsEndpoint);
+
 $a = $bitfinex->getAllTickersApi($symbolsEndpoint, $baseEndpoint);
-print_r($a);
+//print_r($a);
 //$ticker = $bitfinex->getAllBTCByVolumeTicker();
 //$ticker = json_encode($ticker);
 
