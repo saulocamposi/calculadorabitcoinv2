@@ -1,8 +1,8 @@
 var app = require('../manager-module.js');
 
-var mbCtrl = function($scope, $http, serviceforex) {
+var mbCtrl = function($scope, $http, foxbitservice) {
 
-$scope.helloforex = serviceforex;
+$scope.foxbitservice = foxbitservice;
 
 /*
   $http.get(root_path + "youtube-search.php").then(function(response) {
@@ -17,18 +17,18 @@ $scope.helloforex = serviceforex;
     $scope.forex = response.data;
   });
 */
-  //$scope.averageBTC = function(){
+  $scope.averageBTC = function(){
   //{{}}(brlref + mtc.ticker.last + foxbit.last + btctoyou.ticker.last + negociecoins.last) / 4
-  /*numbersofexchange = 10;
-    foxbitlast = $scope.foxbit.last >= 0 ? $scope.foxbit.last : 0 ;
-    mtclast = $scope.mtc.last >= 0 ? $scope.mtc.last : 0 ;
-    btctoyoulast = $scope.btctoyou.ticker.last >= 0 ? $scope.btctoyou.ticker.last : 0 ;
-    negociecoinslast  = $scope.negociecoins.last >= 0 ? $scope.negociecoins.last : 0 ;
-    sumof = foxbitlast + mtclast + btctoyoulast + negociecoinslast;
-    $scope.brlref =  sumof / 10;
-*/
-
-//}
+    numbersofexchange = 10;
+    //foxbitlast = $scope.foxbit.last >= 0 ? $scope.foxbit.last : 0 ;
+    //mtclast = $scope.mtc.last >= 0 ? $scope.mtc.last : 0 ;
+    //btctoyoulast = $scope.btctoyou.ticker.last >= 0 ? $scope.btctoyou.ticker.last : 0 ;
+    //negociecoinslast  = $scope.negociecoins.last >= 0 ? $scope.negociecoins.last : 0 ;
+    //sumof = foxbitlast + mtclast + btctoyoulast + negociecoinslast;
+    //$scope.brlref =  sumof / 10;
+    console.log($scope);
+    $scope.brlref = 10;
+}
 
   $scope.viewCalculator = function(value) {
     $scope.viewCalc = value;
