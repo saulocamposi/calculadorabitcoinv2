@@ -5,39 +5,33 @@
 
   <table class="table table-striped">
 
-    <tr>
-      <th>
-        Moeda
-      </th>
-      <th class="hidden-xs hidden-md">
-        Conversão
-      </th>
-      <th>
-        Volume
-      </th>
-      <th class="hidden-xs hidden-md">
-        LastTrade
-      </th>
-      <th>
-        Preço
-      </th>
-    </tr>
+      <tr>
+        <th class="col-xs-3 col-md-3">Moeda</th>
+        <th class="col-xs-3 col-md-3 hidden-xs hidden-md">Conversão</th>
+        <th class="col-xs-3 col-md-3">Volume</th>
+        <th class="col-xs-3 col-md-3 hidden-xs hidden-md">LastTrade</th>
+        <th>Preço</th>
+      </tr>
+
+
+
     <tr ng-repeat="ticker in tickerpoloniex">
-      <td>
+      <td class="col-xs-3 col-md-3">
         {{ticker.pair}}
       </td>
-      <td>BTC
+      <td class="col-xs-3 col-md-3 hidden-xs hidden-md">BTC
       </td>
-      <td class="hidden-xs hidden-md">
+      <td class="col-xs-3 col-md-3">
         {{ticker.vol}}
       </td>
-      <td class="hidden-xs hidden-md">
+      <td class="col-xs-3 col-md-3 hidden-xs hidden-md">
         {{ticker.last}}
       </td>
-      <td>
+      <td class="col-xs-3 col-md-3">
         {{ticker.high}}
       </td>
-
     </tr>
+
+
   </table>
 </div>
