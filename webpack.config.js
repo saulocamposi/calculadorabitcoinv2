@@ -31,9 +31,7 @@ module.exports = {
       {
         test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
         loader: 'url-loader?limit=30000&name=[name]-[hash].[ext]'
-      }
-
-      // Bootstrap 3
+      }  
 
     ],
   },
