@@ -5,7 +5,10 @@ require("angular-busy");
 require("angular-animate");
 require("angular-translate");
 
+
+require("./controllers/value.js");
 require("./manager-module.js");
+require("./menu-routes.js");
 require("./translate-provider.js");
 
 require("./controllers/exchangescontroller.js");
@@ -17,7 +20,7 @@ require("./controllers/poloniexcontrollerv2.js");
 require("./controllers/coinbrcontroller.js");
 require("./controllers/walletfoxbitcontroller.js");
 require("./controllers/bitinkacontroller.js");
-require("./controllers/value.js");
+
 
 require("./services/forex.js");
 require("./services/exchangesChartService.js");
