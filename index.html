@@ -2,6 +2,7 @@
 <html ng-app="calcbtc">
 
 <head>
+  <base href="/">
   <meta charset="utf-8">
   <title>Calculadora Bitcoin</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -20,11 +21,16 @@
       <ng-include src="'app/tpl/nav/nav.html'"></ng-include>
     </div>
 
+
+
     <div class="row">
-      <ng-include src="'app/tpl/cards.html'"></ng-include>
+<!-- XXX: Routes space       <ng-include src="'app/tpl/pages/cards.html'"></ng-include>-->
+<ng-view></ng-view>
     </div>
+
+
     <div class="row">
-        <ng-include src="'app/tpl/footer.html'"></ng-include>
+        <ng-include src="'app/tpl/pages/footer.html'"></ng-include>
     </div>
   </div>
 
