@@ -9,26 +9,7 @@ $scope.foxbitservice = foxbitservice;
     $scope.dailydecrypt = response.data;
   });
 
-  $http.get("services/agenciaideias_services.php").then(function(response) {
-    $scope.agenciaideias = response.data;
-  });
-
-  $http.get( root_path + "forex_services.php").then(function(response) {
-    $scope.forex = response.data;
-  });
 */
-  $scope.averageBTC = function(){
-  //{{}}(brlref + mtc.ticker.last + foxbit.last + btctoyou.ticker.last + negociecoins.last) / 4
-    numbersofexchange = 10;
-    //foxbitlast = $scope.foxbit.last >= 0 ? $scope.foxbit.last : 0 ;
-    //mtclast = $scope.mtc.last >= 0 ? $scope.mtc.last : 0 ;
-    //btctoyoulast = $scope.btctoyou.ticker.last >= 0 ? $scope.btctoyou.ticker.last : 0 ;
-    //negociecoinslast  = $scope.negociecoins.last >= 0 ? $scope.negociecoins.last : 0 ;
-    //sumof = foxbitlast + mtclast + btctoyoulast + negociecoinslast;
-    //$scope.brlref =  sumof / 10;
-    console.log($scope);
-    $scope.brlref = 10;
-}
 
   $scope.viewCalculator = function(value) {
     $scope.viewCalc = value;
