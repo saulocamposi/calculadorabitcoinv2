@@ -1,0 +1,38 @@
+<div class="input-group">
+  <span class="input-group-addon" id="lbl-btc-calc-base">BTC</span>
+  <input class="form-control"
+         type="number"
+         name="brlrefname"
+         aria-label="lbl-btc-calc-base"
+         ng-model="brlref"
+         ng-change="btcReference()"
+         step="0.01"
+         placeholder="Bitcoin Mercado"
+         required />
+</div>
+
+<div class="input-group">
+  <span class="input-group-addon" id="lbl-btc-calc-input">BTC</span>
+  <input class="form-control"
+         type="number"
+         name="btcname"
+         aria-label="lbl-btc-calc-input"
+         ng-change="btcQtd()"
+         ng-model="bitcoin"
+         required="number"
+         placeholder="BTC"
+         step="0.00000001"
+         required />
+</div>
+
+<div class="input-group">
+  <span class="input-group-addon" id="lbl-btc-calc-input">BRL</span>
+  <input class="form-control"
+        type="number"
+        name="brlname"
+        ng-model="brl"
+        ng-change="fiatCurrency()"
+        ng-required="number"
+        placeholder="BRL"
+        required />
+</div>

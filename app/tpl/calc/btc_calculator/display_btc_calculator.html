@@ -1,0 +1,9 @@
+      <div class="results">
+        <span class="labelPrice">BRL : </span>
+        <span class="price"> {{ $parent.brlref * $parent.bitcoin | number : 2}} </span>
+      </div>
+
+      <div class="results">
+        <span class="labelPrice">Bitcoin :</span>
+        <span class="price"> {{ $parent.brl / $parent.brlref | number : 8 }} </span>
+      </div>
