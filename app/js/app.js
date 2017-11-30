@@ -11,6 +11,7 @@ require("./manager-module.js");
 require("./menu-routes.js");
 require("./translate-provider.js");
 
+require("./controllers/calculatorcontroller.js");
 require("./controllers/exchangescontroller.js");
 require("./controllers/bitvalorcontroller.js");
 require("./controllers/foxbitcontroller.js");
