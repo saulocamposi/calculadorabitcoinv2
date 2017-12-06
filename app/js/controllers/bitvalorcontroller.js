@@ -9,8 +9,6 @@ app.controller('bitvalorcontroller', ['$scope','$http', 'bitvalorChartService', 
       var databitvalor = response.data;
       $scope.bitvalor = databitvalor;
 
-      console.log(databitvalor.ARN);
-
       dataChart.push({"c" : [{"v" : "ArenaBitcoin", "f": null},{"v" : databitvalor.ARN.last, "f": null}]});
       dataChart.push({"c" : [{"v" : "Bitcointoyou", "f": null},{"v" : databitvalor.B2U.last, "f": null}]});
       dataChart.push({"c" : [{"v" : "BaseBit", "f": null},{"v" : databitvalor.BTD.last, "f": null}]});
