@@ -10,7 +10,7 @@ var bitvalorChartService = function() {
         left: 90,
         top: 40,
         width: "60%",
-        height: "70%"
+        height: "80%"
       }
     },
     "data": {
