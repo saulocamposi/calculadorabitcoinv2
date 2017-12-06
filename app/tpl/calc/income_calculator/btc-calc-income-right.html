@@ -1,0 +1,13 @@
+<div class="well">
+  <span class=""> BRL : </span>
+  <span class=""> {{ brlrefincome * bitcoinincome | number : 2}} </span>
+</div>
+
+<div class="well">
+  <span class="">BTC :</span>
+  <span class=""> {{ brlincome / brlrefincome | number : 8 }} </span>
+</div>
+
+  <input class="form-control input-sm margin-pannel" type="text" name="brlrefname" value="" ng-model="brlrefincome" ng-required="number" placeholder="BTC Preço">
+  <input class="form-control input-sm margin-pannel" type="text" name="brlname" value="" ng-model="brlincome" ng-required="number" placeholder="Reais">
+  <input class="form-control input-sm margin-pannel" type="text" name="btcname" value="" ng-model="bitcoinincome" required="number" placeholder="BTC">
