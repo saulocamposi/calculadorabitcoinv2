@@ -8,7 +8,7 @@ var bitinkaChartService = function() {
       "chartArea": {
         left: 90,
         top: 40,
-        width: "70%",
+        width: "65%",
         height: "70%"
       }
     },
