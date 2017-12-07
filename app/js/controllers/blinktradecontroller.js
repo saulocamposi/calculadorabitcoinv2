@@ -1,6 +1,6 @@
 var app = require('../manager-module.js');
 
-app.controller('blinktradecontroller', ['$scope', '$http', 'blinktradeChartService', function($scope, $http, blinktradeChartService) {
+app.controller('blinktradecontroller', ['$scope', '$http', 'blinktradeChartService','blinktradeService', function($scope, $http, blinktradeChartService, blinktradeService) {
 
    var dataChart = [];
 

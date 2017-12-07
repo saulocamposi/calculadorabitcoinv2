@@ -24,6 +24,7 @@ require("./controllers/bitvalorcontroller.js");
 
 
 require("./services/forex.js");
+require("./services/blinktradeService.js");
 require("./services/exchangesChartService.js");
 require("./services/blinktradeChartService.js");
 require("./services/bitinkaChartService.js");
