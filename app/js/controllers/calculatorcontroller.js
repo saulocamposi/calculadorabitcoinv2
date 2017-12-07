@@ -1,24 +1,28 @@
 var app = require('../manager-module.js');
 
-app.controller('calculatorcontroller', ['$scope','$http', function( $scope, $http ) {
+app.controller('calculatorcontroller',  ['$scope','$http', 'blinktradeService', function( $scope, $http, blinktradeService ) {
 
 
+    blinktradeService.async().then(function(d) {
+     $scope.serviceFox = d;
+     console.log("service fox");
+     console.log(d);
+     $scope.brlref = d.data.last;
+    });
 
-    $scope.brlref = 10;
+
 
     $scope.btcReference = function(){
-      console.log("btcReference");
-      console.log("calculatorcontroller");
+
     }
 
     $scope.btcQtd = function(){
-      console.log("btcQtd");
+      $scope.bitcoin = parseFloat($scope.brl) / parseFloat($scope.brlref);
     }
 
     $scope.fiatCurrency = function(){
-      console.log("fiatCurrency");
+      $scope.brl = parseFloat($scope.bitcoin) * parseFloat($scope.brlref);
     }
-
 
     $scope.averageBTC = function(){
     //{{}}(brlref + mtc.ticker.last + foxbit.last + btctoyou.ticker.last + negociecoins.last) / 4
