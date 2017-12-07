@@ -9,9 +9,11 @@ var bitvalorChartService = function() {
       "chartArea": {
         left: 90,
         top: 40,
-        width: "60%",
-        height: "80%"
-      }
+        width: "70%",
+        height: "70%"
+      },
+      width: 600,
+      height: 300
     },
     "data": {
       "cols": [{
