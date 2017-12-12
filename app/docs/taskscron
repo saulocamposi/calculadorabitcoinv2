@@ -1,7 +1,7 @@
 * * * * * /usr/bin/php -q /home/[user]/calculadorabitcoin/backend/src/model/seed/insert_data_db.php
 
-* * * * * /usr/bin/php -q /home/[user]/calculadorabitcoin/backend/src/ws/services/br/exchanges_foxbit.php
-* * * * * /usr/bin/php -q /home/[user]/calculadorabitcoin/backend/src/ws/services/br/exchanges_flowbtc.php
-* * * * * /usr/bin/php -q /home/[user]/calculadorabitcoin/backend/src/ws/services/br/exchanges_mbtc.php
-* * * * * /usr/bin/php -q /home/[user]/calculadorabitcoin/backend/src/ws/services/br/exchanges_bitcointoyou.php
+* * * * * /usr/bin/php -q /home/[user]/calculadorabitcoin/backend/src/ws/services/foxbit/exchanges_foxbit.php
+* * * * * /usr/bin/php -q /home/[user]/calculadorabitcoin/backend/src/ws/services/flowbtc/exchanges_flowbtc.php
+* * * * * /usr/bin/php -q /home/[user]/calculadorabitcoin/backend/src/ws/services/mercadobitcoin/exchanges_mbtc.php
+* * * * * /usr/bin/php -q /home/[user]/calculadorabitcoin/backend/src/ws/services/bitcointoyou/exchanges_bitcointoyou.php
 * * * * * /usr/bin/php -q /home/[user]/calculadorabitcoin/backend/src/ws/services/poloniex/poloniex-task.php
