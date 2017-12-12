@@ -58,27 +58,16 @@ class PoloniexTask
     $this->poloniexclient->postTicker( $this->sql['postTicker'] );
   }
 
-  public static function  main( $bootstrap )
+  public static function  main( $bootstrap, $argv )
   {
     $task = new PoloniexTask( $bootstrap );
-
-/*
-    if (defined('STDIN')) {
-      $param = $argv[1] != null ? $argv[1] : null ;
-    } else {
-      $param = $_GET['ticker'];
-    }
-
+    $param = $argv[1] != null ? $argv[1] : $_GET['ticker']; ;
     $param = $param != null ? $task->getJsonAllBtcByVolume() : $task->postTicker();
-    */
-
-    $task->getJsonAllBtcByVolume();
-
   }
 }
 
 $bootstrap['endpoint'] = "https://poloniex.com/public?command=returnTicker";
 
-PoloniexTask::main( $bootstrap );
+PoloniexTask::main( $bootstrap, $argv );
 
 ?>
