@@ -9,12 +9,11 @@ include ( dirname( __FILE__ ) . "/dao-interface.php" );
 class Dao implements DaoInterface
 {
   private $activeRecord;
-  private $sql;
 
-  function __construct( $activeRecord, $sql )
+  function __construct( $activeRecord )
   {
     $this->activeRecord = $activeRecord;
-    $this->sql = $sql;
+
   }
 
   function postTicker( $sql )
