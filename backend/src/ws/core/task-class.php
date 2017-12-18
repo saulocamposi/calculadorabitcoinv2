@@ -73,8 +73,20 @@ include ( dirname(__FILE__) . "/client-ticker-class.php" );
    public static function  main( $bootstrap, $argv )
    {
      $task = new Task( $bootstrap );
-     $param = $argv[1] != null ? $argv[1] : $_GET['ticker']; ;
-     $param = $param != null ? $task->getJsonAllBtcByVolume() : $task->postTicker();
+
+     //$param = $_GET != null ? $_GET['ticker'] : null;
+
+     //$param = is_array($argv) ? $argv[1] : null;
+
+     if(is_array($argv) && array_key_exists( 1, $argv)){
+       $param = $argv[1];
+       $task->postTicker();
+
+     }else{
+
+     }
+
+     //$param = $param != null ? $task->getJsonAllBtcByVolume() : $task->postTicker();
    }
  }
 
