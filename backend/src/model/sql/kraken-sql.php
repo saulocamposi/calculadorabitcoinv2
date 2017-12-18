@@ -41,10 +41,10 @@ $lastTicker = "SELECT id,
           id = " . $max['max(id)'];
 
 $all = "SELECT * FROM ticker_kraken
-          WHERE created_at IN (SELECT max(created_at) FROM ticker_poloniex)";
+          WHERE created_at IN (SELECT max(created_at) FROM ticker_kraken)";
 
 $allByVolume = "SELECT * FROM ticker_kraken
-          WHERE created_at IN (SELECT max(created_at) FROM ticker_poloniex)
+          WHERE created_at IN (SELECT max(created_at) FROM ticker_kraken)
           AND pair LIKE 'BTC_%'
           ORDER BY vol DESC;";
 
