@@ -11,6 +11,19 @@
     private $high;
     private $today;
 
-    
+    function __construct(){
+      $this->wrapper();
+    }
+
+
+
+    public function wrapper()
+    {
+      $ticker = json_decode(file_get_contents( "https://api.kraken.com/0/public/Ticker?pair=BCHEUR"));
+      print_r($ticker->result->BCHEUR);
+    }
+
+
   }
+  new KrakenTicker
  ?>
