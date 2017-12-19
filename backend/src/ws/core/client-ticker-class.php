@@ -24,6 +24,7 @@ class ClientTicker
   {
     $this->getTicker();
 
+    /*
     foreach ( $this->ticker as $key => $value ) {
 
       $sql = "INSERT INTO ticker_poloniex (
@@ -45,7 +46,8 @@ class ClientTicker
                 date("Y-m-d H:i:s") . "' );";
 
       $this->activeRecord->persistEntity($sql);
-    }
+    }*/
+
   }
 
   function getTicker()
