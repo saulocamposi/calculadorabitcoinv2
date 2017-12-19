@@ -20,7 +20,7 @@ class ClientTicker
   }
 
 
-  function postTicker()
+  function postTicker( $sql )
   {
     $this->getTicker();
 
