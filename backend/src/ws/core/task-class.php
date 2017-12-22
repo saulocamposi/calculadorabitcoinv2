@@ -45,6 +45,7 @@ include ( dirname(__FILE__) . "/client-ticker-class.php" );
      $this->user = $bootstrap['user'];
      $this->password = $bootstrap['password'];
      $this->sql = $bootstrap['sql'];
+     $this->wrapper = $bootstrap['wrapper'];
      $this->initialize();
 
    }
@@ -67,7 +68,7 @@ include ( dirname(__FILE__) . "/client-ticker-class.php" );
 
    public function postTicker()
    {
-     $this->client->postTicker( $this->sql['postTicker'] );
+     $this->client->postTicker( $this->wrapper, $this->sql['postTicker'] );
    }
 
    public static function  main( $bootstrap, $argv )
