@@ -20,9 +20,12 @@ class ClientTicker
   }
 
 
-  function postTicker( $sql )
+  function postTicker( $wrapper, $sql )
   {
     $this->getTicker();
+    $wrapper->wrapper( $this->ticker , $sql );
+
+    //$wrapper->wrapper( $this->ticker, $sql );
 
     /*
     foreach ( $this->ticker as $key => $value ) {
