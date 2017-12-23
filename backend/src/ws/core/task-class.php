@@ -4,23 +4,9 @@ $dirname_model_level = dirname(__FILE__, 5 );
 
 include ( dirname(__FILE__, 4 ) . "/src/model/core/active-record-class.php" );
 
-//TODO gonna be generic dao
 include ( dirname(__FILE__, 4 ) . "/src/model/dao/dao-class.php" );
 
-//TODO gonna be generic ticker
 include ( dirname(__FILE__) . "/client-ticker-class.php" );
-
-
-
-
-/**
- *
-
-
-
-
- */
-
 
  class Task
  {
