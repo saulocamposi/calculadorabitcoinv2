@@ -12,7 +12,7 @@
     private $today;
 
     function __construct(){
-      //$this->wrapper();
+
     }
 
     public function wrapper( $ticker, $sql)
@@ -22,19 +22,17 @@
 
       print_r($ticker);
 
-      /* $result = $ticker->result->XXBTZUSD;
+       $result = $ticker->result->XXBTZUSD;
        $this->ask = $result->a[0];
        $this->bid = $result->b[0];
        $this->last_trade = $result->c[0];
        $this->volume_array = $result->v[0];
        $this->volume_weighted = $result->p[0];
        $this->number = $result->t[0];
-*/
 
+       print $sql;
 
-    }
-
-
+      }
   }
   //new KrakenTicker
  ?>
