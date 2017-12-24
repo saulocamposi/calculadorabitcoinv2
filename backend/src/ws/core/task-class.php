@@ -54,7 +54,7 @@ include ( dirname(__FILE__) . "/client-ticker-class.php" );
 
    public function postTicker()
    {
-     $this->client->postTicker( $this->wrapper, $this->sql['postTicker'] );
+     $this->client->postTicker( $this->wrapper, $this->sql, $this->activeRecord );
    }
 
    public static function  main( $bootstrap, $argv )
