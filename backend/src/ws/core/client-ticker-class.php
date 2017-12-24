@@ -20,36 +20,13 @@ class ClientTicker
   }
 
 
-  function postTicker( $wrapper, $sql )
+  function postTicker( $wrapper, $sql, $activeRecord )
   {
     $this->getTicker();
-    $wrapper->wrapper( $this->ticker , $sql );
-
-    //$wrapper->wrapper( $this->ticker, $sql );
-
-    /*
-    foreach ( $this->ticker as $key => $value ) {
-
-      $sql = "INSERT INTO ticker_poloniex (
-                id ,
-                vol ,
-                low ,
-                high ,
-                last ,
-                pair ,
-                created_at
-              )
-              VALUES (
-                NULL,
-                $value->baseVolume,
-                $value->lowestAsk,
-                $value->highestBid,
-                $value->last,"
-                . "'" . $key . "'" . ", '" .
-                date("Y-m-d H:i:s") . "' );";
-
-      $this->activeRecord->persistEntity($sql);
-    }*/
+    $query = $wrapper->wrapper( $this->ticker , $sql );
+    //foreach ( $this->ticker as $key => $value ) {
+      $activeRecord->persistEntity($query);
+    //}
 
   }
 
