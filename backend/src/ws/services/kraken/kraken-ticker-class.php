@@ -30,7 +30,7 @@
        $this->volume_weighted = $result->p[0];
        $this->number = $result->t[0];
 
-       print $sql;
+       return $sql->postTicker($this->volume_array, $this->volume_array, $this->volume_array, $this->volume_array, $this->volume_array);
 
       }
   }
