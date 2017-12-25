@@ -5,3 +5,4 @@
 * * * * * /usr/bin/php -q /home/[user]/calculadorabitcoin/backend/src/ws/services/mercadobitcoin/exchanges_mbtc.php
 * * * * * /usr/bin/php -q /home/[user]/calculadorabitcoin/backend/src/ws/services/bitcointoyou/exchanges_bitcointoyou.php
 * * * * * /usr/bin/php -q /home/[user]/calculadorabitcoin/backend/src/ws/services/poloniex/poloniex-task.php
+* * * * * /usr/bin/php -q /home/[user]/calculadorabitcoin/backend/src/ws/services/kraken/kraken-ticker.php 1
