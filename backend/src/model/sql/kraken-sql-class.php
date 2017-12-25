@@ -27,7 +27,7 @@ class KrakenSql {
               " . $lowestAsk . ",
               " . $highestBid . ",
               " . $last . ",
-              " . $key .  "," .
+              '" . $key .  "'," .
               "'" . date("Y-m-d H:i:s") . "' );";
 
       return $postTicker;
