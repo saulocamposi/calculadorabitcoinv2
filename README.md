@@ -1,8 +1,9 @@
 # CalculadoraBitcoin V2
 # Presentation
 
- Calculadora Bitcoin has to target show the price, volume, and data relevant from Exchanges wich provide public APIs.  Actualy the most BTC Indexers of Brazil and South America countries. We are continuously improving this project with more code and documentation. How always as open source group which is proud to code for BTC and cryptocoins. Our aim is to increase the number of the cards that represents the blocks of information displayed and through it display sections contents with a sort of informations about Bitcoin Exchanges and stock markets around the world - prices, miner difficult, arbitrage and altcoins.
- 
+ Calculadora Bitcoin shows the prices, volumes, and data from Exchanges of Bitcoins and Altcoins around the world wich provide public APIs.  Actualy the most of all values comes from Brazilians exchanges and some exchanges from South America countries. We are continuously improving this project with more code and documentation. How always as open source group which is proud to code for BTC and cryptocoins. 
+Our aim has been coding for increase the number of tickers from exchanges showing live prices of Bitcoins and Altcoins and then display a scenario of stock markets around the world -- prices, miner difficult, arbitrage and altcoins.
+  
 # History 
 
  In the begining this project were launched with mainly a calculator to convert bitcoin prices to BRL currency and bitcoin prices in different currencies (blockchain.info ticker). Now we have division of information through cards with different values from  public apis. Some are Brazilian exchanges but also  South  Americas exchanges and Altcoins market. Another interesting features are the web socket plugin from tradindview and youtube channel (Tradindview and youtube channel were disable).
