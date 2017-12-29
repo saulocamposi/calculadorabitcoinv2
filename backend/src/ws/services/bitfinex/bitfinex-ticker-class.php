@@ -1,160 +1,72 @@
 <?php
+  class BitfinexTicker{
 
-include (dirname(__FILE__, 4 ) . "/model/core/active-record-class.php");
+    private $ask;
+    private $bid;
+    private $last_trade;
+    private $volume;
+    private $volume_weighted;
+    private $number;
+    private $low;
+    private $high;
+    private $open_today;
+    private $pair;
 
-class BitfinexTicker
-{
-  private $ticker;
-  private $activeRecord;
-
-  function __construct( $activeRecord )
-  {
-    $this->activeRecord = $activeRecord;
-  }
-
-  function initialize()
-  {
-    try {
-
-      return true;
-
-    } catch ( Exception $e ) {
-
-      echo "Message ". $e.getMessage();
+    function __construct(){
 
     }
-  }
 
-  function getSymbols( $endpoint ){
-
-    $symbols = [];
-
-    try {
-      $symbols = json_decode(file_get_contents( $endpoint )) ;
-
-    } catch ( Exception $e ) {
-      echo "Message ". $e.getMessage();
-    }
-
-    return $symbols;
-
-  }
-
-  function getTicker( $endpoint )
-  {
-    $this->ticker = json_decode(file_get_contents( $endpoint )) ;
-    return $this->ticker;
-  }
-
-  function getAllTickersApi($symbolsEndpoint, $baseEndpoint)
-  {
-
-    $ticker = [];
-
-    $symbols = $this->getSymbols($symbolsEndpoint);
-
-    $start = microtime(true);
-
-    foreach ($symbols as $symbol) {
-      $endpoint = $baseEndpoint . $symbol;
-      //$nodeSymbol = array($symbol);
-      $nodeTicker = array($this->getTicker( $endpoint ));
-
-      print_r($nodeTicker);
-      //$ticker[$symbol] = $nodeTicker;
-      sleep(1);
-    }
-
-    $time_elapsed_secs = microtime(true) - $start;
-
-    print $time_elapsed_secs;
-
-
-    //|return $ticker;
-    //return $endpoint;
-   }
-
-  function getTickerBySymbol($symbol){
-
-  }
+    public function wrapper( $ticker, $sql)
+    {
+      //$ticker = json_decode(file_get_contents( "https://api.kraken.com/0/public/Ticker?pair=XBTUSD"));
+      //print_r($ticker->result->XXBTZUSD);
 
 
 
 
-  function countTickerElements()
-  {
 
-    $count = 0;
+    /*  <pair_name> = pair name
+    a = ask array(<price>, <whole lot volume>, <lot volume>),
+    b = bid array(<price>, <whole lot volume>, <lot volume>),
+    c = last trade closed array(<price>, <lot volume>),
+    v = volume array(<today>, <last 24 hours>),
+    p = volume weighted average price array(<today>, <last 24 hours>),
+    t = number of trades array(<today>, <last 24 hours>),
+    l = low array(<today>, <last 24 hours>),
+    h = high array(<today>, <last 24 hours>),
+    o = today's opening price
+    */
 
-    if ( $this->ticker ) {
-      foreach ( $this->ticker as $key => $value ) {
-        $count = $count + 1;
+
+
+      print_r($ticker);
+
+       $result = $ticker->result->XXBTZUSD;
+       $this->pair = "XBTUSD";
+       $this->ask = $result->a[0];
+       $this->bid = $result->b[0];
+       $this->last_trade = $result->c[0];
+       $this->volume = $result->v[0];
+       $this->volume_weighted = $result->p[0];
+       $this->number = $result->t[0];
+       $this->low = $result->l[0];
+       $this->high = $result->h[0];
+       $this->open_today = $result->o[0];
+
+       /*$sql = "CREATE TABLE ticker_kraken (
+               id int NOT NULL AUTO_INCREMENT,
+               vol decimal(16,8) ,
+               low decimal(16,8) ,
+               high decimal(16,8) ,
+               last decimal(16,8) ,
+               pair varchar(30) ,
+               created_at DATETIME,
+               PRIMARY KEY (`id`)
+               )";
+       */
+       return $sql->postTicker($this->volume, $this->low, $this->high, $this->last_trade, $this->pair);
+
       }
-    }
-
-    return $count;
-
   }
-
-  function postTicker()
-  {
-    foreach ( $this->ticker as $key => $value ) {
-
-      $sql = "INSERT INTO ticker_bitfinex (
-                id ,
-                mid ,
-                ask ,
-                last_price ,
-                low ,
-                high ,
-                volume ,
-                created_at
-              )
-              VALUES (
-                NULL,
-                $value->mid,
-                $value->ask,
-                $value->last_price,
-                $value->low,
-                $value->high,
-                $value->volume,"
-                . "'" . $key . "'" . ", '" .
-                date("Y-m-d H:i:s") . "' );";
-
-      $this->activeRecord->persistEntity($sql);
-    }
-  }
-
-
-
-  function getLastTicker(){
-    $sql = array();
-    $sql[0] = "SELECT max(id) from ticker_bitfinex";
-    $max = $this->activeRecord->getEntity( $sql[0] );
-    $sql[1] = "SELECT id ,
-                mid ,
-                ask ,
-                last_price ,
-                low ,
-                high ,
-                volume ,
-                created_at from ticker_bitfinex where id = " . $max['max(id)'];
-
-    return $this->activeRecord->getEntity($sql[1]);
-  }
-
-  function getAllLastMinuteTicker(){
-    $query = "SELECT * FROM ticker_bitfinex where created_at in (SELECT max(created_at) from ticker_bitfinex)";
-    return $this->activeRecord->getAll($query);
-  }
-
-  function getAllBTCByVolumeTicker(){
-    $query = "SELECT * FROM ticker_bitfinex
-              where created_at in (SELECT max(created_at) from ticker_bitfinex)
-              AND pair like 'BTC_%'
-              order by vol DESC;";
-    return $this->activeRecord->getAll($query);
-  }
-
-}
-?>
+  //new KrakenTicker
+ ?>
