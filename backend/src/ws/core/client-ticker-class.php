@@ -67,5 +67,8 @@ class ClientTicker
 
   }
 
+  function getSymbols(){
+  }
+
 }
 ?>
