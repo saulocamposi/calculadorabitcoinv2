@@ -12,6 +12,7 @@ include ( dirname(__FILE__) . "/client-ticker-class.php" );
  {
 
    private $endpoint;
+   private $endpoint_symbols;
    private $conn;
    private $activeRecord;
    private $client;
@@ -36,17 +37,18 @@ include ( dirname(__FILE__) . "/client-ticker-class.php" );
 
    }
 
-   private function initialize(){
-
+   private function initialize()
+   {
      $this->conn = new Connection( $this->servername, $this->dbname, $this->user, $this->password );
      $this->activeRecord = new ActiveRecord( $this->conn );
-     $this->client = new ClientTicker( $this->endpoint );
      $this->dao = new Dao( $this->activeRecord );
 
+     $this->client = new ClientTicker( $this->endpoint );
    }
 
    public function getJsonAllBtcByVolume()
    {
+     //TODO needs to call client to get acess to dao
      $ticker = $this->dao->getAllBTCByVolumeTicker( $this->sql['allByVolume'] );
      $ticker = json_encode($ticker);
      echo $ticker;
