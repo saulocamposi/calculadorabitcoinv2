@@ -1,0 +1,32 @@
+<div class="results">
+  <span class="labelPrice">Valor Lucro: </span>
+  <span class="price"> {{ base2 - base1 | number : 8}} </span>
+</div>
+
+<div class="results">
+  <span class="labelPrice">Porcentagem Lucro:</span>
+  <span class="price"> {{ base2 * 100 / base1 - 100 | number : 8 }} %</span>
+</div>
+
+<div class="input-group">
+  <span class="input-group-addon" id="lbl-btc-calc-base">Base 1</span>
+  <input class="form-control"
+         type="number"
+         aria-label="lbl-btc-calc-base"
+         ng-model="base1"
+         step="0.00000001"
+         placeholder="crypto value"
+         required />
+</div>
+
+<div class="input-group">
+  <span class="input-group-addon" id="lbl-btc-calc-input">Base 2</span>
+  <input class="form-control"
+         type="number"
+         aria-label="lbl-btc-calc-input"
+         ng-model="base2"
+         required="number"
+         placeholder="crypto value"
+         step="0.00000001"
+         required />
+</div>
