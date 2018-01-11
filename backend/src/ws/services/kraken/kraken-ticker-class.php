@@ -18,12 +18,6 @@
 
     public function wrapper( $ticker, $sql)
     {
-      //$ticker = json_decode(file_get_contents( "https://api.kraken.com/0/public/Ticker?pair=XBTUSD"));
-      //print_r($ticker->result->XXBTZUSD);
-
-
-
-
 
     /*  <pair_name> = pair name
     a = ask array(<price>, <whole lot volume>, <lot volume>),
@@ -37,21 +31,19 @@
     o = today's opening price
     */
 
+    print_r($ticker);
 
-
-      print_r($ticker);
-
-       $result = $ticker->result->XXBTZUSD;
-       $this->pair = "XBTUSD";
-       $this->ask = $result->a[0];
-       $this->bid = $result->b[0];
-       $this->last_trade = $result->c[0];
-       $this->volume = $result->v[0];
-       $this->volume_weighted = $result->p[0];
-       $this->number = $result->t[0];
-       $this->low = $result->l[0];
-       $this->high = $result->h[0];
-       $this->open_today = $result->o[0];
+   $result = $ticker->result->XXBTZUSD;
+   $this->pair = "XBTUSD";
+   $this->ask = $result->a[0];
+   $this->bid = $result->b[0];
+   $this->last_trade = $result->c[0];
+   $this->volume = $result->v[0];
+   $this->volume_weighted = $result->p[0];
+   $this->number = $result->t[0];
+   $this->low = $result->l[0];
+   $this->high = $result->h[0];
+   $this->open_today = $result->o[0];
 
        /*$sql = "CREATE TABLE ticker_kraken (
                id int NOT NULL AUTO_INCREMENT,
@@ -62,9 +54,9 @@
                pair varchar(30) ,
                created_at DATETIME,
                PRIMARY KEY (`id`)
-               )";
-       */
-       return $sql->postTicker($this->volume, $this->low, $this->high, $this->last_trade, $this->pair);
+               )";*/
+
+    return $sql->postTicker($this->volume, $this->low, $this->high, $this->last_trade, $this->pair);
 
       }
   }
