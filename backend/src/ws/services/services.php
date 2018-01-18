@@ -9,12 +9,13 @@
   if( $_GET['brand'] == "btctoyou" ){
 
       include( dirname( __FILE__ , 3 ) . "/model/selects/ticker_bitcointoyou_select.php" );
+//      $row =  json_decode(file_get_contents("https://www.bitcointoyou.com/api/ticker.aspx"));
+//      $row = $row->ticker;
       echo json_encode( $row );
-
   }
 
   if( $_GET['brand'] == "negociecoins" ){
-    echo $negociecoins =  file_get_contents( "http://www.negociecoins.com.br/api/v3/btcbrl/ticker" );
+    echo $row =  file_get_contents( "https://broker.negociecoins.com.br/api/v3/btcbrl/ticker" );
   }
 
   if( $_GET['brand'] == "flowbtc" ){
