@@ -48,8 +48,13 @@
         <td ng-if="key == 'NEG'">
           NegocieCoins
         </td>
+
+        <td ng-if="key == 'BZX'">
+          Braziliex
+        </td>
+
         <td>
-          {{ticket.vol}}
+          {{ticket.vol | number : 8 }}
         </td>
         <td class="hidden-xs hidden-md">
           {{ticket.high | number : 2}}
