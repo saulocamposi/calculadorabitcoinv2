@@ -1,8 +1,9 @@
 # CalculadoraBitcoin V2
-# Presentation
+# Introduction
 
- Calculadora Bitcoin shows the prices, volumes, and data from Exchanges of Bitcoins and Altcoins around the world wich provide public APIs.  Actualy the most of all values comes from Brazilians exchanges and some exchanges from South America countries. We are continuously improving this project with more code and documentation. How always as open source group which is proud to code for BTC and cryptocoins. 
-Our aim has been coding for increase the number of tickers from exchanges showing live prices of Bitcoins and Altcoins and then display a scenario of stock markets around the world -- prices, miner difficult, arbitrage and altcoins.
+ CalculadoraBitcoin website is open-source project that has aim to provide updated values of cryptocurrency exchanges around the world. Showing prices, volumes, correlations among differents altcoins which is provided by public APIs.  
+ Actualy the most of datasources comes from Brazilians exchanges and some correlated data from couples of internacional exchanges. We are continuously improving this project with more code and documentation.   
+Our aim has been coding for increase our database adding new exchanges, showing more live prices and provide the real scenario of cryptocurrency market around the world.
   
 # History 
 
