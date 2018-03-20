@@ -24,14 +24,11 @@ The documentation consist of a README mainly, but we pretend to start a wiki wit
 Calculadora bitcoin has to coverage with three important topics: unit test, behavior test and integration Test.
 Unit test could be usefull for Angular controllers to test the logic of method, the behavior has to test calculadora actions and one of most important test is the integration Apis, testing performance and latency.
 
-# Code
-Front-end and Back-end prospectives
-
 # Issues 
 The project are open to post issues, in general are bugs to solve and implementations or refactore . 
 
 # Microservices perspectives
-This system has to aim growth using microservices with differents architectures and languages. Our front-end in the moment were made with pure HTML 5, Angular 1.5 and PHP on the back-end. We will start other services in rails which will be the base of ORM back-end sharing contents via webservices using small machines on the cloud.
+This system has to aim growth using microservices with differents architectures and languages. Our front-end in the moment were made with pure HTML 5, AngularJS and PHP as the back-end. We will start other services in rails which will be the base of ORM back-end sharing contents via webservices using small machines on the cloud.
 
 # Archteture Project
 
