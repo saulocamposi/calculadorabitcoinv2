@@ -13,30 +13,10 @@ module.exports = {
     publicPath: '/public/assets/',
   },
   module: {
-    loaders: [{
+    rules: [{
         test: /\.css$/,
-        loaders: ['style', 'css', 'postcss']
-      }, {
-        test: /\.scss$/,
-        loaders: ['style', 'css', 'postcss', 'sass']
-      },
-      {
-       test: /\.woff2?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-       loader: "url?limit=10000"
-       },
-       {
-       test: /\.(ttf|eot|svg)(\?[\s\S]+)?$/,
-       loader: 'file'
-       },
-      {
-        test: /\.(png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot)$/,
-        loader: 'url-loader?limit=30000&name=[name]-[hash].[ext]'
-      }  
-
-    ],
+        use : ['style-loader', 'css-loader', 'postcss-loader']
+      }],
   },
-
-  postcss: [autoprefixer],
-  devtool: 'sourcemap'
-  //devtool: null,
+  devtool: 'source-map'
 };
