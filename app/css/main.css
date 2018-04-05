@@ -4,7 +4,9 @@ html {
 }
 
 body {
-  padding-top: 70px;
+  /* Show it is fixed to the top */
+  min-height: 75rem;
+  padding-top: 4.5rem;
 }
 
 .header {
@@ -14,31 +16,10 @@ body {
   position: fixed;
 }
 
-.title-logo{
-  margin: 0;
-  padding: 0;
-}
-
-.card-index {
-  display: block-inline;
-  float: left;
-  margin-bottom: 1%;
-  margin-left: 1%;
-}
-
-.card-index-right {
-  display: block-inline;
-  float: right;
-  margin-top: 1%;
-  margin-bottom: 1%;
-  margin-right: 22.5%;
-}
-
 .footer {
   clear: both;
   padding: 0 15px;
 }
-
 
 /* to verify - orphan class*/
 .priceRef {
