@@ -5,6 +5,21 @@
   margin-bottom: 3%;
 }
 
+.card-index {
+  display: block-inline;
+  float: left;
+  margin-bottom: 1%;
+  margin-left: 1%;
+}
+
+.card-index-right {
+  display: block-inline;
+  float: right;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  margin-right: 22.5%;
+}
+
 .title-card{
   background: #673AB7;
   height: 35px;
@@ -29,4 +44,9 @@
   position: absolute;
   bottom: 0;
   left: 0;
+}
+
+.title-logo{
+  margin: 0;
+  padding: 0;
 }
