@@ -4,6 +4,9 @@ require("angular-google-chart");
 require("angular-busy");
 require("angular-animate");
 require("angular-translate");
+//require("bootstrap");
+require("jquery");
+//require("popper");
 
 
 require("./controllers/value.js");
@@ -34,6 +37,8 @@ require("./services/polionexChartService.js");
 require("./services/foxbitService.js");
 
 require("../css/bootstrap-custom.css");
+require("../css/bootstrap-custom-card.css");
+require("../css/bootstrap-custom-panel.css");
 require("../css/calc_bitcoin.css");
 require("../css/calc_income.css");
 require("../css/card.css");
