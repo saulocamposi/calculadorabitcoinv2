@@ -1,0 +1,21 @@
+.card.card-accent-green {
+    border-top: 3px solid #5cb85c;
+}
+.card.card-accent-red {
+    border-top: 3px solid #d9534f;
+}
+.card.card-accent-blue {
+    border-top: 3px solid #5bc0de;
+}
+.card.card-accent-orange {
+    border-top: 3px solid #f39c12;
+}
+.card.card-accent-pink {
+    border-top: 3px solid #e671b8;
+}
+.card.card-accent-purple {
+    border-top: 3px solid #7b4f9d;
+}
+.card.card-accent-lime {
+    border-top: 3px solid #8cbf26;
+}
