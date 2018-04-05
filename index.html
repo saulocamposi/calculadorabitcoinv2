@@ -6,34 +6,71 @@
   <meta charset="utf-8">
   <title>Calculadora Bitcoin</title>
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-  <!-- XXX:  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous" />-->
+
+
+<!-- XXX:
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+-->
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+
+
+
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="description" content="Acompanhe o preço do bitcoin em todas as Exchanges Brasileiras com Calculadora para converter (BRL) em Bitcoin (BTC).">
   <meta name="keywords" content="Bitcoin, Altcoin, Calculadora Bitcoin, API, Exchanges, bitvalor, brxbt, indice, bitcoin, custa, preco, preço, valor, brasil, exchange, bolsa, compra, venda, volume, melhor, relatorio, relatório, p2p, blockchain, api, widget, rating, mercado bitcoin, foxbit, flowbtc, bitcointoyou, negociecoins, bitinvest, basebit">
   <meta name="author" content="Saulo Campos">
   <script src="public/assets/app.js" charset="utf-8"></script>
+
 </head>
 
 <body>
-
-  <div class="container-fluid" ng-controller="mbCtrl">
+<main role="main" class="container-fluid">
+  <div  ng-controller="mbCtrl" >
     <div class="row">
       <ng-include src="'app/tpl/nav/nav.html'"></ng-include>
     </div>
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <ng-include src="'app/tpl/cards/graphs/card-graph-exchanges.html'"></ng-include>
+            <ng-include src="'app/tpl/cards/card-exchanges.html'"></ng-include>
+            <ng-include src="'app/tpl/calc/main-calculator.html'"></ng-include>
+            <ng-include src="'app/tpl/cards/card-btcvarejo.html'"></ng-include>
+            <ng-include src="'app/tpl/cards/card-polionex.html'"></ng-include>
+            <ng-include src="'app/tpl/cards/graphs/card-graph-blinktrade.html'"></ng-include>
+            <ng-include src="'app/tpl/cards/card-blinktrade.html'"></ng-include>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <ng-include src="'app/tpl/cards/graphs/card-graph-bitvalor.html'"></ng-include>
+            <ng-include src="'app/tpl/cards/bitvalor/card-bitvalorv2.html'"></ng-include>
+            <ng-include src="'app/tpl/cards/card-poloniex-v2.html'"></ng-include>
+          </div>
+
+        </div>
 
 
 
-    <div class="row">
+        <div class="row">
+            <ng-include src="'app/tpl/pages/footer.html'"></ng-include>
+        </div>
+</main>
+
+
+
+
 <!-- XXX: Routes space       <ng-include src="'app/tpl/pages/cards.html'"></ng-include>-->
-<ng-view></ng-view>
-    </div>
+<!-- XXX:
+
+</div>
+
+-->
 
 
-    <div class="row">
-        <ng-include src="'app/tpl/pages/footer.html'"></ng-include>
-    </div>
-  </div>
+
+
+
 
   <script>
     (function(i, s, o, g, r, a, m) {
