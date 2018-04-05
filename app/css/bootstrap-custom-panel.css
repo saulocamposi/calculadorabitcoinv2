@@ -1,0 +1,21 @@
+.panel.panel-accent-green {
+    border-top: 3px solid #5cb85c;
+}
+.panel.panel-accent-red {
+    border-top: 3px solid #d9534f;
+}
+.panel.panel-accent-blue {
+    border-top: 3px solid #5bc0de;
+}
+.panel.panel-accent-orange {
+    border-top: 3px solid #f39c12;
+}
+.panel.panel-accent-pink {
+    border-top: 3px solid #e671b8;
+}
+.panel.panel-accent-purple {
+    border-top: 3px solid #7b4f9d;
+}
+.panel.panel-accent-lime {
+    border-top: 3px solid #8cbf26;
+}
