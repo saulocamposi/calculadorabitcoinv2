@@ -4,9 +4,9 @@ require("angular-google-chart");
 require("angular-busy");
 require("angular-animate");
 require("angular-translate");
-//require("bootstrap");
+require("bootstrap");
 require("jquery");
-//require("popper");
+require("popper.js");
 
 
 require("./controllers/value.js");
@@ -36,6 +36,13 @@ require("./services/bitvalorChartService.js");
 require("./services/polionexChartService.js");
 require("./services/foxbitService.js");
 
+
+/*
+TODO future bootstrap configured for scss
+require ("custom");
+@import "~bootstrap/scss/bootstrap";
+*/
+require ("bootstrap/dist/css/bootstrap.min.css");
 require("../css/bootstrap-custom.css");
 require("../css/bootstrap-custom-card.css");
 require("../css/bootstrap-custom-panel.css");
