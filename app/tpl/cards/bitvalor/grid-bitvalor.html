@@ -1,0 +1,63 @@
+<table class="table table-striped" ng-controller="bitvalorcontroller">
+  <tr>
+    <th>
+      Empresas
+    </th>
+    <th>
+      Volume
+    </th>
+    <th class="hidden-xs hidden-md">
+      Maior Valor
+    </th>
+    <th class="hidden-xs hidden-md">
+      Menor Valor
+    </th>
+    <th>
+      Last Trade
+    </th>
+  </tr>
+  <tr ng-repeat="(key, ticket) in bitvalor">
+
+      <td ng-if="key == 'ARN'">
+        Arena Bitcoin
+      </td>
+      <td ng-if="key == 'B2U'">
+        BitcoinToYou
+      </td>
+      <td ng-if="key == 'BTD'">
+        Basebit
+      </td>
+      <td ng-if="key == 'FLW'">
+        flowBTC
+      </td>
+      <td ng-if="key == 'FOX'">
+        FoxBit
+      </td>
+      <td ng-if="key == 'LOC'">
+        Local bitcoins
+      </td>
+      <td ng-if="key == 'MBT'">
+        Mercado Bitcoin
+      </td>
+      <td ng-if="key == 'NEG'">
+        NegocieCoins
+      </td>
+
+      <td ng-if="key == 'BZX'">
+        Braziliex
+      </td>
+
+      <td>
+        {{ticket.vol | number : 8 }}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{ticket.high | number : 2}}
+      </td>
+      <td class="hidden-xs hidden-md">
+        {{ticket.low | number : 2}}
+      </td>
+      <td>
+        {{ticket.last | number : 2}}
+      </td>
+  </tr>
+</table>
