@@ -28,18 +28,17 @@ Unit test could be usefull for Angular controllers to test the logic of method, 
 The project are open to post issues, in general are bugs to solve and implementations or refactore . 
 
 # Microservices perspectives
-This system has to aim growth using microservices with differents architectures and languages. Our front-end in the moment were made with pure HTML 5, AngularJS and PHP as the back-end. We will start other services in rails which will be the base of ORM back-end sharing contents via webservices using small machines on the cloud.
+This system has to aim growth using microservices with differents architectures and languages. Our front-end in the moment were made with pure HTML 5, AngularJS and PHP as the back-end. 
 
 # Archteture Project
 
-This project is composed by front-end :HTML 5,CSS 3,BootStrap 3, AngularJS 1.5 - Its used to databinding   
+This project is composed by front-end :HTML 5,CSS 3,BootStrap 4, AngularJS 1.5 - Its used to databinding   
 
 # Front-End
-The fisrt version calculadorabitcoin were coded using plan css, angular 1.5, for second version were addded bootstrap 3.
-For the thrird version we are migrating for React instead of angular, but could be possible to run all versions and package as well
+CalculadoraV2 has made with AngularJS, Bootstrap 4 mainly.
 
 # Backend
-Most of all services are coded with PHP 5 to consume public APIs from Exchanges
+Most of all services are coded with PHP 7 to consume public APIs from Exchanges
 
 # Build 
 The Webpack 1.5 (current version) - To build all assets, chunk and package. 
