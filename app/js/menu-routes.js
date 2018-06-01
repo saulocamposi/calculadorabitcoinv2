@@ -4,7 +4,7 @@ var routes = function($routeProvider, $locationProvider){
   $routeProvider
          // route for the bitcoincalculator page
          .when('/', {
-             templateUrl : 'app/tpl/pages/cards.html',
+             templateUrl : 'app/tpl/pages/cards_lab.html',
          })
          // route for the satoshicalculator page
            .when('/hotwallets', {
