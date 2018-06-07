@@ -1,6 +1,9 @@
 <?php
 
-include( dirname(__FILE__) . "/connection-class.php" );
+include( dirname(__FILE__, 4 ) . "/vendor/autoload.php" );
+
+//print dirname(__FILE__, 4 ) . "/vendor/autoload.php" . PHP_EOL;
+//die;
 
 class ActiveRecord {
 
@@ -101,22 +104,4 @@ function getEntity ( $sql )
 
 }
 
-/*
-print $dbname . "DBNAME\r\n";
-print $user . " USER\r\n";
-print $password . " USER\r\n";
-$conn = new Connection( $servername, $dbname, $user, $password );
-
-$active = new ActiveRecord( $conn );
-
-$sql = "select * from ticker_mbtc";
-
-include( dirname(__FILE__, 2) . "/selects/ticker_poloniex_select.php" );
-
-echo $sql[0] . "\r\n";
-
-$sql = $sql[0];
-
-print_r( $active->getEntity( $sql )->fetch_assoc() );
-*/
 ?>
