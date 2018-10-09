@@ -9,7 +9,7 @@
   "autoload" : {
     "classmap" : [
       "src/model/core",
-      "src/ws/services/eu/poloniex",
+      "src/ws/services/poloniex",
       "src/ws/core"
     ]
   }
