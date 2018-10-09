@@ -1,6 +1,7 @@
 <?php
-
-include (dirname(__FILE__, 4 ) . "/model/core/active-record-class.php");
+//print dirname(__FILE__, 4 ) . "/vendor/autoload.php";
+//exit;
+include( dirname(__FILE__, 5 ) . "/vendor/autoload.php" );
 
 class PoloniexTicker
 {
