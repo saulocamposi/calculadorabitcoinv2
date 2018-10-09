@@ -2,9 +2,6 @@
 
 include( dirname(__FILE__, 4 ) . "/vendor/autoload.php" );
 
-//print dirname(__FILE__, 4 ) . "/vendor/autoload.php" . PHP_EOL;
-//die;
-
 class ActiveRecord {
 
   public $conn;
