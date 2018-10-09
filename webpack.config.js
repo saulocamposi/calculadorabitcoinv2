@@ -4,6 +4,7 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
 
+
   entry: [
     './app/js/app.js',
   ],
@@ -15,8 +16,10 @@ module.exports = {
   module: {
     rules: [{
         test: /\.css$/,
-        use : ['style-loader', 'css-loader', 'postcss-loader']
+        use : ['style-loader', 'css-loader','postcss-loader']
       }],
   },
-  devtool: 'source-map'
+  devtool: 'source-map',
+
+
 };
