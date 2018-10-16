@@ -9,8 +9,12 @@
   "autoload" : {
     "classmap" : [
       "src/model/core",
+      "src/model/dao",
+      "src/model/sql",
       "src/ws/services/poloniex",
+      "src/ws/services/kraken",
       "src/ws/core"
+
     ]
   }
 }
