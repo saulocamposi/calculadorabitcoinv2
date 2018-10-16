@@ -6,13 +6,13 @@ app.controller('blinktradecontroller', ['$scope', '$http', 'blinktradeChartServi
 
    var root_path = "backend/src/ws/services/blinktrade/";
 
-   var urlfox = root_path + "blinktrade_fox_services.php";
+   var urlbitcambio = root_path + "blinktrade_bitcambio_services.php";
    var urlsur = root_path + "blinktrade_sur_services.php";
    var urlchile = root_path + "blinktrade_chile_services.php";
    var urlurdu = root_path + "blinktrade_urdu_services.php";
 
 
-  $http.get(urlfox).then(function(response) {
+  $http.get(urlbitcambio).then(function(response) {
      var dataFox = response.data;
      dataChart.push({"c" : [{"v" : "FoxBit", "f": null},{"v" : dataFox.vol, "f": null}]});
      $scope.foxbit = dataFox;

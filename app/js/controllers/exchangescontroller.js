@@ -6,9 +6,9 @@ app.controller('exchangescontroller', ['$scope','$http', 'exchangesChartService'
 
   var root_path = "backend/src/ws/services/";
 
-    $http.get( root_path + "services.php?brand=fox").then(function(response) {
+    $http.get( root_path + "services.php?brand=bitcambio").then(function(response) {
       var datafoxbit = response.data;
-      dataChart.push({"c" : [{"v" : "FOXBIT", "f": null},{"v" : datafoxbit.last, "f": null}]});
+      dataChart.push({"c" : [{"v" : "BitCambio", "f": null},{"v" : datafoxbit.last, "f": null}]});
       $scope.foxbit = datafoxbit;
     });
 

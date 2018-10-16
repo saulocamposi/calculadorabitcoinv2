@@ -6,6 +6,12 @@
     echo json_encode( $row );
   }
 
+  if( $_GET['brand'] == "bitcambio" ){
+
+    include( dirname( __FILE__ , 3 ) . "/model/selects/ticker_bitcambio_select.php");
+    echo json_encode( $row );
+  }
+
   if( $_GET['brand'] == "btctoyou" ){
 
       include( dirname( __FILE__ , 3 ) . "/model/selects/ticker_bitcointoyou_select.php" );

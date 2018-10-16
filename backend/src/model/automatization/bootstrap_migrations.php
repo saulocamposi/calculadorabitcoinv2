@@ -16,5 +16,6 @@
   include( $dirname_level . "/migrations/ticker_poloniex_create.php");
   include( $dirname_level . "/migrations/ticker_kraken_create.php");
   include( $dirname_level . "/migrations/ticker_bitfinex_create.php");
+  include( $dirname_level . "/migrations/ticker_bitcambio_create.php");
 
  ?>
