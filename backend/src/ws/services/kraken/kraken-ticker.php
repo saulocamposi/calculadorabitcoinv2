@@ -10,6 +10,6 @@ $bootstrap['endpoint'] = "https://api.kraken.com/0/public/Ticker?pair=XBTUSD";
 $bootstrap['wrapper'] = new KrakenTicker;
 $bootstrap['sql'] = new KrakenSql;
 
-Task::main( $bootstrap, $argv );
+Task::main( $bootstrap, $argv=1);
 
 ?>

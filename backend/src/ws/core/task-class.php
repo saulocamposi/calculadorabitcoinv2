@@ -42,7 +42,6 @@ include ( dirname(__FILE__) . "/client-ticker-class.php" );
      $this->conn = new Connection( $this->servername, $this->dbname, $this->user, $this->password );
      $this->activeRecord = new ActiveRecord( $this->conn );
      $this->dao = new Dao( $this->activeRecord );
-
      $this->client = new ClientTicker( $this->endpoint );
    }
 
@@ -62,30 +61,8 @@ include ( dirname(__FILE__) . "/client-ticker-class.php" );
    public static function  main( $bootstrap, $argv )
    {
      $task = new Task( $bootstrap );
-
-     //$param = $_GET != null ? $_GET['ticker'] : null;
-
-     //$param = is_array($argv) ? $argv[1] : null;
-
-     if(is_array($argv) && array_key_exists( 1, $argv)){
-       $param = $argv[1];
-       $task->postTicker();
-
-     }else{
-
-     }
-
-     //$param = $param != null ? $task->getJsonAllBtcByVolume() : $task->postTicker();
+     $task->postTicker();
    }
  }
-
-
- //TODO its gonna be the implementation service
- //$bootstrap['endpoint'] = "https://poloniex.com/public?command=returnTicker";
-
-// Task::main( $bootstrap, $argv );
-
-
-
 
 ?>
