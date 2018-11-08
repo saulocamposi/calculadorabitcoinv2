@@ -1,11 +1,14 @@
 <?php
 
 $dirname_model_level = dirname(__FILE__, 5 );
-
+/*
 include ( dirname(__FILE__, 5 ) . "/src/model/core/active-record-class.php" );
 include ( dirname(__FILE__, 5 ) . "/src/model/dao/poloniex-dao-class.php" );
 include ( dirname(__FILE__, 5 ) . "/src/model/sql/poloniex-sql.php" );
 include ( dirname(__FILE__) . "/poloniex-client-ticker-class.php" );
+*/
+include( dirname(__FILE__, 4) . "/model/core/connection_db.php");
+include( dirname(__FILE__, 5 ) . "/vendor/autoload.php" );
 /**
  *
  */
