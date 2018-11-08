@@ -5,13 +5,12 @@ var bitvalorChartService = function() {
     "type": "BarChart",
     "options": {
       "title": "BitValor Brazil",
-      "pointSize": 100,
-      "width" : 500,
+      "pointSize": 70,
       "chartArea": {
-        left: 90,
+        left: 80,
         top: 40,
-        width: "60%",
-        height: "70%"
+        width: "50%",
+        height: "50%"
       }
     },
     "data": {

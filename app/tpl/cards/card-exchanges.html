@@ -9,6 +9,7 @@
     <span>{{ 'exchanges' | translate }}</span>
   </div>
 
+<div class="table-responsive">
   <table class="table table-striped">
     <tr>
       <th>
@@ -17,10 +18,10 @@
       <th>
         Volume
       </th>
-      <th class="hidden-xs hidden-md">
+      <th class="hidden-xs hidden-md-down">
         Maior Valor
       </th>
-      <th class="hidden-xs hidden-md">
+      <th class="hidden-xs hidden-md-down">
         Menor Valor
       </th>
       <th>
@@ -34,10 +35,10 @@
       <td>
         {{foxbit.vol}}
       </td>
-      <td class="hidden-xs hidden-md">
+      <td class="hidden-xs hidden-md-down">
         {{foxbit.high | number : 2}}
       </td>
-      <td class="hidden-xs hidden-md">
+      <td class="hidden-xs hidden-md-down">
         {{foxbit.low | number : 2}}
       </td>
       <td>
@@ -51,10 +52,10 @@
       <td>
         {{mbtc.vol}}
       </td>
-      <td class="hidden-xs hidden-md">
+      <td class="hidden-xs hidden-md-down">
         {{mbtc.high | number : 2}}
       </td>
-      <td class="hidden-xs hidden-md">
+      <td class="hidden-xs hidden-md-down">
         {{mbtc.low | number : 2}}
       </td>
       <td>
@@ -69,10 +70,10 @@
       <td>
         {{btctoyou.vol}}
       </td>
-      <td class="hidden-xs hidden-md">
+      <td class="hidden-xs hidden-md-down">
         {{btctoyou.high | number : 2}}
       </td>
-      <td class="hidden-xs hidden-md">
+      <td class="hidden-xs hidden-md-down">
         {{btctoyou.low | number : 2}}
       </td>
       <td>
@@ -87,10 +88,10 @@
       <td>
         {{negociecoins.vol}}
       </td>
-      <td class="hidden-xs hidden-md">
+      <td class="hidden-xs hidden-md-down">
         {{negociecoins.high | number : 2}}
       </td>
-      <td class="hidden-xs hidden-md">
+      <td class="hidden-xs hidden-md-down">
         {{negociecoins.low | number : 2}}
       </td>
       <td>
@@ -114,8 +115,8 @@
         {{bitinka.brllast[0] | number : 2}}
       </td>
     </tr>-->
-<!-- XXX:
-<tr>
+  <!-- XXX:
+  <tr>
   <td>
     FlowBTC
   </td>
@@ -131,8 +132,10 @@
   <td>
     {{flowbtc.last | number : 2}}
   </td>
-</tr>
--->
+  </tr>
+  -->
 
   </table>
+</div>
+
 </div>

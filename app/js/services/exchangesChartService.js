@@ -9,7 +9,7 @@ var exchangesChartService = function() {
       "chartArea": {
         left: 90,
         top: 40,
-        width: "60%",
+        width: "50%",
         height: "70%"
       }
     },
