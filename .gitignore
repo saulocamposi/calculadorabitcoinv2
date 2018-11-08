@@ -1,8 +1,6 @@
 /backend/src/model/core/connection_db.php
 /backend/vendor
-
 composer.lock
-
 /node_modules
 /public
 yarn.lock
