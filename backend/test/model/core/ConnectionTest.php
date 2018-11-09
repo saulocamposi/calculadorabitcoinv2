@@ -8,15 +8,19 @@
     function testGetConnection(){
 
       $servername = 'localhost';
-      $dbname = 'dbname';
-      $user = 'user';
-      $password = 987;
+      $database = 'calculadorabitcoin';
+      $user = 'root';
+      $password = 123;
 
-      $conn = new Connection( $servername, $dbname, $user, $password );
+      $setup = array(
+        'servername' => $servername,
+        'database' => $database,
+        'user' => $user ,
+        'password' => $password );
 
-      print_r($conn);
+      $conn = new Connection( $setup );
 
-      $this->assertTrue($conn->getConnection());
+      $this->assertInstanceOf('mysqli', $conn->getConnection() );
     }
 
   }
