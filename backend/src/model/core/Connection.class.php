@@ -11,29 +11,23 @@
     public $user;
     public $password;
 
-    function __construct( $servername, $database, $user, $password )
+    function __construct( $setup )
     {
-      $this->servername = $servername;
-      $this->database = $database;
-      $this->user = $user;
-      $this->password = $password;
+      $this->servername = $setup['servername'];
+      $this->database = $setup['database'];
+      $this->user = $setup['user'];
+      $this->password = $setup['password'];
     }
 
-    function destroyConnection( $connect )
-    {
+    function destroyConnection( $connect ){
       mysqli_close( $connect );
     }
 
-    function getConnection()
-    {
+    function getConnection(){
        $this->connect = mysqli_connect( $this->servername, $this->user, $this->password, $this->database );
        return $this->connect;
     }
 
   }
-
-  //$conn = new Connection( $servername, $dbname, $user, $password );
-  //print_r($conn->getConnection());
-
 
  ?>
