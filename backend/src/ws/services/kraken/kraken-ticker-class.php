@@ -45,20 +45,13 @@
    $this->high = $result->h[0];
    $this->open_today = $result->o[0];
 
-       /*$sql = "CREATE TABLE ticker_kraken (
-               id int NOT NULL AUTO_INCREMENT,
-               vol decimal(16,8) ,
-               low decimal(16,8) ,
-               high decimal(16,8) ,
-               last decimal(16,8) ,
-               pair varchar(30) ,
-               created_at DATETIME,
-               PRIMARY KEY (`id`)
-               )";*/
-
     return $sql->postTicker($this->volume, $this->low, $this->high, $this->last_trade, $this->pair);
 
-      }
   }
-  //new KrakenTicker
- ?>
+
+  function getLastTicker($sql){
+      return $sql->lastTicker();
+  }
+}
+
+?>
