@@ -29,14 +29,5 @@ class WsUtilsTest extends TestCase
     $remotenode = $this->instance->isJson();
     $this->assertTrue($remotenode, true);
   }
-
-
-
-
-
-
-
-
-
 }
  ?>
