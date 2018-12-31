@@ -9,6 +9,6 @@ $bootstrap['endpoint'] = "https://api.bitfinex.com/v1/pubticker/btcusd";
 $bootstrap['wrapper'] = new BitfinexTicker;
 $bootstrap['sql'] = new BitfinexSql;
 
-Task::main( $bootstrap, $argv );
+Task::main( $bootstrap );
 
 ?>

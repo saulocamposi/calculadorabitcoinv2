@@ -5,7 +5,7 @@ include (dirname(__FILE__) . "/bitfinex-ticker-class.php");
 $symbolsEndpoint = "https://api.bitfinex.com/v1/symbols";
 $baseEndpoint = "https://api.bitfinex.com/v1/pubticker/";
 
-$conn = new Connection( $servername, $dbname, $user, $password );
+$conn = new Connection( $bootstrap );
 $activeRecord = new ActiveRecord($conn);
 $bitfinex = new BitfinexTicker($activeRecord);
 
