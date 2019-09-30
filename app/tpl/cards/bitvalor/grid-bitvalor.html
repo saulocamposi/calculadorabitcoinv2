@@ -1,7 +1,9 @@
-<table class="table table-striped" ng-controller="bitvalorcontroller">
+<div ng-controller="bitvalorcontroller">
+    
+<table class="table table-striped">  
   <tr>
     <th>
-      Empresas
+      Empresas 
     </th>
     <th>
       Volume
@@ -17,7 +19,7 @@
     </th>
   </tr>
   <tr ng-repeat="(key, ticket) in bitvalor">
-
+      
       <td ng-if="key == 'WAL'">
         Walltime
       </td>
@@ -37,7 +39,7 @@
         Basebit
       </td>
       <td ng-if="key == 'FLW'">
-        flowBTC
+        FlowBTC
       </td>
       <td ng-if="key == 'FOX'">
         FoxBit
@@ -54,6 +56,10 @@
         Braziliex
       </td>
 
+      <td ng-if="key == 'BSQ'">
+          BSQ
+      </td>
+
       <td>
         {{ticket.vol | number : 8 }}
       </td>
@@ -68,3 +74,4 @@
       </td>
   </tr>
 </table>
+</div>
