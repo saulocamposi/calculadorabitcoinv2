@@ -7,7 +7,8 @@ require("angular-translate");
 require("bootstrap");
 require("jquery");
 require("popper.js");
-
+require("chart.js");
+require("angular-chart.js");
 
 require("./controllers/value.js");
 require("./manager-module.js");
@@ -24,6 +25,7 @@ require("./controllers/coinbrcontroller.js");
 require("./controllers/walletfoxbitcontroller.js");
 require("./controllers/bitinkacontroller.js");
 require("./controllers/bitvalorcontroller.js");
+require("./controllers/chartjscontroller.js");
 
 
 require("./services/forex.js");
