@@ -39,7 +39,16 @@ include ( dirname(__FILE__) . "/client-ticker-class.php" );
    public function getJsonAllBtcByVolume()
    {
      //TODO needs to call client to get acess to dao
-     $ticker = $this->dao->getAllBTCByVolumeTicker( $this->bootstrap['sql']['allByVolume'] );
+
+      $ticker = $this->client->getAllBTCByVolumeTicker(
+      $this->bootstrap['wrapper'],
+      $this->bootstrap['sql']->allByVolume(),
+      $this->activeRecord);
+      print_r($ticker);
+      exit;
+
+     //$ticker = $this->dao->getAllBTCByVolumeTicker( $this->bootstrap['sql']['allByVolume'] );
+
      $ticker = json_encode($ticker);
      echo $ticker;
    }
@@ -60,6 +69,7 @@ include ( dirname(__FILE__) . "/client-ticker-class.php" );
       if (isset($bootstrap['action'])) {
         if ( $bootstrap['action'] == 'select') {
           print "select action \r\n"  ;
+          $task->getJsonAllBtcByVolume();
         }else {
           $task->postTicker();
         }

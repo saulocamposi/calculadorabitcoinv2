@@ -70,5 +70,13 @@ class ClientTicker
   function getSymbols(){
   }
 
+  function getAllBTCByVolumeTicker($wrapper, $sql, $activeRecord){
+
+      $query = $wrapper->getLastTicker( $sql );
+      $entity = $activeRecord->getEntity($query);
+
+      
+  }
+
 }
 ?>

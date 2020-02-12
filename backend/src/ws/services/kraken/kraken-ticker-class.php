@@ -49,9 +49,11 @@
 
   }
 
-  function getLastTicker($sql){
-      return $sql->lastTicker();
+  function getLastTicker($sql){    
+      return $sql;
   }
+
+
 }
 
 ?>
