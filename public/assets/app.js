@@ -107554,6 +107554,22 @@ app.controller('bitvalorcontroller', ['$scope','$http', 'bitvalorChartService', 
       var databitvalor = response.data;
       $scope.bitvalor = databitvalor;
 
+      console.log(databitvalor);
+      let labels = [];
+      let datagraph = [];
+      for (let data of Object.keys(databitvalor)) {
+        console.log(data);                
+        labels.push(data);
+        datagraph.push(databitvalor[data]['last'])
+      }
+
+      console.log(labels);
+      console.log(datagraph);
+
+      $scope.labels = labels;
+      $scope.data = datagraph;
+      
+
 
       if (databitvalor.ARN){
         dataChart.push({"c" : [{"v" : "ArenaBitcoin", "f": null},{"v" : databitvalor.ARN.last, "f": null}]});
