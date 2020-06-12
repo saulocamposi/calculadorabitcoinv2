@@ -107510,7 +107510,8 @@ var app = __webpack_require__(1);
 app.controller('bitinkacontroller', ['$scope','$http','bitinkaChartService', function($scope, $http, bitinkaChartService) {
  var dataChart = [];
 
-    $http.get("backend/src/ws/services/bitinka_services.php").then(function(response) {
+ 
+    $http.get("../../../../calculadorabitcoinv2_backend/backend/src/ws/services/bitvalor/bitvalor_services.php").then(function(response) {
       var bitinka = response.data;
       $scope.bitinka = bitinka;
 

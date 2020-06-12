@@ -1,23 +1,24 @@
 
      <!-- XXX:  <div class="panel panel-info" ng-controller="calculatorcontroller">
        <div class="panel-heading">-->
+<div ng-controller="calculatorcontroller">
+  <div class="card card-info">
+      
+      <div class="container-fluid">
+        <div class="col-md-12">
+          <ng-include src="'app/tpl/calc/btc_calculator/btc_calculator.html'"></ng-include>
+        </div>
+        <!-- XXX: 
+          <div class="col-md-2 btn-cal-func">
+          <ng-include src="'app/tpl/calc/btc-calc-income-buttons.html'"></ng-include>
+          </div>
+        -->
 
-       <div class="card card-info" ng-controller="calculatorcontroller">
-         <div class="card-heading">
-
-    <ng-include src="'app/tpl/calc/nav/nav-calculator.html'"></ng-include>
-  </div>
-  <div class="container-fluid">
-
-    <div class="col-md-6">
-      <ng-include src="'app/tpl/calc/btc_calculator/fields_btc_calculator.html'"></ng-include>
-    </div>
-
-    <div class="col-md-2 btn-cal-func">
-
-    <!-- XXX:   <ng-include src="'app/tpl/calc/btc-calc-income-buttons.html'"></ng-include>-->
-    </div>
-
+        
+      </div>
 
   </div>
+  
+    <ng-include src="'app/tpl/calc/income_calculator/main_income.html'"></ng-include>
+  
 </div>
