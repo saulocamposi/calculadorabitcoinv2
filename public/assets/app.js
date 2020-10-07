@@ -107550,9 +107550,10 @@ app.controller('bitvalorcontroller', ['$scope','$http', function($scope, $http, 
 
     var dataChart = [];
     var domain = "http://calculadorabitcoin.com.br/";
-    var root_path = "backend/src/ws/services/bitvalor/";
+    var api = "calculadorabitcoin_api/"
+    var root_path = "src/ws/services/bitvalor/";
 
-    $http.get( domain + root_path + "bitvalor_services.php" ).then(function(response) {
+    $http.get( domain + api + root_path + "bitvalor_services.php" ).then(function(response) {
       var databitvalor = response.data;
       $scope.bitvalor = databitvalor;
 
