@@ -2,15 +2,12 @@ var app = require('../manager-module.js');
 
 app.controller('calculatorcontroller',  ['$scope','$http', 'blinktradeService', function( $scope, $http, blinktradeService ) {
 
-
     blinktradeService.async().then(function(d) {
      $scope.serviceFox = d;
      console.log("service fox");
      console.log(d);
      $scope.brlref = d.data.last;
     });
-
-
 
     $scope.btcReference = function(){
 
