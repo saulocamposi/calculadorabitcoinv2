@@ -1,7 +1,7 @@
 # CalculadoraBitcoin V2
 # Introduction
 
- CalculadoraBitcoin website is open-source project that has aim to provide updated values of cryptocurrency exchanges around the world. Showing prices, volumes, correlations among differents altcoins which is provided by public APIs.  
+ CalculadoraBitcoin website is open-source project aimed to provide updated cryptocurrency values from  exchanges around the world. Prices, Volumes, Correlations among altcoins.  
  Actualy the most of datasources comes from Brazilians exchanges and some correlated data from couples of internacional exchanges. We are continuously improving this project with more code and documentation.   
 Our aim has been coding for increase our database adding new exchanges, showing more live prices and provide the real scenario of cryptocurrency market around the world.
   
