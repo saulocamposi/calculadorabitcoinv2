@@ -30158,17 +30158,18 @@ __webpack_require__(203);
 __webpack_require__(204);
 __webpack_require__(205);
 __webpack_require__(206);
-
-
 __webpack_require__(207);
+
+
 __webpack_require__(208);
 __webpack_require__(209);
 __webpack_require__(210);
 __webpack_require__(211);
 __webpack_require__(212);
-
 __webpack_require__(213);
+
 __webpack_require__(214);
+__webpack_require__(215);
 
 
 /*
@@ -30176,15 +30177,15 @@ TODO future bootstrap configured for scss
 require ("custom");
 @import "~bootstrap/scss/bootstrap";
 */
-__webpack_require__ (215);
-__webpack_require__(217);
-__webpack_require__(219);
-__webpack_require__(221);
-__webpack_require__(223);
-__webpack_require__(225);
-__webpack_require__(227);
-__webpack_require__(229);
-__webpack_require__(231);
+__webpack_require__ (216);
+__webpack_require__(218);
+__webpack_require__(220);
+__webpack_require__(222);
+__webpack_require__(224);
+__webpack_require__(226);
+__webpack_require__(228);
+__webpack_require__(230);
+__webpack_require__(232);
 
 
 /***/ }),
@@ -107242,15 +107243,12 @@ var app = __webpack_require__(1);
 
 app.controller('calculatorcontroller',  ['$scope','$http', 'blinktradeService', function( $scope, $http, blinktradeService ) {
 
-
     blinktradeService.async().then(function(d) {
      $scope.serviceFox = d;
      console.log("service fox");
      console.log(d);
      $scope.brlref = d.data.last;
     });
-
-
 
     $scope.btcReference = function(){
 
@@ -107336,6 +107334,25 @@ app.controller('exchangescontroller', ['$scope','$http', 'exchangesChartService'
 
 var app = __webpack_require__(1);
 
+app.controller('tradingviewcontroller', ['$scope', '$http', function($scope, $http) {
+
+  var root_path_magrela = "https://magrela.xyz";
+  var root_path_calculadora = "http://calculadorabitcoin.com.br";
+
+
+
+    $scope.magrela = root_path_magrela;
+
+
+}]);
+
+
+/***/ }),
+/* 200 */
+/***/ (function(module, exports, __webpack_require__) {
+
+var app = __webpack_require__(1);
+
 app.controller('blinktradecontroller', ['$scope', '$http', 'blinktradeChartService','blinktradeService', function($scope, $http, blinktradeChartService, blinktradeService) {
 
    var dataChart = [];
@@ -107382,7 +107399,7 @@ app.controller('blinktradecontroller', ['$scope', '$http', 'blinktradeChartServi
 
 
 /***/ }),
-/* 200 */
+/* 201 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var app = __webpack_require__(1);
@@ -107424,7 +107441,7 @@ app.controller('poloniexcontroller', ['$scope','$http', 'polionexChartService', 
 
 
 /***/ }),
-/* 201 */
+/* 202 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var app = __webpack_require__(1);
@@ -107445,7 +107462,7 @@ app.controller('poloniexcontrollerv2', ['$scope','$http', /*'polionexChartServic
 
 
 /***/ }),
-/* 202 */
+/* 203 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var app = __webpack_require__(1);
@@ -107460,7 +107477,7 @@ app.controller('coinbrcontroller', ['$scope','$http', function($scope, $http) {
 
 
 /***/ }),
-/* 203 */
+/* 204 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var app = __webpack_require__(1);
@@ -107481,7 +107498,7 @@ app.controller('walletfoxbitcontroller', ['$scope', '$http', function($scope, $h
 
 
 /***/ }),
-/* 204 */
+/* 205 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var app = __webpack_require__(1);
@@ -107520,7 +107537,7 @@ app.controller('bitinkacontroller', ['$scope','$http','bitinkaChartService', fun
 
 
 /***/ }),
-/* 205 */
+/* 206 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var app = __webpack_require__(1);
@@ -107557,7 +107574,7 @@ app.controller('bitvalorcontroller', ['$scope','$http', function($scope, $http, 
 
 
 /***/ }),
-/* 206 */
+/* 207 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var app = __webpack_require__(1);
@@ -107570,7 +107587,7 @@ $scope.data = [0, 10, 5, 2, 20, 30, 45];
 
 
 /***/ }),
-/* 207 */
+/* 208 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var app = __webpack_require__(1);
@@ -107583,7 +107600,7 @@ module.exports = app;
 
 
 /***/ }),
-/* 208 */
+/* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var app = __webpack_require__(1);
@@ -107607,7 +107624,7 @@ module.exports = app;
 
 
 /***/ }),
-/* 209 */
+/* 210 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var app = __webpack_require__(1);
@@ -107654,7 +107671,7 @@ module.exports = app;
 
 
 /***/ }),
-/* 210 */
+/* 211 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var app = __webpack_require__(1);
@@ -107702,7 +107719,7 @@ module.exports = app;
 
 
 /***/ }),
-/* 211 */
+/* 212 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var app = __webpack_require__(1);
@@ -107742,7 +107759,7 @@ module.exports = app;
 
 
 /***/ }),
-/* 212 */
+/* 213 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var app = __webpack_require__(1);
@@ -107789,7 +107806,7 @@ module.exports = app;
 
 
 /***/ }),
-/* 213 */
+/* 214 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var app = __webpack_require__(1);
@@ -107829,7 +107846,7 @@ module.exports = app;
 
 
 /***/ }),
-/* 214 */
+/* 215 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var app = __webpack_require__(1);
@@ -107849,13 +107866,13 @@ module.exports = app;
 
 
 /***/ }),
-/* 215 */
+/* 216 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(216);
+var content = __webpack_require__(217);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(3)(content, {});
@@ -107875,7 +107892,7 @@ if(false) {
 }
 
 /***/ }),
-/* 216 */
+/* 217 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)();
@@ -107889,13 +107906,13 @@ exports.push([module.i, "/*!\n * Bootstrap v4.1.3 (https://getbootstrap.com/)\n 
 
 
 /***/ }),
-/* 217 */
+/* 218 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(218);
+var content = __webpack_require__(219);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(3)(content, {});
@@ -107915,7 +107932,7 @@ if(false) {
 }
 
 /***/ }),
-/* 218 */
+/* 219 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)();
@@ -107929,13 +107946,13 @@ exports.push([module.i, ".nav-pills li {\n    margin: 1px;\n    padding: 1px;\n}
 
 
 /***/ }),
-/* 219 */
+/* 220 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(220);
+var content = __webpack_require__(221);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(3)(content, {});
@@ -107955,7 +107972,7 @@ if(false) {
 }
 
 /***/ }),
-/* 220 */
+/* 221 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)();
@@ -107969,13 +107986,13 @@ exports.push([module.i, ".card.card-accent-green {\n    border-top: 3px solid #5
 
 
 /***/ }),
-/* 221 */
+/* 222 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(222);
+var content = __webpack_require__(223);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(3)(content, {});
@@ -107995,7 +108012,7 @@ if(false) {
 }
 
 /***/ }),
-/* 222 */
+/* 223 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)();
@@ -108009,13 +108026,13 @@ exports.push([module.i, ".panel.panel-accent-green {\n    border-top: 3px solid 
 
 
 /***/ }),
-/* 223 */
+/* 224 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(224);
+var content = __webpack_require__(225);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(3)(content, {});
@@ -108035,7 +108052,7 @@ if(false) {
 }
 
 /***/ }),
-/* 224 */
+/* 225 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)();
@@ -108049,13 +108066,13 @@ exports.push([module.i, "/* styles about font size */\n.labelPrice {\n  font-siz
 
 
 /***/ }),
-/* 225 */
+/* 226 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(226);
+var content = __webpack_require__(227);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(3)(content, {});
@@ -108075,7 +108092,7 @@ if(false) {
 }
 
 /***/ }),
-/* 226 */
+/* 227 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)();
@@ -108089,13 +108106,13 @@ exports.push([module.i, ".results {\n  border-radius: 3px;\n  width: 100%;\n  pa
 
 
 /***/ }),
-/* 227 */
+/* 228 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(228);
+var content = __webpack_require__(229);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(3)(content, {});
@@ -108115,7 +108132,7 @@ if(false) {
 }
 
 /***/ }),
-/* 228 */
+/* 229 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)();
@@ -108129,13 +108146,13 @@ exports.push([module.i, ".card{\n  border-radius: 3px;\n  background: #FFFFFF;\n
 
 
 /***/ }),
-/* 229 */
+/* 230 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(230);
+var content = __webpack_require__(231);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(3)(content, {});
@@ -108155,7 +108172,7 @@ if(false) {
 }
 
 /***/ }),
-/* 230 */
+/* 231 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)();
@@ -108169,13 +108186,13 @@ exports.push([module.i, "html {\n  font-family: \"Helvetia\", \"Arial\", sans-se
 
 
 /***/ }),
-/* 231 */
+/* 232 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(232);
+var content = __webpack_require__(233);
 if(typeof content === 'string') content = [[module.i, content, '']];
 // add the styles to the DOM
 var update = __webpack_require__(3)(content, {});
@@ -108195,7 +108212,7 @@ if(false) {
 }
 
 /***/ }),
-/* 232 */
+/* 233 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(2)();
