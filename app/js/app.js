@@ -18,6 +18,7 @@ require("./translate-provider.js");
 require("./controllers/calculatorcontroller.js");
 require("./controllers/exchangescontroller.js");
 //require("./controllers/foxbitcontroller.js");
+require("./controllers/tradingviewcontroller.js");
 require("./controllers/blinktradecontroller.js");
 require("./controllers/poloniexcontroller.js");
 require("./controllers/poloniexcontrollerv2.js");
